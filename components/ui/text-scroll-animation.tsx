@@ -84,8 +84,8 @@ const PinnedSection = ({
   children,
   ...rest
 }: React.HTMLAttributes<HTMLElement> & { sectionRef: React.RefObject<HTMLElement | null> }) => (
-  <section ref={sectionRef} className={cn("relative h-[125vh] md:h-[170vh]", className)} {...rest}>
-    <div className="sticky top-0 flex h-svh flex-col items-center justify-center gap-10 overflow-hidden px-4">
+  <section ref={sectionRef} className={cn("relative md:h-[170vh]", className)} {...rest}>
+    <div className="flex flex-col items-center justify-center gap-10 overflow-hidden px-4 py-20 md:sticky md:top-0 md:h-svh md:py-0">
       {children}
     </div>
   </section>

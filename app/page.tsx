@@ -82,7 +82,7 @@ const faqData: FaqSectionData = {
   mainTitle: "Questions",
   mainSubtitle: (
     <>
-      Hover or tap a row to pause it. Can&apos;t find your answer? Email{" "}
+      Can&apos;t find your answer? Email{" "}
       <a className="faq-mail" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>.
     </>
   ),

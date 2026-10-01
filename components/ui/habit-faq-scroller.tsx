@@ -23,7 +23,7 @@ export type FaqSectionData = {
  */
 export const FaqCard = ({ question, answer }: Omit<FaqItem, "id">) => {
   return (
-    <div className="faq-card flex w-[min(24rem,80vw)] shrink-0 flex-col items-start gap-3 rounded-lg border border-border bg-card p-6 backdrop-blur-sm">
+    <div className="faq-card flex snap-center w-[min(24rem,80vw)] shrink-0 flex-col items-start gap-3 rounded-lg border border-border bg-card p-6 backdrop-blur-sm">
       <h3 className="faq-title text-lg font-semibold leading-snug text-foreground">{question}</h3>
       <p className="faq-answer text-base text-muted-foreground">{answer}</p>
     </div>
@@ -51,23 +51,23 @@ export const HorizontalScroller = ({ children, speed = "40s", direction = "left"
   const style = { "--scroll-duration": speed } as React.CSSProperties;
 
   const half = Array.from({ length: repeat }, (_, i) => (
-    <React.Fragment key={i}>{children}</React.Fragment>
+    <div key={i} className={i ? "contents max-md:hidden" : "contents"}>{children}</div>
   ));
 
   return (
-    <div className="scroller-mask group relative w-full overflow-hidden motion-reduce:overflow-x-auto">
+    <div className="scroller-mask group relative w-full overflow-hidden motion-reduce:overflow-x-auto max-md:snap-x max-md:snap-mandatory max-md:overflow-x-auto max-md:[scrollbar-width:none]">
       <div
         className={cn(
           "flex w-max",
           animationClass,
           "group-hover:[animation-play-state:paused] group-focus-within:[animation-play-state:paused]",
-          "motion-reduce:animate-none"
+          "motion-reduce:animate-none max-md:animate-none max-md:px-4"
         )}
         style={style}
       >
         <div className="flex shrink-0 items-stretch gap-6 pr-6">{half}</div>
         {/* duplicate for seamless loop */}
-        <div className="flex shrink-0 items-stretch gap-6 pr-6 motion-reduce:hidden" aria-hidden="true">
+        <div className="flex shrink-0 items-stretch gap-6 pr-6 motion-reduce:hidden max-md:hidden" aria-hidden="true">
           {half}
         </div>
       </div>

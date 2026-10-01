@@ -5,7 +5,6 @@ import { SmoothScroll } from "@/components/smooth-scroll";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SplashCursorEffect } from "@/components/splash-cursor-effect";
-import { SiteAnimations } from "@/components/site-animations";
 import { SITE } from "@/lib/site";
 
 const title = "vexoro | Web Design & Development Studio in Oman";
@@ -66,16 +65,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <link rel="preload" href="/assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        {/* Hide small hero pieces until their intro starts (CSS reveals them after 2.5 s regardless). Never the h1. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!/bot|crawl|spider|slurp|lighthouse|pagespeed|preview/i.test(navigator.userAgent))document.documentElement.classList.add('anim-pending')",
-          }}
-        />
       </head>
       <body>
         <SmoothScroll>
@@ -85,8 +77,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SiteFooter />
         </SmoothScroll>
         <SplashCursorEffect />
-        <SiteAnimations />
-        <div className="scroll-progress" aria-hidden="true" />
       </body>
     </html>
   );
