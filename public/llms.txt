@@ -1,0 +1,31 @@
+# vexoro
+
+> vexoro is a web design and development studio building fast, search-ready websites for businesses in Oman and brands worldwide. We handle design, code and search setup, and the client owns the finished site.
+
+Contact: hello@vexoro.dev
+
+## Pages
+
+- [Home](https://vexoro.dev/): services, process, SEO approach, FAQ and contact form
+- [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
+
+## Website packages (OMR)
+
+- Starter, 15 OMR: 1 custom webpage, responsive, business information, contact details, WhatsApp button, social media links, 1 revision
+- Business, 30 OMR (most popular): up to 4 pages, custom design, contact form, WhatsApp integration, Google Maps, social media integration, basic SEO setup, simple animations, 2 revisions
+- Professional, 50 OMR: up to 7 pages, premium custom design, advanced animations, contact forms, WhatsApp, Google Maps, SEO setup, performance optimisation, custom features, 3 revisions, priority support
+- Elite, from 75 OMR: custom number of pages, fully custom UI/UX, custom functionality, advanced forms, SEO and performance optimisation, third-party integrations, priority support, unlimited revisions (price depends on requirements)
+
+## Add-ons (OMR)
+
+- Additional page: 5
+- Premium animations: from 10
+- Advanced contact / booking system: from 10
+- Custom functionality: from 10
+- SEO optimisation: from 10
+- Website maintenance: 5 per month
+- Domain & hosting setup: from 5
+
+## Services
+
+Brand websites, landing pages, online stores, web apps, technical SEO audits and website care plans. Every site ships with page titles and descriptions, social preview images, schema.org data, a sitemap, robots.txt, compressed images and Google Search Console setup.

@@ -9,6 +9,7 @@ const LINKS = [
   { href: "/#process", label: "Process" },
   { href: "/#seo", label: "SEO" },
   { href: "/#faq", label: "FAQ" },
+  { href: "/pricing", label: "Pricing" },
 ];
 
 export function SiteHeader() {

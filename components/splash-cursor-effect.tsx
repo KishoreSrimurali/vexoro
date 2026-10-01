@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import SplashCursor from "@/components/ui/SplashCursor";
+import dynamic from "next/dynamic";
 import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+
+// Loaded only when shown (desktop), so phones never download the WebGL code
+const SplashCursor = dynamic(() => import("@/components/ui/SplashCursor"), { ssr: false });
 
 /**
  * Fluid cursor trail in the brand violet.

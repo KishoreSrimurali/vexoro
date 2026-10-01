@@ -20,6 +20,9 @@ npm run lint     # typecheck
 app/
   layout.tsx          SEO metadata (title, description, Open Graph, Twitter, icons), smooth scroll
   page.tsx            Home page + schema.org JSON-LD
+  pricing/page.tsx    Packages and add-ons in OMR (Offer schema, breadcrumbs)
+  sitemap.ts          /sitemap.xml (add new pages here)
+  robots.ts           /robots.txt
   not-found.tsx       404 (noindex)
   globals.css         Tailwind, shadcn theme tokens, site styles (dark grain theme)
 components/
@@ -32,24 +35,32 @@ components/
   site-footer.tsx
   contact-form.tsx    Opens the visitor's email app with the enquiry filled in
   smooth-scroll.tsx   Lenis smooth scrolling (off for reduced motion)
-  splash-cursor-effect.tsx  Violet fluid cursor trail; desktop only, off for reduced motion
+  splash-cursor-effect.tsx  Violet fluid cursor trail; desktop only, lazy-loaded, off for reduced motion
+  site-animations.tsx  anime.js motion (lazy-loaded; skipped for reduced motion and crawlers)
 hooks/
   use-prefers-reduced-motion.ts  Hydration-safe reduced-motion check
 lib/
   faq.ts              FAQ questions, used by the page and the FAQPage schema
+  pricing.ts          Packages and add-ons (OMR), used by /pricing, schema and llms.txt
+  site.ts             Site facts + pageMetadata() helper for every page's SEO tags
   utils.ts            `cn()` class helper used by shadcn components
   structured-data.ts  Organization, WebSite, ProfessionalService, WebPage, FAQPage
-public/               Served at the site root: robots.txt, sitemap.xml, manifest,
+public/               Served at the site root: llms.txt, manifest,
                       favicons, assets/brand, assets/fonts, assets/img (OG image, icons)
 components.json       shadcn/ui config (aliases: @/components/ui, @/lib/utils)
 ```
 
 ## SEO
 
-- Sitemap: https://vexoro.dev/sitemap.xml (update `<lastmod>` when content changes)
-- Robots: https://vexoro.dev/robots.txt
-- Every page gets a title, description, canonical URL and social preview image
-  from `app/layout.tsx`; the home page adds schema.org data.
+- Every page: unique title, description (≤160 chars), canonical, Open Graph and Twitter tags via `pageMetadata()` in `lib/site.ts`.
+- schema.org: Organization, WebSite, ProfessionalService (Oman + worldwide, OMR price range), WebPage,
+  FAQPage (home), BreadcrumbList and OfferCatalog with real prices (pricing).
+- `/sitemap.xml` and `/robots.txt` are generated (`app/sitemap.ts`, `app/robots.ts`); `/llms.txt` summarises the site for AI search.
+- The h1 is never hidden by animations (it is the LCP element); crawlers and Lighthouse get no animations.
+- Lighthouse (local, production build): desktop 100/100/100/100, mobile 97/100/100/100 on both pages.
+
+After deploying: verify the domain in Google Search Console and Bing Webmaster Tools, submit
+`https://vexoro.dev/sitemap.xml`, and create a Google Business Profile for local (Oman) searches.
 
 ## Brand
 

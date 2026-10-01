@@ -3,7 +3,10 @@ import { ContactForm } from "@/components/contact-form";
 import FaqSection, { type FaqSectionData } from "@/components/ui/habit-faq-scroller";
 import { Skiper31 } from "@/components/ui/text-scroll-animation";
 import { FAQS } from "@/lib/faq";
-import { structuredData } from "@/lib/structured-data";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { homeStructuredData } from "@/lib/structured-data";
+import { pageMetadata } from "@/lib/site";
 
 const SERVICES = [
   {
@@ -90,10 +93,16 @@ const faqData: FaqSectionData = {
   ],
 };
 
+const TITLE = "vexoro | Web Design & Development Studio in Oman";
+const DESCRIPTION =
+  "Fast, search-ready websites for businesses in Oman and brands worldwide: brand sites, landing pages, online stores and SEO. Packages from 15 OMR.";
+
+export const metadata: Metadata = pageMetadata({ path: "/", title: TITLE, description: DESCRIPTION });
+
 export default function Home() {
   return (
     <main id="main">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData(TITLE, DESCRIPTION)) }} />
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="wrap hero-inner">
@@ -106,7 +115,7 @@ export default function Home() {
             </p>
             <div className="hero-links">
               <a className="btn" href="#contact">Tell us about your project</a>
-              <a className="text-link" href="#services">Services and timelines</a>
+              <Link className="text-link" href="/pricing">Packages from 15 OMR</Link>
             </div>
           </div>
         </div>
@@ -119,7 +128,7 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <h2 id="services-title">Services</h2>
-            <p>Every project gets a fixed quote before work starts. Timelines assume content and feedback arrive on schedule.</p>
+            <p>Every project gets a fixed quote before work starts. Timelines assume content and feedback arrive on schedule. <Link className="text-link" href="/pricing">See packages and prices</Link>.</p>
           </div>
           <table className="services">
             <thead>
