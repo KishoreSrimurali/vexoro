@@ -13,9 +13,9 @@ index.html            Home page (all sections, JSON-LD structured data)
 robots.txt            Crawl rules + sitemap link
 sitemap.xml           XML sitemap
 site.webmanifest      PWA manifest / app icons
-favicon.svg/.ico      Favicons; apple-touch-icon.png
-assets/brand/         Logo mark + wordmark (original PNG + vector SVG)
-assets/css/           styles.css (light + dark mode)
+favicon.ico/-32.png   Favicons (from the app icon); apple-touch-icon.png
+assets/brand/         Logo mark, wordmark (PNG + SVG) and app icon
+assets/css/           styles.css (dark grain theme)
 assets/js/            main.js (mobile nav, contact form)
 assets/fonts/         Self-hosted Archivo variable font (OFL)
 assets/img/           Open Graph image + app icons
@@ -40,4 +40,4 @@ Tools, submit `https://vexoro.dev/sitemap.xml`, and update `<lastmod>` when cont
 | Ink    | `#14141A` |
 | Stone  | `#8A867C` |
 | Violet | `#5B3DF5` |
-| Paper  | `#F7F7F9` |
+| Ground | `#0A0A0B` |
