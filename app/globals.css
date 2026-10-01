@@ -1,3 +1,32 @@
+@import "tailwindcss";
+
+/* shadcn/ui theme tokens, mapped to the vexoro palette defined below */
+@theme inline {
+  --color-background: var(--ground);
+  --color-foreground: var(--ink);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--surface-strong);
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--ink);
+  --color-primary-foreground: var(--ground);
+  --color-secondary: var(--surface);
+  --color-secondary-foreground: var(--ink);
+  --color-muted: var(--surface);
+  --color-muted-foreground: var(--muted);
+  --color-accent: var(--violet);
+  --color-accent-foreground: #ffffff;
+  --color-border: var(--line);
+  --color-input: var(--line);
+  --color-ring: var(--violet);
+  --color-stone: var(--stone);
+  --font-sans: var(--text);
+  --font-display: var(--display);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 1.6);
+}
+
 /* vexoro / vexoro.dev */
 
 /* Archivo variable (wdth 62–125, wght 100–900), self-hosted, SIL Open Font License */
@@ -7,7 +36,7 @@
   font-weight: 100 900;
   font-stretch: 62% 125%;
   font-display: swap;
-  src: url("../fonts/archivo-latin-var.woff2") format("woff2");
+  src: url("/assets/fonts/archivo-latin-var.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -55,7 +84,6 @@ html {
     radial-gradient(30vmax 24vmax at 100% 8%, rgba(255, 255, 255, 0.07), transparent 70%);
   background-attachment: fixed;
 }
-@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 
 body {
   margin: 0;
@@ -178,7 +206,11 @@ h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.3; }
   fill: var(--ink);
 }
 @media (max-width: 1100px) {
-  .hero-mark { opacity: .08; }
+  .hero-inner { padding-block-end: 8px; }
+  .hero-mark {
+    position: relative; top: auto; right: auto;
+    width: min(560px, 78vw); margin: 0 calc(-1 * min(110px, 16vw)) clamp(-48px, -6vw, -24px) auto;
+  }
 }
 @media (min-width: 1101px) {
   .hero h1 { max-width: 9.5ch; }
@@ -314,3 +346,29 @@ h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.3; }
 .notfound { padding-block: clamp(80px, 14vw, 180px); }
 .notfound h1 { font-size: clamp(4rem, 16vw, 11rem); }
 .notfound p { color: var(--muted); margin: 20px 0 32px; max-width: 40ch; }
+
+/* Scroll animation (components/ui/text-scroll-animation.tsx) */
+.scroll-text {
+  margin: 0; width: 100%; max-width: 64rem; text-align: center;
+  font-family: var(--display); font-stretch: 125%; font-weight: 800;
+  font-size: clamp(2.1rem, 8.5vw, 7.5rem); line-height: 1.05; letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.scroll-tile {
+  display: grid; justify-items: center; align-content: center; gap: 8px;
+  width: clamp(76px, 18vw, 112px); aspect-ratio: 1;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); color: var(--ink);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  will-change: transform;
+}
+.scroll-tile svg { width: clamp(24px, 5vw, 34px); height: auto; }
+.scroll-tile span { font-stretch: 75%; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.scroll-icons {
+  display: grid; grid-template-columns: repeat(3, auto); justify-content: center; gap: 14px;
+}
+@media (min-width: 640px) { .scroll-icons { display: flex; flex-wrap: wrap; gap: 24px; } }
+.scroll-static {
+  display: grid; justify-items: center; gap: 40px;
+  padding: clamp(72px, 10vw, 140px) 16px;
+}
