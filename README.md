@@ -1,6 +1,6 @@
 # vexoro.dev
 
-Marketing website for **Vexoro** — a web design & development studio for brands.
+Marketing website for **vexoro** — a web design & development studio for brands.
 
 Plain static HTML/CSS/JS, no build step. Deploy the repo root to any static host
 (GitHub Pages, Netlify, Vercel, Cloudflare Pages). `CNAME` is set for GitHub Pages.
