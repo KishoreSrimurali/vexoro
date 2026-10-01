@@ -1,4 +1,6 @@
 // schema.org data for the home page (Organization, WebSite, ProfessionalService, WebPage, FAQPage).
+import { FAQS } from "@/lib/faq";
+
 export const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -112,48 +114,11 @@ export const structuredData = {
     {
       "@type": "FAQPage",
       "@id": "https://vexoro.dev/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does a website cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It depends on the number of pages, the features and how much content we write for you. Send us a short brief and we'll reply with a fixed quote within two business days."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is SEO included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Every site ships with page titles and descriptions, social preview images, schema.org data, a sitemap, robots.txt, compressed images, redirects from your old URLs and Google Search Console set up."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I own the website?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Once the final invoice is paid, the design, code, content and domain are yours. We hand over the code repository, hosting access and a short guide."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can my team edit the site after launch?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We set up a content editor so you can change text and images, publish posts and add products without touching code."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you work with brands in other countries?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We work remotely, share progress in writing and book calls at times that suit your time zone."
-          }
-        }
-      ]
+      "mainEntity": FAQS.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer },
+      }))
     }
   ]
 } as const;

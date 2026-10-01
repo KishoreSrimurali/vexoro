@@ -1,6 +1,8 @@
 import { Mark } from "@/components/brand";
 import { ContactForm } from "@/components/contact-form";
+import FaqSection, { type FaqSectionData } from "@/components/ui/habit-faq-scroller";
 import { Skiper31 } from "@/components/ui/text-scroll-animation";
+import { FAQS } from "@/lib/faq";
 import { structuredData } from "@/lib/structured-data";
 
 const SERVICES = [
@@ -72,8 +74,21 @@ const SEO_ITEMS = [
   "Google Search Console set up and verified at launch",
 ];
 
-// Kept in sync with the FAQPage entry in lib/structured-data.ts
-const FAQ = structuredData["@graph"][4].mainEntity.map((q) => ({ q: q.name, a: q.acceptedAnswer.text }));
+// Same questions as the FAQPage data in lib/structured-data.ts (both read lib/faq.ts)
+const faqData: FaqSectionData = {
+  mainTitle: "Questions",
+  mainSubtitle: (
+    <>
+      Hover or tap a row to pause it. Can&apos;t find your answer? Email{" "}
+      <a className="faq-mail" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>.
+    </>
+  ),
+  rows: [
+    { id: "row1", speed: "70s", direction: "left", faqItems: FAQS.slice(0, 3) },
+    { id: "row2", speed: "55s", direction: "right", faqItems: FAQS.slice(3, 5) },
+    { id: "row3", speed: "80s", direction: "left", faqItems: FAQS.slice(5) },
+  ],
+};
 
 export default function Home() {
   return (
@@ -203,17 +218,7 @@ export default function Home() {
       </section>
 
       <section className="section" id="faq" aria-labelledby="faq-title">
-        <div className="wrap faq-wrap">
-          <h2 id="faq-title">Questions</h2>
-          <div className="faq">
-            {FAQ.map(({ q, a }) => (
-              <details key={q}>
-                <summary>{q}</summary>
-                <p>{a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
+        <FaqSection data={faqData} titleId="faq-title" />
       </section>
 
       <section className="section" id="contact" aria-labelledby="contact-title">

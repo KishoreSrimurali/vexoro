@@ -2,7 +2,6 @@
 
 import {
   motion,
-  useReducedMotion,
   useScroll,
   useTransform,
   type MotionValue,
@@ -10,6 +9,7 @@ import {
 import { Code2, Gauge, PenTool, Search, ShoppingBag, Smartphone, type LucideIcon } from "lucide-react";
 import React, { useRef } from "react";
 import { cn } from "@/lib/utils";
+import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 
 // Characters settle into place while scroll progress moves through this range.
 const SETTLE: [number, number] = [0.15, 0.6];
@@ -116,7 +116,7 @@ const Skiper31 = ({
 }: TextScrollAnimationProps) => {
   const textRef = useRef<HTMLElement | null>(null);
   const iconsRef = useRef<HTMLElement | null>(null);
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = usePrefersReducedMotion();
 
   const { scrollYProgress } = useScroll({ target: textRef, offset: ["start end", "end end"] });
   const { scrollYProgress: iconsProgress } = useScroll({ target: iconsRef, offset: ["start end", "end end"] });
