@@ -1,0 +1,36 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import SplashCursor from "@/components/ui/SplashCursor";
+import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+
+/**
+ * Fluid cursor trail in the brand violet.
+ * Desktop only (mouse or trackpad): on touch screens it would paint on every scroll swipe.
+ * Skipped for visitors who prefer reduced motion.
+ */
+export function SplashCursorEffect() {
+  const reduceMotion = usePrefersReducedMotion();
+  const [finePointer, setFinePointer] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const update = () => setFinePointer(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  if (!finePointer || reduceMotion) return null;
+
+  return (
+    <SplashCursor
+      RAINBOW_MODE={false}
+      COLOR="#6B52FF"
+      DENSITY_DISSIPATION={4}
+      SPLAT_RADIUS={0.2}
+      SPLAT_FORCE={6000}
+      CURL={3}
+    />
+  );
+}

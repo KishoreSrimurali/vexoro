@@ -4,6 +4,7 @@ import "./globals.css";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { SplashCursorEffect } from "@/components/splash-cursor-effect";
 
 const title = "vexoro | Web Design & Development Studio for Brands";
 const shareTitle = "vexoro | We design and build websites for brands";
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <SiteFooter />
         </SmoothScroll>
+        <SplashCursorEffect />
       </body>
     </html>
   );

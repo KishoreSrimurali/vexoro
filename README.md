@@ -26,11 +26,13 @@ components/
   ui/                 shadcn-style components (add more with `npx shadcn@latest add <name>`)
     text-scroll-animation.tsx   Scroll-driven letter + icon animation (framer-motion)
     habit-faq-scroller.tsx      FAQ cards in looping rows (pause on hover, static for reduced motion)
+    SplashCursor.jsx            React Bits fluid cursor (WebGL), vendored as JavaScript
   brand.tsx           Logo mark + wordmark as SVG components
   site-header.tsx     Sticky header + mobile menu
   site-footer.tsx
   contact-form.tsx    Opens the visitor's email app with the enquiry filled in
   smooth-scroll.tsx   Lenis smooth scrolling (off for reduced motion)
+  splash-cursor-effect.tsx  Violet fluid cursor trail; desktop only, off for reduced motion
 hooks/
   use-prefers-reduced-motion.ts  Hydration-safe reduced-motion check
 lib/
