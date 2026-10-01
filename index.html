@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Vexoro — Web Design &amp; Development Studio for Brands</title>
+  <meta name="description" content="Vexoro designs and builds fast, SEO-optimized websites for brands. Custom web design, development, e-commerce and technical SEO — from strategy to launch.">
+  <meta name="keywords" content="web design agency, website development, brand website, custom website design, SEO optimized website, e-commerce website, landing page design, Next.js development, vexoro">
+  <meta name="author" content="Vexoro">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://vexoro.dev/">
+  <meta name="theme-color" content="#F4F2EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E0E12" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vexoro">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://vexoro.dev/">
+  <meta property="og:title" content="Vexoro — Websites that make brands impossible to ignore">
+  <meta property="og:description" content="Web design & development studio. We design, build and launch fast, SEO-ready websites for ambitious brands.">
+  <meta property="og:image" content="https://vexoro.dev/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vexoro — web design and development studio for brands">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vexoro — Websites that make brands impossible to ignore">
+  <meta name="twitter:description" content="Web design & development studio. Fast, SEO-ready websites for ambitious brands.">
+  <meta name="twitter:image" content="https://vexoro.dev/assets/img/og-image.png">
+  <meta name="twitter:image:alt" content="Vexoro — web design and development studio for brands">
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preload" href="/assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vexoro.dev/#organization",
+        "name": "Vexoro",
+        "url": "https://vexoro.dev/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://vexoro.dev/assets/brand/vexoro-mark.png",
+          "width": 1174,
+          "height": 886
+        },
+        "image": "https://vexoro.dev/assets/img/og-image.png",
+        "email": "hello@vexoro.dev",
+        "description": "Vexoro is a web design and development studio that builds fast, SEO-optimized websites for brands.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@vexoro.dev",
+          "availableLanguage": ["English"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vexoro.dev/#website",
+        "url": "https://vexoro.dev/",
+        "name": "Vexoro",
+        "publisher": { "@id": "https://vexoro.dev/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://vexoro.dev/#service",
+        "name": "Vexoro — Web Design & Development",
+        "url": "https://vexoro.dev/",
+        "image": "https://vexoro.dev/assets/img/og-image.png",
+        "email": "hello@vexoro.dev",
+        "areaServed": "Worldwide",
+        "parentOrganization": { "@id": "https://vexoro.dev/#organization" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Website services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand website design & development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce websites" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing pages & campaign sites" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technical SEO & performance optimization" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website care & maintenance" } }
+          ]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://vexoro.dev/#webpage",
+        "url": "https://vexoro.dev/",
+        "name": "Vexoro — Web Design & Development Studio for Brands",
+        "isPartOf": { "@id": "https://vexoro.dev/#website" },
+        "about": { "@id": "https://vexoro.dev/#organization" },
+        "primaryImageOfPage": "https://vexoro.dev/assets/img/og-image.png",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vexoro.dev/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does it take to build a website?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A focused landing page typically takes 1–2 weeks. A full brand website usually takes 3–6 weeks, and e-commerce or custom builds 6–10 weeks, depending on scope and how quickly content and feedback come in." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SEO included in every website?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every Vexoro site ships with technical SEO built in: semantic HTML, metadata, Open Graph tags, structured data (schema.org), XML sitemaps, robots.txt, clean URLs, image optimization and Core Web Vitals tuning." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I own my website and its code?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. On final payment you own the design, the code, the content and the domain. We hand over repositories, hosting access and documentation — no lock-in." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I update the content myself?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We connect a CMS that suits your team, so you can edit pages, publish posts and update products without touching code." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with brands outside my country?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Vexoro works remotely with brands worldwide, with async updates and scheduled calls across time zones." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Reusable brand symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="vx-mark" viewBox="0 0 1174 886"><path fill-rule="evenodd" d="M 372.333 1.964 C 168.741 2.259, 1.852 2.814, 1.468 3.199 C 1.084 3.583, 17.359 28.939, 37.635 59.546 L 74.500 115.194 396.289 114.731 C 573.273 114.476, 717.948 114.597, 717.789 114.999 C 717.630 115.401, 660.575 201.487, 591 306.301 C 495.043 450.860, 464.224 496.586, 463.358 495.686 C 462.730 495.034, 419.147 429.587, 366.506 350.250 L 270.797 206 211.648 206.099 C 179.117 206.154, 148.788 206.491, 144.251 206.849 L 136.002 207.500 266.040 403.384 C 337.560 511.121, 395.947 599.588, 395.789 599.978 C 395.630 600.368, 382.092 620.895, 365.703 645.594 C 349.315 670.292, 335.832 690.901, 335.741 691.392 C 335.543 692.454, 402.214 792.942, 403.139 792.976 C 403.490 792.989, 417.371 772.447, 433.984 747.326 L 464.189 701.653 492.095 743.876 C 507.443 767.099, 520 786.704, 520 787.443 C 520 788.181, 520.592 789.013, 521.316 789.291 C 522.040 789.569, 536.778 811.195, 554.066 837.349 C 571.355 863.503, 585.798 884.924, 586.162 884.951 C 586.832 885.001, 1173 2.617, 1173 1.559 C 1173 1.244, 1142.535 1.102, 1105.300 1.243 L 1037.600 1.500 887.231 228 C 804.527 352.575, 703 505.476, 661.614 567.781 L 586.367 681.062 559.517 640.783 C 544.749 618.629, 532.676 600.053, 532.688 599.502 C 532.700 598.951, 621.465 464.850, 729.945 301.500 C 838.425 138.150, 927.606 3.712, 928.126 2.750 C 929.023 1.088, 924.359 1.011, 835.785 1.214 C 784.478 1.332, 575.925 1.670, 372.333 1.964"/></symbol>
+    <symbol id="vx-wordmark" viewBox="0 0 3000 313">
+      <path fill-rule="evenodd" class="wm-ink" d="M 531 93.075 C 423.125 99.819, 374.424 133.377, 377.276 199 C 380.145 265.018, 434.303 294.457, 557 296.692 C 642.400 298.248, 694.311 285.996, 722.582 257.610 C 731.866 248.288, 741 231.328, 741 223.411 C 741 222.217, 733.878 222, 694.615 222 L 648.230 222 646.741 224.272 C 643.314 229.503, 629.703 234.503, 610.500 237.583 C 596.878 239.768, 553.071 240.648, 537.549 239.048 C 502.152 235.398, 479.170 223.026, 473.945 204.808 L 473.140 202 607.570 202 L 742 202 741.994 194.750 C 741.963 156.501, 725.339 128.243, 693.434 112.206 C 661.763 96.287, 598.604 88.848, 531 93.075 M 1271.245 93.094 C 1209.574 96.820, 1166.137 110.995, 1144.057 134.599 C 1114.462 166.235, 1114.861 225.633, 1144.873 255.960 C 1171.640 283.009, 1217.652 295.248, 1298 296.691 C 1418.836 298.861, 1478.383 275.614, 1493.166 220.500 C 1496.043 209.771, 1496.342 182.220, 1493.696 171.647 C 1481.299 122.114, 1437.278 98.682, 1346 93.031 C 1327.285 91.872, 1290.962 91.903, 1271.245 93.094 M 1688.849 93.564 C 1656.585 99.403, 1627.538 122.057, 1610.074 155 L 1605.038 164.500 1605.019 131.250 L 1605 98 1557.500 98 L 1510 98 1510 194.500 L 1510 291 1557.500 291 L 1605 291 1605 243.741 L 1605 196.481 1607.203 195.105 C 1628.285 181.940, 1669.514 171, 1698.051 171 L 1707 171 1707 131.500 L 1707 92 1701.750 92.090 C 1698.862 92.139, 1693.057 92.803, 1688.849 93.564 M 1860.245 93.094 C 1798.574 96.820, 1755.137 110.995, 1733.057 134.599 C 1703.462 166.235, 1703.861 225.633, 1733.873 255.960 C 1760.640 283.009, 1806.652 295.248, 1887 296.691 C 2007.748 298.859, 2067.394 275.574, 2082.166 220.500 C 2085.043 209.771, 2085.342 182.220, 2082.696 171.647 C 2070.294 122.095, 2026.312 98.684, 1935 93.031 C 1916.285 91.872, 1879.962 91.903, 1860.245 93.094 M 32.273 115.986 C 38.998 125.888, 68.504 169.317, 97.843 212.495 L 151.186 291 196.014 291 L 240.843 291 271.324 248.250 C 288.088 224.738, 318.942 181.425, 339.888 152 L 377.971 98.500 326.736 98.240 C 298.556 98.097, 275.050 98.153, 274.500 98.364 C 273.950 98.575, 256.400 125.778, 235.500 158.815 C 214.600 191.851, 197.129 218.515, 196.676 218.067 C 196.223 217.619, 179.761 190.533, 160.093 157.876 L 124.335 98.500 72.191 98.241 L 20.047 97.982 32.273 115.986 M 744.550 98.936 C 745.072 99.450, 774.075 121.061, 809 146.960 C 843.925 172.859, 872.589 194.375, 872.697 194.774 C 872.806 195.173, 843.892 216.875, 808.445 243 L 743.995 290.500 801.497 290.758 L 858.999 291.016 893.079 263.008 C 911.823 247.604, 927.461 235.017, 927.829 235.038 C 928.198 235.059, 945.805 247.659, 966.955 263.038 L 1005.409 291 1062.705 291 C 1094.217 291, 1120 290.819, 1120 290.598 C 1120 290.377, 1089.850 267.846, 1053 240.530 C 1016.150 213.213, 986.019 190.556, 986.043 190.182 C 986.067 189.807, 1011.773 171.050, 1043.167 148.500 C 1074.561 125.950, 1103.217 105.362, 1106.846 102.750 L 1113.445 98 1055.473 98.042 L 997.500 98.083 965 123.988 C 947.125 138.236, 932.011 149.917, 931.414 149.947 C 930.817 149.976, 914.214 138.300, 894.519 124 L 858.710 98 801.155 98 C 765.414 98, 743.960 98.355, 744.550 98.936 M 543.500 149.649 C 541.850 149.842, 536.337 150.482, 531.249 151.072 C 518.062 152.601, 505.027 156.353, 494.163 161.745 C 485.467 166.061, 476 173.472, 476 175.963 C 476 176.671, 503.581 177, 563 177 C 661.145 177, 653.581 177.743, 645.321 168.912 C 635.957 158.901, 618.410 152.513, 593.576 150.073 C 583.589 149.092, 550.671 148.813, 543.500 149.649 M 1288 149.598 C 1249.820 154.039, 1230.041 162.995, 1221.963 179.500 C 1218.232 187.124, 1218.346 203.314, 1222.184 210.586 C 1232.391 229.930, 1256.429 238.694, 1302.140 239.735 C 1367.332 241.220, 1399.158 226.545, 1399.158 195 C 1399.158 171.809, 1381.948 157.559, 1346.500 151.398 C 1337.875 149.899, 1296.387 148.622, 1288 149.598 M 1877 149.598 C 1838.820 154.039, 1819.041 162.995, 1810.963 179.500 C 1807.172 187.246, 1807.344 203.306, 1811.299 210.814 C 1818.501 224.485, 1833.462 232.744, 1860 237.698 C 1873.770 240.268, 1923.218 240.270, 1937 237.700 C 1971.678 231.234, 1988.256 217.293, 1988.167 194.671 C 1988.078 171.977, 1970.366 157.362, 1935.752 151.421 C 1926.890 149.900, 1885.454 148.614, 1877 149.598"/>
+      <path fill-rule="evenodd" class="wm-dot" d="M 2109 261.500 L 2109 291 2159 291 L 2209 291 2209 261.500 L 2209 232 2159 232 L 2109 232 2109 261.500"/>
+      <path fill-rule="evenodd" class="wm-dev" d="M 2422.927 84.250 C 2422.854 151.966, 2422.839 152.459, 2420.999 147.284 C 2411.351 120.146, 2390.141 100.967, 2362 93.934 C 2351.402 91.285, 2323.462 90.157, 2312 91.915 C 2270.386 98.296, 2239.648 125.317, 2228.857 165 C 2225.181 178.520, 2225.400 208.508, 2229.276 222.414 C 2239.421 258.805, 2266.906 284.372, 2305.441 293.262 C 2317.262 295.989, 2343.614 296.212, 2354.743 293.679 C 2385.870 286.594, 2409.375 265.515, 2420.543 234.671 L 2422.676 228.782 2423.417 249.141 C 2423.825 260.339, 2424.686 274.450, 2425.329 280.500 L 2426.500 291.500 2450.250 291.768 L 2474 292.036 2474 154.018 L 2474 16 2448.500 16 L 2423 16 2422.927 84.250 M 2606.500 91.659 C 2550.158 98.417, 2513.909 127.102, 2504.569 172.319 C 2502.340 183.109, 2502.496 204.931, 2504.884 216.502 C 2513.103 256.322, 2546.540 284.470, 2596.500 293.626 C 2618.345 297.629, 2657.971 296.016, 2678 290.308 C 2710.469 281.054, 2735.522 256.745, 2740.411 229.750 L 2741.091 226 2716.197 226 L 2691.304 226 2689.542 229.906 C 2678.348 254.732, 2624.632 265.018, 2590.107 248.947 C 2571.939 240.490, 2560.218 226.893, 2555.670 209 L 2554.272 203.500 2648.278 203.245 L 2742.283 202.990 2741.693 187.245 C 2739.585 131.059, 2712.508 100.960, 2656.471 92.515 C 2647.383 91.145, 2615.360 90.597, 2606.500 91.659 M 2745.161 95.925 C 2745.348 96.451, 2766.172 140.783, 2791.439 194.441 L 2837.377 292 2861.518 292 L 2885.658 292 2932.436 194.750 C 2958.164 141.262, 2979.442 96.930, 2979.720 96.234 C 2980.123 95.227, 2974.467 95.023, 2952.083 95.234 L 2923.940 95.500 2893.127 165.260 C 2876.180 203.627, 2862.114 235.219, 2861.870 235.464 C 2861.625 235.708, 2847.936 204.316, 2831.449 165.704 L 2801.473 95.500 2773.148 95.234 C 2755.439 95.068, 2744.950 95.327, 2745.161 95.925 M 38 97.724 C 85.495 98.419, 124.768 98.431, 124.346 97.750 C 124.091 97.338, 100.396 97.102, 71.691 97.227 C 42.986 97.351, 27.825 97.575, 38 97.724 M 273.654 97.750 C 273.232 98.431, 312.505 98.419, 360 97.724 C 370.175 97.575, 355.014 97.351, 326.309 97.227 C 297.604 97.102, 273.909 97.338, 273.654 97.750 M 743 97.941 C 743 98.459, 743.520 99.203, 744.155 99.595 C 744.867 100.036, 745.038 99.870, 744.601 99.163 C 744.072 98.307, 758.431 97.949, 801.196 97.750 L 858.500 97.483 800.750 97.242 C 765.160 97.093, 743 97.361, 743 97.941 M 1026.821 97.750 C 1042.948 97.904, 1069.048 97.904, 1084.821 97.749 C 1100.595 97.595, 1087.400 97.468, 1055.500 97.468 C 1023.600 97.468, 1010.695 97.595, 1026.821 97.750 M 1534.250 97.749 C 1547.313 97.907, 1568.688 97.907, 1581.750 97.749 C 1594.813 97.591, 1584.125 97.462, 1558 97.462 C 1531.875 97.462, 1521.188 97.591, 1534.250 97.749 M 2332.912 131.104 C 2299.925 135.366, 2278.764 159.490, 2278.616 193 C 2278.504 218.665, 2290 237.714, 2312 248.314 C 2334.423 259.118, 2366.574 258.698, 2389.942 247.296 C 2400.212 242.284, 2412.358 230.322, 2416.904 220.740 C 2425.894 201.794, 2424.704 176.682, 2414.034 160.174 C 2399.461 137.627, 2368.446 126.513, 2332.912 131.104 M 2607 131.428 C 2583.747 136.313, 2565.744 150.010, 2558.899 168.025 L 2557.008 173 2624.071 173 C 2687.462 173, 2691.108 172.904, 2690.642 171.250 C 2690.371 170.287, 2689.842 167.925, 2689.467 166 C 2686.662 151.609, 2672.178 138.534, 2652.829 132.927 C 2643.371 130.186, 2617.018 129.324, 2607 131.428 M 476 176.250 C 476 176.662, 515.263 176.894, 563.250 176.765 C 611.237 176.635, 636.550 176.411, 619.500 176.266 C 538.465 175.578, 476 175.571, 476 176.250 M 742.079 198.746 L 742 200.993 607.833 201.246 C 500.058 201.450, 473.616 201.751, 473.408 202.775 C 473.266 203.476, 473.379 203.589, 473.658 203.025 C 474.002 202.333, 517.635 202, 608.115 202 C 750.163 202, 744.439 202.179, 742.673 197.783 C 742.390 197.077, 742.122 197.511, 742.079 198.746 M 1119.377 289.766 C 1119.988 290.783, 1108.714 290.980, 1062.119 290.766 C 1030.208 290.620, 1004.441 290.841, 1004.858 291.258 C 1005.275 291.675, 1031.872 291.900, 1063.962 291.758 C 1116.004 291.528, 1122.108 291.338, 1120.462 290 C 1119.358 289.103, 1118.922 289.009, 1119.377 289.766 M 150.655 291.250 C 150.909 291.663, 171.315 292, 196 292 C 220.685 292, 241.091 291.663, 241.345 291.250 C 241.600 290.837, 221.195 290.500, 196 290.500 C 170.805 290.500, 150.400 290.837, 150.655 291.250 M 743 291.250 C 743 291.663, 769.073 292, 800.941 292 C 832.809 292, 859.091 291.663, 859.345 291.250 C 859.600 290.837, 833.527 290.500, 801.405 290.500 C 769.282 290.500, 743 290.837, 743 291.250 M 1533.819 291.749 C 1547.195 291.907, 1568.795 291.907, 1581.819 291.749 C 1594.844 291.591, 1583.900 291.462, 1557.500 291.462 C 1531.100 291.463, 1520.444 291.592, 1533.819 291.749 M 561.299 297.745 C 566.139 297.929, 573.789 297.928, 578.299 297.743 C 582.810 297.558, 578.850 297.408, 569.500 297.409 C 560.150 297.410, 556.460 297.562, 561.299 297.745 M 1301.250 297.745 C 1306.063 297.928, 1313.938 297.928, 1318.750 297.745 C 1323.563 297.561, 1319.625 297.411, 1310 297.411 C 1300.375 297.411, 1296.438 297.561, 1301.250 297.745 M 1890.250 297.745 C 1895.063 297.928, 1902.938 297.928, 1907.750 297.745 C 1912.563 297.561, 1908.625 297.411, 1899 297.411 C 1889.375 297.411, 1885.438 297.561, 1890.250 297.745"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Vexoro home">
+        <svg class="brand-wordmark" role="img" aria-label="vexoro.dev"><use href="#vx-wordmark"/></svg>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#seo">SEO</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#contact">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Web design &amp; development studio</p>
+          <h1 id="hero-title" class="display">Websites that make brands <span class="accent">impossible to ignore</span><span class="period">.</span></h1>
+          <p class="lede">Vexoro designs, builds and launches fast, search-ready websites for ambitious brands — from first sketch to the first page of Google.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start your project <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#services">See what we build</a>
+          </div>
+          <ul class="hero-facts" aria-label="Highlights">
+            <li><strong>2–6</strong><span>weeks to launch</span></li>
+            <li><strong>90+</strong><span>Lighthouse target</span></li>
+            <li><strong>100%</strong><span>code ownership</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span>yourbrand.com</span></div>
+            <div class="browser-body">
+              <div class="sk sk-nav"></div>
+              <div class="sk sk-h1"></div>
+              <div class="sk sk-h1 short"></div>
+              <div class="sk sk-p"></div>
+              <div class="sk-row"><div class="sk sk-btn"></div><div class="sk sk-btn ghost"></div></div>
+              <div class="sk-grid"><div class="sk"></div><div class="sk"></div><div class="sk"></div></div>
+            </div>
+          </div>
+          <svg class="hero-mark"><use href="#vx-mark"/></svg>
+          <div class="score-chip">
+            <span class="ring"><b>100</b></span>
+            <span>SEO score</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Brand websites</span><span>E-commerce</span><span>Landing pages</span><span>Technical SEO</span><span>Web apps</span><span>Design systems</span><span>Performance</span><span>CMS</span>
+        <span>Brand websites</span><span>E-commerce</span><span>Landing pages</span><span>Technical SEO</span><span>Web apps</span><span>Design systems</span><span>Performance</span><span>CMS</span>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title" class="h2">Everything your brand needs online<span class="period">.</span></h2>
+          <p class="section-lede">One studio for strategy, design, development and search. No hand-offs between agencies, no lost details.</p>
+        </header>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-num">01</span>
+            <h3>Brand websites</h3>
+            <p>Custom-designed marketing sites that carry your identity into every pixel — typography, motion and tone that feel unmistakably yours.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">02</span>
+            <h3>E-commerce</h3>
+            <p>Storefronts on Shopify or headless stacks, built to convert: fast product pages, frictionless checkout, structured product data.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">03</span>
+            <h3>Landing pages</h3>
+            <p>Launch and campaign pages shipped in days, A/B-ready and wired to your analytics, ads and email tools.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">04</span>
+            <h3>Technical SEO</h3>
+            <p>Audits, site architecture, schema markup and Core Web Vitals work that help search engines understand and rank you.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">05</span>
+            <h3>Web apps &amp; portals</h3>
+            <p>Dashboards, member areas and custom tools built with modern frameworks, secure auth and clean APIs.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">06</span>
+            <h3>Care &amp; growth</h3>
+            <p>Hosting, updates, monitoring and monthly improvements so your site keeps getting faster and ranking higher.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section-dark" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Process</p>
+          <h2 id="process-title" class="h2">From idea to live in four steps<span class="period">.</span></h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Discover</h3>
+            <p>We dig into your brand, audience, competitors and keywords to define goals, sitemap and success metrics.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Design</h3>
+            <p>Wireframes, then high-fidelity designs built around your logo, type and colour — reviewed together, refined fast.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Build</h3>
+            <p>Hand-coded, responsive and accessible, with a CMS your team can use and SEO baked into every template.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3>Launch &amp; grow</h3>
+            <p>QA across devices, analytics and Search Console set up, redirects mapped — then we keep optimizing.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SEO -->
+    <section class="section" id="seo" aria-labelledby="seo-title">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">SEO, built in</p>
+          <h2 id="seo-title" class="h2">Designed to look good. Engineered to be found<span class="period">.</span></h2>
+          <p class="section-lede">Search isn't an add-on. Every site we ship includes the technical foundations that help you rank and get clicked.</p>
+          <a class="btn btn-primary" href="#contact">Get a free site audit <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="checklist">
+          <li class="reveal"><strong>Semantic HTML &amp; accessibility</strong><span>Clear heading structure, landmarks and alt text that search engines and screen readers love.</span></li>
+          <li class="reveal"><strong>Metadata &amp; social cards</strong><span>Titles, descriptions, canonical URLs, Open Graph and Twitter cards on every page.</span></li>
+          <li class="reveal"><strong>Structured data</strong><span>Schema.org markup for your organization, products, articles and FAQs to earn rich results.</span></li>
+          <li class="reveal"><strong>Core Web Vitals</strong><span>Optimized images, minimal JavaScript and smart loading for a fast, stable page.</span></li>
+          <li class="reveal"><strong>Sitemaps &amp; indexing</strong><span>XML sitemaps, robots.txt, redirects and Search Console setup from day one.</span></li>
+          <li class="reveal"><strong>Keyword-led content structure</strong><span>Pages planned around what your customers actually search for.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section section-alt" id="packages" aria-labelledby="packages-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Packages</p>
+          <h2 id="packages-title" class="h2">Pick a starting point<span class="period">.</span></h2>
+          <p class="section-lede">Every project is quoted to its scope. These are the shapes most brands start with.</p>
+        </header>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Launch</h3>
+            <p class="plan-sub">A high-converting single page for a launch, product or campaign.</p>
+            <ul>
+              <li>Custom one-page design</li>
+              <li>Responsive build</li>
+              <li>On-page SEO &amp; analytics</li>
+              <li>Contact or waitlist form</li>
+              <li>~1–2 weeks</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact" data-plan="Launch">Request a quote</a>
+          </article>
+          <article class="plan plan-featured reveal">
+            <span class="badge">Most popular</span>
+            <h3>Brand</h3>
+            <p class="plan-sub">A complete multi-page website that tells your story and ranks.</p>
+            <ul>
+              <li>Up to 10 custom pages</li>
+              <li>CMS for blog &amp; pages</li>
+              <li>Full technical SEO &amp; schema</li>
+              <li>Motion &amp; micro-interactions</li>
+              <li>~3–6 weeks</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact" data-plan="Brand">Request a quote</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Commerce</h3>
+            <p class="plan-sub">An online store or custom web app built for scale.</p>
+            <ul>
+              <li>Shopify or headless storefront</li>
+              <li>Product schema &amp; feeds</li>
+              <li>Payments &amp; integrations</li>
+              <li>Performance budget</li>
+              <li>~6–10 weeks</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact" data-plan="Commerce">Request a quote</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title" class="h2">Questions, answered<span class="period">.</span></h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>How long does it take to build a website?</summary>
+            <p>A focused landing page typically takes 1–2 weeks. A full brand website usually takes 3–6 weeks, and e-commerce or custom builds 6–10 weeks, depending on scope and how quickly content and feedback come in.</p>
+          </details>
+          <details>
+            <summary>Is SEO included in every website?</summary>
+            <p>Yes. Every Vexoro site ships with technical SEO built in: semantic HTML, metadata, Open Graph tags, structured data (schema.org), XML sitemaps, robots.txt, clean URLs, image optimization and Core Web Vitals tuning.</p>
+          </details>
+          <details>
+            <summary>Do I own my website and its code?</summary>
+            <p>Yes. On final payment you own the design, the code, the content and the domain. We hand over repositories, hosting access and documentation — no lock-in.</p>
+          </details>
+          <details>
+            <summary>Can I update the content myself?</summary>
+            <p>Yes. We connect a CMS that suits your team, so you can edit pages, publish posts and update products without touching code.</p>
+          </details>
+          <details>
+            <summary>Do you work with brands outside my country?</summary>
+            <p>Yes. Vexoro works remotely with brands worldwide, with async updates and scheduled calls across time zones.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div>
+          <h2 id="contact-title" class="display display-sm">Let's build something <span class="accent">unforgettable</span><span class="period">.</span></h2>
+          <p class="section-lede">Tell us about your brand and what you need. We reply within one business day.</p>
+          <p class="contact-mail"><a href="mailto:hello@vexoro.dev">hello@vexoro.dev</a></p>
+        </div>
+        <form class="contact-form" id="contact-form" action="mailto:hello@vexoro.dev" method="post" enctype="text/plain">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-brand">Brand / website</label>
+            <input id="cf-brand" name="brand" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="cf-type">What do you need?</label>
+            <select id="cf-type" name="type">
+              <option>Brand website</option>
+              <option>E-commerce</option>
+              <option>Landing page</option>
+              <option>SEO audit</option>
+              <option>Web app</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="cf-msg">Project details</label>
+            <textarea id="cf-msg" name="message" rows="4" placeholder="Goals, timeline, budget range…" required></textarea>
+          </div>
+          <button class="btn btn-primary field-full" type="submit">Send enquiry <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-mark" role="img" aria-label="Vexoro"><use href="#vx-mark"/></svg>
+        <p>Web design &amp; development for brands that want to stand out — and be found.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#seo">SEO</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> Vexoro. All rights reserved.</p>
+    </div>
+    <svg class="footer-wordmark" aria-hidden="true"><use href="#vx-wordmark"/></svg>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
