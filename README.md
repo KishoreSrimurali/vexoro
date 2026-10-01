@@ -16,8 +16,8 @@ site.webmanifest      PWA manifest / app icons
 favicon.svg/.ico      Favicons; apple-touch-icon.png
 assets/brand/         Logo mark + wordmark (original PNG + vector SVG)
 assets/css/           styles.css (light + dark mode)
-assets/js/            main.js (mobile nav, reveal, contact form)
-assets/fonts/         Self-hosted Archivo + Inter (variable, OFL)
+assets/js/            main.js (mobile nav, contact form)
+assets/fonts/         Self-hosted Archivo variable font (OFL)
 assets/img/           Open Graph image + app icons
 ```
 
@@ -40,4 +40,4 @@ Tools, submit `https://vexoro.dev/sitemap.xml`, and update `<lastmod>` when cont
 | Ink    | `#14141A` |
 | Stone  | `#8A867C` |
 | Violet | `#5B3DF5` |
-| Paper  | `#F4F2EE` |
+| Paper  | `#F7F7F9` |
