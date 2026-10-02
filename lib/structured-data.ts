@@ -121,15 +121,6 @@ export const homeStructuredData = (title: string, description: string) => ({
     website,
     professionalService,
     webPage("/", title, description),
-    {
-      "@type": "FAQPage",
-      "@id": abs("/#faq"),
-      mainEntity: FAQS.map((f) => ({
-        "@type": "Question",
-        name: f.question,
-        acceptedAnswer: { "@type": "Answer", text: f.answer },
-      })),
-    },
   ],
 });
 
@@ -153,5 +144,22 @@ export const pricingStructuredData = (title: string, description: string) => ({
       url: abs("/pricing#add-ons"),
       itemListElement: ADD_ONS.map(addOnOffer),
     },
+  ],
+});
+
+/** WebPage + breadcrumb for a section page; /faq also carries the FAQPage markup. */
+export const subpageStructuredData = (path: string, name: string, title: string, description: string) => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    organization,
+    webPage(path, title, description, { breadcrumb: { "@id": abs(`${path}#breadcrumb`) } }),
+    { ...breadcrumb([["Home", "/"], [name, path]]), "@id": abs(`${path}#breadcrumb`) },
+    ...(path === "/faq"
+      ? [{
+          "@type": "FAQPage",
+          "@id": abs("/faq#faqpage"),
+          mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+        }]
+      : []),
   ],
 });

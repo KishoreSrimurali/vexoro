@@ -8,6 +8,11 @@ Contact: hello@vexoro.dev
 
 - [Home](https://vexoro.dev/): services, process, SEO approach, FAQ and contact form
 - [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
+- [Services](https://vexoro.dev/services): what we build and typical timelines
+- [Process](https://vexoro.dev/process): how a project runs, from brief to launch
+- [SEO](https://vexoro.dev/seo): the search setup included with every site
+- [FAQ](https://vexoro.dev/faq): cost, SEO, ownership, editing and timelines
+- [Contact](https://vexoro.dev/contact): start a project or book a free consultation
 
 ## Website packages (OMR)
 

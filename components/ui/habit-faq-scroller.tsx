@@ -79,13 +79,14 @@ export const HorizontalScroller = ({ children, speed = "40s", direction = "left"
  * FaqSection
  * Assembles title, subtitle, and multiple horizontal rows.
  */
-const FaqSection = ({ data, titleId }: { data: FaqSectionData; titleId?: string }) => {
+const FaqSection = ({ data, titleId, headingLevel = "h2" }: { data: FaqSectionData; titleId?: string; headingLevel?: "h1" | "h2" }) => {
+  const H = headingLevel;
   return (
     <div className="relative flex w-full flex-col items-center gap-12">
       <div className="z-10 flex max-w-2xl flex-col items-center gap-5 px-4 text-center">
-        <h2 id={titleId} className="faq-fade-in leading-tight" style={{ animationDelay: "0.2s" }}>
+        <H id={titleId} className="faq-fade-in leading-tight" style={{ animationDelay: "0.2s" }}>
           {data.mainTitle}
-        </h2>
+        </H>
         <p className="faq-fade-in text-lg text-muted-foreground" style={{ animationDelay: "0.4s" }}>
           {data.mainSubtitle}
         </p>

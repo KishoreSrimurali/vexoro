@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import { Wordmark } from "@/components/brand";
 
 const LINKS = [
-  { href: "/#services", label: "Services" },
-  { href: "/#process", label: "Process" },
-  { href: "/#seo", label: "SEO" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/services", label: "Services" },
+  { href: "/process", label: "Process" },
+  { href: "/seo", label: "SEO" },
+  { href: "/faq", label: "FAQ" },
   { href: "/pricing", label: "Pricing" },
 ];
 
@@ -40,7 +40,7 @@ export function SiteHeader() {
           {LINKS.map((l) => (
             <a key={l.href} href={l.href}>{l.label}</a>
           ))}
-          <a className="nav-contact" href="/#contact">Contact</a>
+          <a className="nav-contact" href="/contact">Contact</a>
         </nav>
       </div>
     </header>

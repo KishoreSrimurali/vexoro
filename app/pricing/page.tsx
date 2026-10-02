@@ -58,7 +58,7 @@ export default function PricingPage() {
                   ))}
                 </ul>
                 {p.note && <p className="price-note">{p.note}</p>}
-                <a className={p.popular ? "btn btn-light" : "btn"} href="/#contact">
+                <a className={p.popular ? "btn btn-light" : "btn"} href="/contact">
                   {p.plus ? "Contact us" : "Get started"}
                 </a>
               </article>
@@ -98,7 +98,7 @@ export default function PricingPage() {
             <h2 id="consult-title">Not sure which package fits?</h2>
             <p>Book a free consultation. Tell us about your business and we&apos;ll recommend the right package.</p>
             <div className="hero-links">
-              <a className="btn" href="/#contact">Get a free consultation</a>
+              <a className="btn" href="/contact">Get a free consultation</a>
               <a className="text-link" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>
             </div>
           </div>
