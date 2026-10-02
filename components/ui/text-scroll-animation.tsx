@@ -2,6 +2,7 @@
 
 import {
   motion,
+  useInView,
   useScroll,
   useTransform,
   type MotionValue,
@@ -9,7 +10,7 @@ import {
 import { Code2, Gauge, PenTool, Search, ShoppingBag, Smartphone, type LucideIcon } from "lucide-react";
 import React, { useRef } from "react";
 import { cn } from "@/lib/utils";
-import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
+import { useIsTouch, usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 
 // Characters settle into place while scroll progress moves through this range.
 const SETTLE: [number, number] = [0.15, 0.6];
@@ -117,6 +118,7 @@ const Skiper31 = ({
   const textRef = useRef<HTMLElement | null>(null);
   const iconsRef = useRef<HTMLElement | null>(null);
   const reduceMotion = usePrefersReducedMotion();
+  const touch = useIsTouch();
 
   const { scrollYProgress } = useScroll({ target: textRef, offset: ["start end", "end end"] });
   const { scrollYProgress: iconsProgress } = useScroll({ target: iconsRef, offset: ["start end", "end end"] });
@@ -130,20 +132,33 @@ const Skiper31 = ({
   }, []);
   const iconCenterIndex = Math.floor(items.length / 2);
 
-  if (reduceMotion) {
+  // Touch screens and reduced motion: no scroll-scrubbing (it lags behind native momentum scroll).
+  // On touch, letters and tiles play a CSS entrance once in view, which runs on the GPU (.scroll-static.in in globals.css).
+  if (reduceMotion || touch) {
     return (
-      <section className="scroll-static" aria-label={text}>
-        <p className="scroll-text">{text}</p>
+      <StaticReveal label={text}>
+        <p className="scroll-text" aria-hidden="true">
+          {words.map(({ word, start }, w) => (
+            <React.Fragment key={start}>
+              {w > 0 && " "}
+              <span className="inline-block whitespace-nowrap">
+                {word.split("").map((char, i) => (
+                  <span key={i} className="pop" style={popStyle(start + i - centerIndex, 30)}>{char}</span>
+                ))}
+              </span>
+            </React.Fragment>
+          ))}
+        </p>
         <Caption text={caption} />
         <div className="scroll-icons">
-          {items.map(({ icon: Icon, label }) => (
-            <div key={label} className="scroll-tile">
+          {items.map(({ icon: Icon, label }, i) => (
+            <div key={label} className="scroll-tile pop" style={popStyle(i - iconCenterIndex, 70)}>
               <Icon aria-hidden="true" strokeWidth={1.75} />
               <span>{label}</span>
             </div>
           ))}
         </div>
-      </section>
+      </StaticReveal>
     );
   }
 
@@ -191,6 +206,21 @@ const Skiper31 = ({
     </div>
   );
 };
+
+// Own component so the in-view observer attaches when this branch mounts
+const StaticReveal = ({ label, children }: { label: string; children: React.ReactNode }) => {
+  const ref = useRef<HTMLElement | null>(null);
+  const inView = useInView(ref, { once: true, amount: 0.3 });
+  return (
+    <section ref={ref} className={inView ? "scroll-static in" : "scroll-static"} aria-label={label}>
+      {children}
+    </section>
+  );
+};
+
+// Offset from the centre drives the start position and the stagger (outer items arrive last)
+const popStyle = (d: number, step: number) =>
+  ({ "--d": d, "--delay": `${Math.abs(d) * step}ms` }) as React.CSSProperties;
 
 const Caption = ({ text }: { text: string }) => (
   <p className="flex items-center justify-center gap-3 text-center text-lg font-medium tracking-tight text-[var(--muted)] sm:text-2xl">
