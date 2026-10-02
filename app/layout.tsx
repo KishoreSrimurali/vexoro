@@ -49,8 +49,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      // Google Search needs a square icon whose size is a multiple of 48px
+      { url: "/favicon.ico", sizes: "48x48 32x32 16x16" },
+      { url: "/favicon-48.png", type: "image/png", sizes: "48x48" },
+      { url: "/favicon-96.png", type: "image/png", sizes: "96x96" },
+      { url: "/assets/img/icon-192.png", type: "image/png", sizes: "192x192" },
     ],
     apple: "/apple-touch-icon.png",
   },
