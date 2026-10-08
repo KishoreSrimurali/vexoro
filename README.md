@@ -1,6 +1,6 @@
 # vexoro.dev
 
-Marketing website for **vexoro**, a web design & development studio for brands.
+Website for **vexoro**: AI solutions for companies, plus branding and web development.
 
 Next.js (App Router) + TypeScript + Tailwind CSS v4, set up for shadcn/ui.
 Deployed on Vercel (`vercel.json` pins the Next.js framework preset).
@@ -21,7 +21,7 @@ app/
   layout.tsx          SEO metadata (title, description, Open Graph, Twitter, icons), smooth scroll
   page.tsx            Home page + schema.org JSON-LD
   pricing/page.tsx    Packages and add-ons in OMR (Offer schema, breadcrumbs)
-  services|process|seo|faq|contact/page.tsx  One section per URL (h1, own metadata, breadcrumbs; FAQPage on /faq)
+  ai|services|process|seo|faq|contact/page.tsx  One section per URL (h1, own metadata, breadcrumbs; FAQPage on /faq)
   sitemap.ts          /sitemap.xml (add new pages here)
   robots.ts           /robots.txt
   not-found.tsx       404 (noindex)
@@ -31,7 +31,7 @@ components/
     text-scroll-animation.tsx   Scroll-driven letter + icon animation (framer-motion)
     habit-faq-scroller.tsx      FAQ cards in looping rows (pause on hover, static for reduced motion)
   brand.tsx           Logo mark + wordmark as SVG components
-  sections.tsx        Services, Process, SEO, FAQ and Contact sections (home + their own routes)
+  sections.tsx        AI, Brand & Web, Process, SEO, FAQ and Contact sections (home + their own routes)
   site-header.tsx     Sticky header + mobile menu
   site-footer.tsx
   contact-form.tsx    Opens the visitor's email app with the enquiry filled in

@@ -3,6 +3,21 @@ export type Faq = { id: string; question: string; answer: string };
 
 export const FAQS: Faq[] = [
   {
+    id: "ai1",
+    question: "What AI solutions can you build for my company?",
+    answer: "AI assistants for your website and WhatsApp, workflow automation, document processing, private knowledge assistants and custom AI features inside your existing systems. We start by finding where AI saves you the most time.",
+  },
+  {
+    id: "ai2",
+    question: "How much does an AI solution cost?",
+    answer: "AI projects are quoted per project after a free consultation, based on the scope and the tools involved. You get a fixed quote before any work starts.",
+  },
+  {
+    id: "ai3",
+    question: "Can AI work with WhatsApp and the tools we already use?",
+    answer: "Yes. We connect AI to WhatsApp, your website, email, spreadsheets and business systems wherever they allow access, so your team keeps working the way it does today.",
+  },
+  {
     id: "q1",
     question: "How much does a website cost?",
     answer: "It depends on the number of pages, the features and how much content we write for you. Send us a short brief and we'll reply with a fixed quote within two business days.",

@@ -1,4 +1,4 @@
-// Home page sections, also rendered on their own routes (/services, /process, /seo, /faq, /contact).
+// Home page sections, also rendered on their own routes (/ai, /services, /process, /seo, /faq, /contact).
 // Pass h1 when a section is the main content of its page.
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
@@ -84,41 +84,61 @@ const faqData: FaqSectionData = {
     </>
   ),
   rows: [
-    { id: "row1", speed: "70s", direction: "left", faqItems: FAQS.slice(0, 3) },
-    { id: "row2", speed: "55s", direction: "right", faqItems: FAQS.slice(3, 5) },
-    { id: "row3", speed: "80s", direction: "left", faqItems: FAQS.slice(5) },
+    { id: "row1", speed: "75s", direction: "left", faqItems: FAQS.slice(0, 3) },
+    { id: "row2", speed: "60s", direction: "right", faqItems: FAQS.slice(3, 6) },
+    { id: "row3", speed: "85s", direction: "left", faqItems: FAQS.slice(6) },
   ],
 };
 
-export function ServicesSection({ h1 = false }: { h1?: boolean }) {
+const AI_SOLUTIONS = [
+  { name: "AI assistants", detail: "Chat assistants for your website and WhatsApp that answer customer questions, capture leads and book appointments, using your business information.", time: "Website, WhatsApp" },
+  { name: "Workflow automation", detail: "AI that handles repetitive work across your tools: data entry, follow-ups, summaries and reports.", time: "Email, sheets, CRM" },
+  { name: "Document processing", detail: "Pull the information you need out of invoices, forms, contracts and PDFs, and organise it automatically.", time: "PDFs, forms, invoices" },
+  { name: "Knowledge assistant", detail: "A private assistant that answers your team's questions from your own documents, policies and manuals.", time: "Your documents" },
+  { name: "Custom AI features", detail: "AI search, summaries and content tools built into your existing website, app or internal system.", time: "Your site or app" },
+  { name: "AI strategy", detail: "A workshop to find where AI saves your business the most time, with a clear plan and cost estimate before anything is built.", time: "Workshop + plan" },
+];
+
+type Row = { name: string; detail: string; time: string };
+function OfferTable({ id, title, lead, rows, cols, h1 }: { id: string; title: string; lead: React.ReactNode; rows: Row[]; cols: [string, string, string]; h1: boolean }) {
   const H = h1 ? "h1" : "h2";
   return (
-  <section className="section" id="services" aria-labelledby="services-title">
-    <div className="wrap">
-      <div className="section-head">
-        <H id="services-title">Services</H>
-        <p>Every project gets a fixed quote before work starts. Timelines assume content and feedback arrive on schedule. <Link className="text-link" href="/pricing">See packages and prices</Link>.</p>
+    <section className="section" id={id} aria-labelledby={`${id}-title`}>
+      <div className="wrap">
+        <div className="section-head">
+          <H id={`${id}-title`}>{title}</H>
+          <p>{lead}</p>
+        </div>
+        <table className="services">
+          <thead>
+            <tr>{cols.map((c) => <th key={c} scope="col">{c}</th>)}</tr>
+          </thead>
+          <tbody>
+            {rows.map((s) => (
+              <tr key={s.name}>
+                <th scope="row">{s.name}</th>
+                <td>{s.detail}</td>
+                <td>{s.time}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-      <table className="services">
-        <thead>
-          <tr>
-            <th scope="col">Service</th>
-            <th scope="col">What you get</th>
-            <th scope="col">Typical time</th>
-          </tr>
-        </thead>
-        <tbody>
-          {SERVICES.map((s) => (
-            <tr key={s.name}>
-              <th scope="row">{s.name}</th>
-              <td>{s.detail}</td>
-              <td>{s.time}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  </section>
+    </section>
+  );
+}
+
+export function AiSection({ h1 = false }: { h1?: boolean }) {
+  return (
+    <OfferTable id="ai" title="AI solutions" h1={h1} rows={AI_SOLUTIONS} cols={["Solution", "What it does", "Works with"]}
+      lead={<>AI built around how your company already works. Every project starts with a free consultation and a fixed quote. <Link className="text-link" href="/contact">Talk to us</Link>.</>} />
+  );
+}
+
+export function ServicesSection({ h1 = false }: { h1?: boolean }) {
+  return (
+    <OfferTable id="services" title="Brand & web" h1={h1} rows={SERVICES} cols={["Service", "What you get", "Typical time"]}
+      lead={<>The brand and website around your business. Every project gets a fixed quote before work starts. <Link className="text-link" href="/pricing">See packages and prices</Link>.</>} />
   );
 }
 

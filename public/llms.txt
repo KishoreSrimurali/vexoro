@@ -1,18 +1,23 @@
 # vexoro
 
-> vexoro is a web design and development studio building fast, search-ready websites for businesses in Oman and brands worldwide. We handle design, code and search setup, and the client owns the finished site.
+> vexoro builds AI solutions for companies in Oman and worldwide: AI assistants, workflow automation, document processing and custom AI integrations. We also design the brand and build the website around them.
 
 Contact: hello@vexoro.dev
 
 ## Pages
 
 - [Home](https://vexoro.dev/): services, process, SEO approach, FAQ and contact form
+- [AI Solutions](https://vexoro.dev/ai): AI assistants, automation, document processing, knowledge assistants, custom AI and strategy
 - [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
-- [Services](https://vexoro.dev/services): what we build and typical timelines
+- [Brand & Web](https://vexoro.dev/services): branding and website services with typical timelines
 - [Process](https://vexoro.dev/process): how a project runs, from brief to launch
 - [SEO](https://vexoro.dev/seo): the search setup included with every site
 - [FAQ](https://vexoro.dev/faq): cost, SEO, ownership, editing and timelines
 - [Contact](https://vexoro.dev/contact): start a project or book a free consultation
+
+## AI solutions
+
+AI assistants for websites and WhatsApp, workflow automation across email, spreadsheets and CRMs, document processing (invoices, forms, contracts), private knowledge assistants, custom AI features and AI strategy workshops. Quoted per project after a free consultation.
 
 ## Website packages (OMR)
 

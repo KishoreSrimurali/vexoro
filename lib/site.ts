@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://vexoro.dev",
   email: "hello@vexoro.dev",
   description:
-    "vexoro is a web design and development studio building fast, search-ready websites for businesses in Oman and brands worldwide.",
+    "vexoro builds AI solutions for companies in Oman and worldwide: AI assistants, workflow automation and custom AI, plus branding and websites.",
   ogImage: "/assets/img/og-image.png",
   logo: "/assets/brand/vexoro-mark.png",
   areaServed: ["Oman", "Worldwide"],
@@ -17,7 +17,7 @@ const OG_IMAGE = {
   url: SITE.ogImage,
   width: 1200,
   height: 630,
-  alt: "vexoro logo and the line: We design and build websites for brands.",
+  alt: "vexoro logo and the line: We build AI solutions for companies.",
 };
 
 /** Per-page metadata. Next.js replaces (not merges) openGraph/twitter objects, so every page gets the full set. */

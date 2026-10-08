@@ -8,6 +8,12 @@ const SITE_ID = abs("/#website");
 const SERVICE_ID = abs("/#service");
 
 const SERVICES = [
+  "AI assistants and chatbots",
+  "AI workflow automation",
+  "AI document processing",
+  "Private AI knowledge assistants",
+  "Custom AI integrations",
+  "AI strategy consulting",
   "Brand website design and development",
   "Landing page design and development",
   "Online store development",
@@ -84,11 +90,11 @@ const professionalService = {
   areaServed: [{ "@type": "Country", name: "Oman" }, "Worldwide"],
   priceRange: "15–75+ OMR",
   currenciesAccepted: SITE.currency,
-  knowsAbout: ["Web design", "Web development", "Search engine optimisation", "E-commerce", "Landing pages", "Next.js"],
+  knowsAbout: ["Artificial intelligence", "AI assistants", "Business process automation", "Large language models", "Web design", "Web development", "Search engine optimisation", "E-commerce", "Landing pages", "Next.js"],
   parentOrganization: { "@id": ORG_ID },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Website services",
+    name: "AI, branding and web services",
     url: abs("/pricing"),
     itemListElement: [
       ...SERVICES.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),

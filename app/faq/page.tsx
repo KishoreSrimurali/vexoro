@@ -3,8 +3,8 @@ import { FaqPageSection, ContactSection } from "@/components/sections";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
-const TITLE = "Web Design FAQ: Cost, SEO, Ownership and Timelines";
-const DESCRIPTION = "Answers about website cost, SEO, ownership, editing your site and timelines from vexoro, a web design studio in Oman.";
+const TITLE = "AI & Web Design FAQ: Cost, Tools, Ownership and Timelines";
+const DESCRIPTION = "Answers about AI solutions, cost, WhatsApp and tool integrations, website ownership, editing and timelines from vexoro in Oman.";
 
 export const metadata: Metadata = pageMetadata({ path: "/faq", title: TITLE, description: DESCRIPTION });
 

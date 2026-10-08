@@ -7,7 +7,7 @@ import {
   useTransform,
   type MotionValue,
 } from "framer-motion";
-import { Code2, Gauge, PenTool, Search, ShoppingBag, Smartphone, type LucideIcon } from "lucide-react";
+import { Bot, BrainCircuit, Code2, FileText, Palette, Workflow, type LucideIcon } from "lucide-react";
 import React, { useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useIsTouch, usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
@@ -102,17 +102,17 @@ type TextScrollAnimationProps = {
 };
 
 const DEFAULT_ITEMS = [
-  { icon: PenTool, label: "Design" },
-  { icon: Code2, label: "Code" },
-  { icon: Smartphone, label: "Mobile" },
-  { icon: Search, label: "SEO" },
-  { icon: ShoppingBag, label: "Stores" },
-  { icon: Gauge, label: "Speed" },
+  { icon: Bot, label: "Assistants" },
+  { icon: Workflow, label: "Automation" },
+  { icon: FileText, label: "Documents" },
+  { icon: BrainCircuit, label: "Knowledge" },
+  { icon: Palette, label: "Branding" },
+  { icon: Code2, label: "Websites" },
 ];
 
 const Skiper31 = ({
-  text = "made for brands",
-  caption = "everything a brand needs online",
+  text = "ai that works",
+  caption = "AI, brand and web under one roof",
   items = DEFAULT_ITEMS,
 }: TextScrollAnimationProps) => {
   const textRef = useRef<HTMLElement | null>(null);
