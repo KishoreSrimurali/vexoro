@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 import { Wordmark } from "@/components/brand";
 
 const LINKS = [
+  { href: "/ventures", label: "Ventures" },
+  { href: "/ventures/roadlens", label: "RoadLens" },
   { href: "/ai", label: "AI Solutions" },
   { href: "/services", label: "Brand & Web" },
-  { href: "/process", label: "Process" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/faq", label: "FAQ" },
 ];
 
 export function SiteHeader() {

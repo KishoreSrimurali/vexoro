@@ -6,6 +6,8 @@ export function SiteFooter() {
       <div className="wrap footer-inner">
         <Wordmark className="footer-wordmark" />
         <nav aria-label="Footer">
+          <a href="/ventures">Ventures</a>
+          <a href="/ventures/roadlens">RoadLens</a>
           <a href="/ai">AI Solutions</a>
           <a href="/services">Brand &amp; Web</a>
           <a href="/process">Process</a>

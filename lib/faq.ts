@@ -3,6 +3,21 @@ export type Faq = { id: string; question: string; answer: string };
 
 export const FAQS: Faq[] = [
   {
+    id: "v1",
+    question: "What is vexoro?",
+    answer: "vexoro is a venture group. We find real problems and build focused products to solve them. Each venture runs on its own, backed by the vexoro team: vexoro Digital is live and RoadLens is raising now.",
+  },
+  {
+    id: "v2",
+    question: "What is RoadLens?",
+    answer: "RoadLens turns India's ride-hailing cars into a live road-data network. Drivers get a dashcam on a small refundable deposit and earn from useful footage; carmakers, insurers, mapping companies and cities buy privacy-safe road data.",
+  },
+  {
+    id: "v3",
+    question: "How can I invest in or partner with a vexoro venture?",
+    answer: "Email hello@vexoro.dev. RoadLens is raising a pre-seed round, and we share the investor deck on request. Fleet owners, data buyers and partners are welcome too.",
+  },
+  {
     id: "ai1",
     question: "What AI solutions can you build for my company?",
     answer: "AI assistants for your website and WhatsApp, workflow automation, document processing, private knowledge assistants and custom AI features inside your existing systems. We start by finding where AI saves you the most time.",

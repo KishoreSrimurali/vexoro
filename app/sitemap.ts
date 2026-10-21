@@ -6,16 +6,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${SITE.url}/`,
-      lastModified: new Date("2026-10-01"),
+      lastModified: new Date("2026-10-21"),
       changeFrequency: "monthly",
       priority: 1,
       images: [`${SITE.url}${SITE.ogImage}`],
     },
+    ...["ventures", "ventures/roadlens"].map((p) => ({
+      url: `${SITE.url}/${p}`,
+      lastModified: new Date("2026-10-21"),
+      changeFrequency: "monthly" as const,
+      priority: 0.95,
+    })),
     {
       url: `${SITE.url}/ai`,
       lastModified: new Date("2026-10-08"),
       changeFrequency: "monthly",
-      priority: 0.95,
+      priority: 0.9,
     },
     ...["services", "process", "seo", "faq", "contact"].map((p) => ({
       url: `${SITE.url}/${p}`,

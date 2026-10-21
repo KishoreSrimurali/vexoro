@@ -7,7 +7,7 @@ import {
   useTransform,
   type MotionValue,
 } from "framer-motion";
-import { Bot, BrainCircuit, Code2, FileText, Palette, Workflow, type LucideIcon } from "lucide-react";
+import { Car, Hammer, Layers, Rocket, Search, ShieldCheck, type LucideIcon } from "lucide-react";
 import React, { useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useIsTouch, usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
@@ -101,18 +101,19 @@ type TextScrollAnimationProps = {
   items?: { icon: LucideIcon; label: string }[];
 };
 
+// Icons are defined here, not passed from the page: server components can't pass components to client ones
 const DEFAULT_ITEMS = [
-  { icon: Bot, label: "Assistants" },
-  { icon: Workflow, label: "Automation" },
-  { icon: FileText, label: "Documents" },
-  { icon: BrainCircuit, label: "Knowledge" },
-  { icon: Palette, label: "Branding" },
-  { icon: Code2, label: "Websites" },
+  { icon: Search, label: "Find" },
+  { icon: Hammer, label: "Build" },
+  { icon: ShieldCheck, label: "Prove" },
+  { icon: Rocket, label: "Scale" },
+  { icon: Car, label: "RoadLens" },
+  { icon: Layers, label: "Digital" },
 ];
 
 const Skiper31 = ({
-  text = "ai that works",
-  caption = "AI, brand and web under one roof",
+  text = "find. build. scale.",
+  caption = "New problems, same approach",
   items = DEFAULT_ITEMS,
 }: TextScrollAnimationProps) => {
   const textRef = useRef<HTMLElement | null>(null);

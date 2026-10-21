@@ -7,14 +7,14 @@ import { SiteFooter } from "@/components/site-footer";
 import { SplashCursorEffect } from "@/components/splash-cursor-effect";
 import { SITE } from "@/lib/site";
 
-const title = "vexoro | Web Design & Development Studio in Oman";
-const shareTitle = "vexoro | We design and build websites for brands";
-const shareDescription = "Design, code and search setup from one small studio in Oman. Packages from 15 OMR.";
+const title = "vexoro | A Venture Group Building Products for Real Problems";
+const shareTitle = "vexoro | We build ventures that solve real problems";
+const shareDescription = "RoadLens, India's road-data network, and vexoro Digital for AI, branding and websites.";
 const ogImage = {
   url: "/assets/img/og-image.png",
   width: 1200,
   height: 630,
-  alt: "vexoro logo and the line: We design and build websites for brands.",
+  alt: "vexoro logo and the line: We build ventures that solve real problems.",
 };
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
   publisher: SITE.name,
-  category: "Web design",
+  category: "Technology",
   formatDetection: { telephone: false, address: false, email: false },
   robots: {
     index: true,

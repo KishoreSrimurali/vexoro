@@ -2,10 +2,34 @@
 import { FAQS } from "@/lib/faq";
 import { ADD_ONS, PACKAGES } from "@/lib/pricing";
 import { SITE, abs } from "@/lib/site";
+import { FOUNDER } from "@/lib/ventures";
 
 const ORG_ID = abs("/#organization");
 const SITE_ID = abs("/#website");
 const SERVICE_ID = abs("/#service");
+const FOUNDER_ID = abs("/#founder");
+const ROADLENS_ID = abs("/ventures/roadlens#organization");
+
+const founder = {
+  "@type": "Person",
+  "@id": FOUNDER_ID,
+  name: FOUNDER.name,
+  jobTitle: FOUNDER.role,
+  worksFor: { "@id": ORG_ID },
+};
+
+const roadlens = {
+  "@type": "Organization",
+  "@id": ROADLENS_ID,
+  name: "RoadLens",
+  alternateName: "RoadLens by vexoro",
+  url: abs("/ventures/roadlens"),
+  description: "A road-data network for India, built on ride-hailing dashcams. Drivers earn from footage; carmakers, insurers, mapping companies and cities get privacy-safe road data.",
+  parentOrganization: { "@id": ORG_ID },
+  founder: { "@id": FOUNDER_ID },
+  areaServed: { "@type": "Country", name: "India" },
+  knowsAbout: ["Dashcam data", "Road safety", "ADAS training data", "Mapping", "Insurance telematics"],
+};
 
 const SERVICES = [
   "AI assistants and chatbots",
@@ -31,11 +55,13 @@ const organization = {
   image: abs(SITE.ogImage),
   email: SITE.email,
   description: SITE.description,
+  founder: { "@id": FOUNDER_ID },
+  subOrganization: [{ "@id": ROADLENS_ID }],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
     email: SITE.email,
-    areaServed: ["OM", "Worldwide"],
+    areaServed: ["OM", "IN", "Worldwide"],
     availableLanguage: ["English"],
   },
 };
@@ -81,8 +107,8 @@ const addOnOffer = (a: (typeof ADD_ONS)[number]) => ({
 const professionalService = {
   "@type": "ProfessionalService",
   "@id": SERVICE_ID,
-  name: SITE.name,
-  url: abs("/"),
+  name: "vexoro Digital",
+  url: abs("/ai"),
   image: abs(SITE.ogImage),
   logo: abs(SITE.logo),
   email: SITE.email,
@@ -124,6 +150,8 @@ export const homeStructuredData = (title: string, description: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     organization,
+    founder,
+    roadlens,
     website,
     professionalService,
     webPage("/", title, description),
@@ -150,6 +178,17 @@ export const pricingStructuredData = (title: string, description: string) => ({
       url: abs("/pricing#add-ons"),
       itemListElement: ADD_ONS.map(addOnOffer),
     },
+  ],
+});
+
+export const roadlensStructuredData = (title: string, description: string) => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    organization,
+    founder,
+    roadlens,
+    webPage("/ventures/roadlens", title, description, { about: { "@id": ROADLENS_ID }, breadcrumb: { "@id": abs("/ventures/roadlens#breadcrumb") } }),
+    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["RoadLens", "/ventures/roadlens"]]), "@id": abs("/ventures/roadlens#breadcrumb") },
   ],
 });
 

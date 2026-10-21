@@ -1,21 +1,29 @@
 # vexoro
 
-> vexoro builds AI solutions for companies in Oman and worldwide: AI assistants, workflow automation, document processing and custom AI integrations. We also design the brand and build the website around them.
+> vexoro is a venture group. We find real problems and build focused products to solve them. Each venture runs on its own, backed by the vexoro team. Founder & CEO: Kishore Srimuralikrishnan.
 
 Contact: hello@vexoro.dev
 
+## Ventures
+
+- vexoro Digital (live): AI solutions, branding and websites for businesses, startups and creators, in Oman and worldwide
+- RoadLens (raising pre-seed): India's road-data network, built on ride-hailing dashcams. Drivers earn from useful footage; carmakers and ADAS teams, insurers, mapping companies and city authorities buy privacy-safe road data (faces and plates blurred, DPDP Act consent). Pilot: 50 drivers in Chennai.
+- Future ventures: new problems, same approach (build lean, prove it, then scale)
+
 ## Pages
 
-- [Home](https://vexoro.dev/): services, process, SEO approach, FAQ and contact form
+- [Home](https://vexoro.dev/): ventures, RoadLens, how we build, vexoro Digital, FAQ and contact form
+- [Ventures](https://vexoro.dev/ventures): our ventures and how we build them
+- [RoadLens](https://vexoro.dev/ventures/roadlens): the problem, how it works, buyers, privacy, roadmap and investor contact
 - [AI Solutions](https://vexoro.dev/ai): AI assistants, automation, document processing, knowledge assistants, custom AI and strategy
 - [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
 - [Brand & Web](https://vexoro.dev/services): branding and website services with typical timelines
-- [Process](https://vexoro.dev/process): how a project runs, from brief to launch
+- [Process](https://vexoro.dev/process): how a website project runs, from brief to launch
 - [SEO](https://vexoro.dev/seo): the search setup included with every site
-- [FAQ](https://vexoro.dev/faq): cost, SEO, ownership, editing and timelines
-- [Contact](https://vexoro.dev/contact): start a project or book a free consultation
+- [FAQ](https://vexoro.dev/faq): ventures, AI, cost, SEO, ownership and timelines
+- [Contact](https://vexoro.dev/contact): investing, partnerships, or a project with vexoro Digital
 
-## AI solutions
+## vexoro Digital: AI solutions
 
 AI assistants for websites and WhatsApp, workflow automation across email, spreadsheets and CRMs, document processing (invoices, forms, contracts), private knowledge assistants, custom AI features and AI strategy workshops. Quoted per project after a free consultation.
 

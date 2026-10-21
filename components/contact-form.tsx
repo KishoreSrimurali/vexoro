@@ -2,7 +2,7 @@
 
 import type { FormEvent } from "react";
 
-const SERVICES = ["Brand website", "Landing page", "Online store", "Web app", "SEO audit", "Care plan", "Not sure yet"];
+const SERVICES = ["Investing in RoadLens", "Partnership or data buying", "Driving with RoadLens", "AI solution", "Brand website", "Landing page", "Online store", "Web app", "SEO audit", "Something else"];
 
 /** Opens the visitor's email app with the enquiry filled in. */
 export function ContactForm() {
@@ -10,12 +10,12 @@ export function ContactForm() {
     e.preventDefault();
     const d = new FormData(e.currentTarget);
     const brand = String(d.get("brand") || "");
-    const subject = `Project enquiry: ${d.get("type")}${brand ? ` (${brand})` : ""}`;
+    const subject = `Enquiry: ${d.get("type")}${brand ? ` (${brand})` : ""}`;
     const body = [
       `Name: ${d.get("name")}`,
       `Email: ${d.get("email")}`,
-      `Brand or website: ${brand || "-"}`,
-      `Service: ${d.get("type")}`,
+      `Company or website: ${brand || "-"}`,
+      `Topic: ${d.get("type")}`,
       "",
       String(d.get("message")),
     ].join("\n");
@@ -33,11 +33,11 @@ export function ContactForm() {
         <input id="cf-email" name="email" type="email" autoComplete="email" required />
       </div>
       <div className="field">
-        <label htmlFor="cf-brand">Brand or current website</label>
+        <label htmlFor="cf-brand">Company or website</label>
         <input id="cf-brand" name="brand" type="text" autoComplete="organization" />
       </div>
       <div className="field">
-        <label htmlFor="cf-type">Service</label>
+        <label htmlFor="cf-type">Topic</label>
         <select id="cf-type" name="type" defaultValue={SERVICES[0]}>
           {SERVICES.map((s) => (
             <option key={s}>{s}</option>
@@ -45,8 +45,8 @@ export function ContactForm() {
         </select>
       </div>
       <div className="field field-full">
-        <label htmlFor="cf-msg">About the project</label>
-        <textarea id="cf-msg" name="message" rows={5} placeholder="What you need, your deadline and a rough budget" required />
+        <label htmlFor="cf-msg">Message</label>
+        <textarea id="cf-msg" name="message" rows={5} placeholder="What you have in mind, and any timeline or budget" required />
       </div>
       <div className="field-full form-foot">
         <button className="btn" type="submit">Send</button>

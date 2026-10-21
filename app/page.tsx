@@ -1,5 +1,6 @@
 import { Mark } from "@/components/brand";
-import { AiSection, ContactSection, FaqPageSection, ProcessSection, SeoSection, ServicesSection } from "@/components/sections";
+import { ContactSection, FaqPageSection } from "@/components/sections";
+import { ApproachSection, DigitalSection, RoadLensTeaser, VenturesSection } from "@/components/ventures";
 import { Skiper31 } from "@/components/ui/text-scroll-animation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,9 +8,9 @@ import { homeStructuredData } from "@/lib/structured-data";
 import { pageMetadata } from "@/lib/site";
 
 
-const TITLE = "vexoro | AI Solutions, Branding & Web Development in Oman";
+const TITLE = "vexoro | A Venture Group Building Products for Real Problems";
 const DESCRIPTION =
-  "AI assistants, workflow automation and custom AI for companies in Oman and worldwide, plus the branding and website around them. Free consultation.";
+  "vexoro finds real problems and builds focused ventures to solve them: RoadLens, India's road-data network, and vexoro Digital for AI, branding and websites.";
 
 export const metadata: Metadata = pageMetadata({ path: "/", title: TITLE, description: DESCRIPTION });
 
@@ -21,15 +22,15 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="wrap hero-inner">
           <h1 id="hero-title">
-            We build AI solutions for companies<span className="sq" aria-hidden="true" />
+            We build ventures that solve real problems<span className="sq" aria-hidden="true" />
           </h1>
           <div className="hero-foot">
             <p className="hero-text">
-              vexoro designs and builds AI assistants, automations and integrations for businesses in Oman and worldwide, plus the brand and website around them.
+              vexoro is a group that creates solutions. We find real problems, build focused products to solve them, and give each venture its own team, backed by ours.
             </p>
             <div className="hero-links">
-              <Link className="btn" href="/contact">Tell us about your project</Link>
-              <Link className="text-link" href="/ai">Explore AI solutions</Link>
+              <Link className="btn" href="/ventures">See our ventures</Link>
+              <Link className="text-link" href="/ventures/roadlens">Meet RoadLens</Link>
             </div>
           </div>
         </div>
@@ -38,10 +39,10 @@ export default function Home() {
 
       <Skiper31 />
 
-      <AiSection />
-      <ServicesSection />
-      <ProcessSection />
-      <SeoSection />
+      <VenturesSection />
+      <RoadLensTeaser />
+      <ApproachSection />
+      <DigitalSection />
       <FaqPageSection />
       <ContactSection />
     </main>

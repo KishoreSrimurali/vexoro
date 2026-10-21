@@ -241,8 +241,8 @@ export function ContactSection({ h1 = false }: { h1?: boolean }) {
   <section className="section" id="contact" aria-labelledby="contact-title">
     <div className="wrap contact">
       <div className="contact-text">
-        <H id="contact-title">Start a project</H>
-        <p>Tell us what you&apos;re building and when you need it. We reply within one business day.</p>
+        <H id="contact-title">Start a conversation</H>
+        <p>Investing, partnering, driving with RoadLens or starting a project with vexoro Digital: tell us what you have in mind. We reply within one business day.</p>
         <p className="contact-mail">
           <a href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>
         </p>
