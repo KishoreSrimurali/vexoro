@@ -1,0 +1,13 @@
+/* TEAM */
+Founder & CEO: Kishore Srimuralikrishnan
+Contact: hello@vexoro.dev
+Site: https://vexoro.dev
+
+/* VENTURES */
+vexoro Digital: AI solutions, branding and websites
+RoadLens: India's road-data network, built on ride-hailing dashcams
+
+/* SITE */
+Standards: HTML5, CSS3, schema.org JSON-LD
+Components: Next.js, React, TypeScript, Tailwind CSS
+Font: Archivo

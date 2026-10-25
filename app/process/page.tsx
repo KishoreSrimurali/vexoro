@@ -6,7 +6,12 @@ import { subpageStructuredData } from "@/lib/structured-data";
 const TITLE = "Website Design Process: From Brief to Launch";
 const DESCRIPTION = "How vexoro builds a brand website in about six weeks: discovery, design, build and launch, with you reviewing every step.";
 
-export const metadata: Metadata = pageMetadata({ path: "/process", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/process",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["website design process", "web project timeline", "how long does a website take", "website discovery design build launch"],
+});
 
 export default function Page() {
   return (

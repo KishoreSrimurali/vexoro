@@ -8,7 +8,12 @@ const TITLE = "RoadLens: India's Road-Data Network from Ride-Hailing Dashcams";
 const DESCRIPTION =
   "RoadLens, a vexoro venture, turns India's cab fleet into a live road-data network. Drivers earn from dashcam footage; carmakers, insurers, mapping and city teams get privacy-safe road data.";
 
-export const metadata: Metadata = pageMetadata({ path: "/ventures/roadlens", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/ventures/roadlens",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["RoadLens", "RoadLens India", "dashcam network India", "road data India", "ride-hailing dashcam", "ADAS training data India", "Indian driving dataset", "road safety India", "pothole detection", "insurance telematics India", "mapping data India", "dashcam for cab drivers", "earn money driving Ola Uber Rapido", "Chennai startup", "pre-seed startup India", "DPDP Act compliant data"],
+});
 
 const DECK = "mailto:hello@vexoro.dev?subject=RoadLens%20investor%20deck";
 

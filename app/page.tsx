@@ -12,7 +12,12 @@ const TITLE = "vexoro | A Venture Group Building Products for Real Problems";
 const DESCRIPTION =
   "vexoro finds real problems and builds focused ventures to solve them: RoadLens, India's road-data network, and vexoro Digital for AI, branding and websites.";
 
-export const metadata: Metadata = pageMetadata({ path: "/", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["venture group Oman", "startup studio", "products that solve real problems", "road data India", "dashcam data network", "AI solutions Oman", "branding and web development Oman", "AI startups", "build ventures"],
+});
 
 export default function Home() {
   return (

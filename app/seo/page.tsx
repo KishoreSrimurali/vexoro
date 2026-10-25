@@ -6,7 +6,12 @@ import { subpageStructuredData } from "@/lib/structured-data";
 const TITLE = "SEO-Ready Website Development in Oman";
 const DESCRIPTION = "Every vexoro website ships with titles, descriptions, schema.org data, a sitemap, fast pages and Google Search Console set up.";
 
-export const metadata: Metadata = pageMetadata({ path: "/seo", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/seo",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["SEO Oman", "technical SEO", "schema markup", "Google Search Console setup", "website SEO setup", "structured data", "sitemap and robots.txt"],
+});
 
 export default function Page() {
   return (

@@ -6,7 +6,12 @@ import { subpageStructuredData } from "@/lib/structured-data";
 const TITLE = "AI & Web Design FAQ: Cost, Tools, Ownership and Timelines";
 const DESCRIPTION = "Answers about AI solutions, cost, WhatsApp and tool integrations, website ownership, editing and timelines from vexoro in Oman.";
 
-export const metadata: Metadata = pageMetadata({ path: "/faq", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/faq",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["website cost Oman", "AI solution cost", "web design FAQ", "AI FAQ", "vexoro FAQ", "who owns my website", "RoadLens FAQ"],
+});
 
 export default function Page() {
   return (

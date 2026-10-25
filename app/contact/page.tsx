@@ -6,7 +6,12 @@ import { subpageStructuredData } from "@/lib/structured-data";
 const TITLE = "Contact vexoro: Start a Website Project";
 const DESCRIPTION = "Tell us about your website project. Free consultation and a reply within one business day. Email hello@vexoro.dev.";
 
-export const metadata: Metadata = pageMetadata({ path: "/contact", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/contact",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["contact vexoro", "invest in RoadLens", "free AI consultation", "website quote Oman", "hire web designer Oman", "partner with vexoro"],
+});
 
 export default function Page() {
   return (

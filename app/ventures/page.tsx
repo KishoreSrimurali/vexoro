@@ -7,7 +7,12 @@ import { subpageStructuredData } from "@/lib/structured-data";
 const TITLE = "Ventures: Products We Build to Solve Real Problems";
 const DESCRIPTION = "vexoro is a venture group. We find real problems and build focused products to solve them: vexoro Digital (live), RoadLens (raising now) and future ventures.";
 
-export const metadata: Metadata = pageMetadata({ path: "/ventures", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/ventures",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["vexoro ventures", "venture builder", "startup studio Oman", "startup studio India", "new ventures", "invest in startups", "pre-seed startups", "lean startups"],
+});
 
 export default function Page() {
   return (

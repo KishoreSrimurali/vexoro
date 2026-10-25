@@ -8,7 +8,12 @@ const TITLE = "Website Design Packages & Prices in Oman (OMR)";
 const DESCRIPTION =
   "Website packages in Oman from 15 OMR: Starter, Business 30, Professional 50 and Elite 75+ OMR. Responsive design, WhatsApp, Google Maps and SEO included.";
 
-export const metadata: Metadata = pageMetadata({ path: "/pricing", title: TITLE, description: DESCRIPTION });
+export const metadata: Metadata = pageMetadata({
+  path: "/pricing",
+  title: TITLE,
+  description: DESCRIPTION,
+  keywords: ["website price Oman", "website packages OMR", "cheap website Oman", "web design pricing", "website cost OMR", "affordable web design Muscat", "landing page price"],
+});
 
 export default function PricingPage() {
   return (
