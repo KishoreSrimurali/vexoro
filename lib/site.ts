@@ -7,7 +7,7 @@ export const SITE = {
     "vexoro is a venture group that finds real problems and builds focused products to solve them: RoadLens, a road-data network for India, and vexoro Digital for AI, branding and websites.",
   ogImage: "/assets/img/og-image.png",
   logo: "/assets/brand/vexoro-mark.png",
-  areaServed: ["Oman", "India", "Worldwide"],
+  areaServed: ["Oman", "India", "Bengaluru", "Worldwide"],
   currency: "OMR",
 } as const;
 

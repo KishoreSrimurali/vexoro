@@ -21,7 +21,7 @@ export const VENTURES: Venture[] = [
     id: "roadlens",
     name: "RoadLens",
     status: "Raising now",
-    summary: "A road-data network for India, built on ride-hailing dashcams.",
+    summary: "A road-data network for India, based in Bengaluru and built on ride-hailing dashcams.",
     href: "/ventures/roadlens",
     cta: "Meet RoadLens",
   },

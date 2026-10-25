@@ -28,6 +28,8 @@ const roadlens = {
   parentOrganization: { "@id": ORG_ID },
   founder: { "@id": FOUNDER_ID },
   areaServed: { "@type": "Country", name: "India" },
+  address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" },
+  location: { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
   knowsAbout: ["Dashcam data", "Road safety", "ADAS training data", "Mapping", "Insurance telematics"],
 };
 
@@ -57,6 +59,10 @@ const organization = {
   description: SITE.description,
   founder: { "@id": FOUNDER_ID },
   subOrganization: [{ "@id": ROADLENS_ID }],
+  location: [
+    { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
+    { "@type": "Place", name: "Oman", address: { "@type": "PostalAddress", addressCountry: "OM" } },
+  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
@@ -189,6 +195,73 @@ export const roadlensStructuredData = (title: string, description: string) => ({
     roadlens,
     webPage("/ventures/roadlens", title, description, { about: { "@id": ROADLENS_ID }, breadcrumb: { "@id": abs("/ventures/roadlens#breadcrumb") } }),
     { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["RoadLens", "/ventures/roadlens"]]), "@id": abs("/ventures/roadlens#breadcrumb") },
+  ],
+});
+
+type QA = { question: string; answer: string };
+const faqPage = (path: string, items: QA[]) => ({
+  "@type": "FAQPage",
+  "@id": abs(`${path}#faqpage`),
+  mainEntity: items.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+});
+
+/** /investors: who we are, what we're raising for, and how to reach us. */
+export const investorsStructuredData = (title: string, description: string, faqs: QA[]) => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    organization,
+    founder,
+    roadlens,
+    webPage("/investors", title, description, {
+      about: [{ "@id": ORG_ID }, { "@id": ROADLENS_ID }],
+      audience: { "@type": "Audience", audienceType: "Investors, angel investors, venture capital funds" },
+      breadcrumb: { "@id": abs("/investors#breadcrumb") },
+    }),
+    { ...breadcrumb([["Home", "/"], ["Investors", "/investors"]]), "@id": abs("/investors#breadcrumb") },
+    faqPage("/investors", faqs),
+  ],
+});
+
+/** /ventures/roadlens/data: the data products RoadLens sells. */
+export const roadlensDataStructuredData = (
+  title: string,
+  description: string,
+  products: { name: string; detail: string; time: string }[],
+  faqs: QA[],
+) => ({
+  "@context": "https://schema.org",
+  "@graph": [
+    organization,
+    roadlens,
+    webPage("/ventures/roadlens/data", title, description, {
+      about: { "@id": ROADLENS_ID },
+      audience: { "@type": "BusinessAudience", audienceType: "Carmakers, ADAS teams, insurers, mapping companies and city authorities" },
+      breadcrumb: { "@id": abs("/ventures/roadlens/data#breadcrumb") },
+    }),
+    {
+      ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["RoadLens", "/ventures/roadlens"], ["Road data", "/ventures/roadlens/data"]]),
+      "@id": abs("/ventures/roadlens/data#breadcrumb"),
+    },
+    {
+      "@type": "Service",
+      "@id": abs("/ventures/roadlens/data#service"),
+      name: "RoadLens road data for India",
+      serviceType: "Road data, dashcam footage and hazard feeds",
+      description,
+      provider: { "@id": ROADLENS_ID },
+      areaServed: { "@type": "Country", name: "India" },
+      audience: { "@type": "BusinessAudience", audienceType: "Carmakers, ADAS teams, insurers, mapping companies and city authorities" },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "RoadLens data products",
+        itemListElement: products.map((p) => ({
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: p.name, description: p.detail },
+          description: `${p.name}: ${p.detail} (${p.time})`,
+        })),
+      },
+    },
+    faqPage("/ventures/roadlens/data", faqs),
   ],
 });
 

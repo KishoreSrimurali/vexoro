@@ -7,7 +7,7 @@ Contact: hello@vexoro.dev
 ## Ventures
 
 - vexoro Digital (live): AI solutions, branding and websites for businesses, startups and creators, in Oman and worldwide
-- RoadLens (raising pre-seed): India's road-data network, built on ride-hailing dashcams. Drivers earn from useful footage; carmakers and ADAS teams, insurers, mapping companies and city authorities buy privacy-safe road data (faces and plates blurred, DPDP Act consent). Pilot: 50 drivers in Chennai.
+- RoadLens (raising pre-seed): India's road-data network, built on ride-hailing dashcams. Drivers earn from useful footage; carmakers and ADAS teams, insurers, mapping companies and city authorities buy privacy-safe road data (faces and plates blurred, DPDP Act consent). Based in Bengaluru, India. Pilot: 50 drivers in Bengaluru, then Chennai and Hyderabad.
 - Future ventures: new problems, same approach (build lean, prove it, then scale)
 
 ## Pages
@@ -15,6 +15,8 @@ Contact: hello@vexoro.dev
 - [Home](https://vexoro.dev/): ventures, RoadLens, how we build, vexoro Digital, FAQ and contact form
 - [Ventures](https://vexoro.dev/ventures): our ventures and how we build them
 - [RoadLens](https://vexoro.dev/ventures/roadlens): the problem, how it works, buyers, privacy, roadmap and investor contact
+- [Investors](https://vexoro.dev/investors): RoadLens pre-seed round, stage-gated tranches, investor FAQ and how to request the deck
+- [Road data for buyers](https://vexoro.dev/ventures/roadlens/data): ADAS datasets, event clips, insurance risk feeds, map updates and city hazard feeds from Indian roads; pilot buyers welcome
 - [AI Solutions](https://vexoro.dev/ai): AI assistants, automation, document processing, knowledge assistants, custom AI and strategy
 - [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
 - [Brand & Web](https://vexoro.dev/services): branding and website services with typical timelines

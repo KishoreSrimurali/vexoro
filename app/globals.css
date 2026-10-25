@@ -495,7 +495,8 @@ h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.3; }
 .venture-card.featured .text-link:hover { text-decoration-color: #fff; }
 .venture-status { display: block; font-stretch: 75%; font-weight: 600; font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .page-intro .venture-status { margin-bottom: 14px; }
-@media (max-width: 900px) { .venture-grid { grid-template-columns: 1fr; } }
+.venture-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 900px) { .venture-grid, .venture-grid-2 { grid-template-columns: 1fr; } }
 
 .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 32px; }
 .steps li { display: grid; align-content: start; gap: 12px; padding-top: 18px; border-top: 2px solid var(--ink-line); }
@@ -526,3 +527,16 @@ h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.3; }
 
 /* Inverted cursor (components/ui/inverted-cursor.tsx): hide the native cursor everywhere while it is active */
 .cursor-none-all, .cursor-none-all * { cursor: none !important; }
+
+/* Q&A list (components/qa-list.tsx) */
+.qa { border-top: 2px solid var(--ink); }
+.qa details { border-bottom: 1px solid var(--line); }
+.qa summary {
+  display: flex; justify-content: space-between; gap: 16px; padding: 20px 0; cursor: pointer; list-style: none;
+  font-family: var(--display); font-stretch: 125%; font-weight: 700; font-size: clamp(1.05rem, 1.6vw, 1.25rem); letter-spacing: -.01em; line-height: 1.25;
+}
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary::after { content: "+"; color: var(--violet); flex: none; }
+.qa details[open] summary::after { content: "–"; }
+.qa summary:hover { color: var(--violet); }
+.qa p { color: var(--muted); padding: 0 0 22px; max-width: 60ch; }

@@ -62,10 +62,11 @@ export function RoadLensTeaser() {
         <div>
           <span className="venture-status">A vexoro venture · Raising now</span>
           <h2 id="roadlens-title">RoadLens<span className="sq" aria-hidden="true" /></h2>
-          <p className="teaser-lede">India&apos;s road-data network, built on the cars already driving it. Ride-hailing drivers earn from dashcam footage of the roads they already drive; safety, insurance, mapping and city teams get fresh, privacy-safe data.</p>
+          <p className="teaser-lede">India&apos;s road-data network, built in Bengaluru on the cars already driving it. Ride-hailing drivers earn from dashcam footage of the roads they already drive; safety, insurance, mapping and city teams get fresh, privacy-safe data.</p>
           <div className="hero-links">
             <Link className="btn" href="/ventures/roadlens">Meet RoadLens</Link>
-            <a className="text-link" href="mailto:hello@vexoro.dev?subject=RoadLens%20investor%20deck">Request the investor deck</a>
+            <Link className="text-link" href="/investors">For investors</Link>
+            <Link className="text-link" href="/ventures/roadlens/data">For data buyers</Link>
           </div>
         </div>
         <dl className="stats">

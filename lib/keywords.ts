@@ -2,7 +2,8 @@
 // unrelated or stuffed terms are a spam signal for Bing, and Google ignores the tag either way.
 
 const OMAN = ["Oman", "Muscat", "Salalah", "Sohar", "Nizwa", "Sur", "Seeb", "Barka", "Ibri", "Duqm", "GCC", "Middle East"];
-const INDIA = ["India", "Chennai", "Bengaluru", "Bangalore", "Hyderabad", "Mumbai", "Delhi", "Pune", "Tamil Nadu"];
+const INDIA = ["Bengaluru", "Bangalore", "Karnataka", "India", "Chennai", "Hyderabad", "Mumbai", "Delhi", "Pune"];
+const BLR = ["Bengaluru", "Bangalore", "Karnataka", "India"];
 
 /** Every pairing of a phrase with a place, e.g. "web design Muscat". */
 const near = (phrases: string[], places: string[]) => phrases.flatMap((p) => places.map((place) => `${p} ${place}`));
@@ -18,7 +19,7 @@ export const KEYWORDS = {
       "RoadLens", "vexoro Digital", "road data India", "dashcam network", "AI solutions", "AI company",
       "branding and web development", "web design studio", "digital studio", "founder-led company",
     ],
-    near(["venture studio", "startup studio", "AI company", "tech company", "digital agency"], ["Oman", "Muscat", "India", "Chennai"]),
+    near(["venture studio", "startup studio", "AI company", "tech company", "digital agency"], ["Oman", "Muscat", "Bengaluru", "Bangalore", "India"]),
     ["شركة ذكاء اصطناعي عمان", "تصميم مواقع عمان", "شركة ناشئة عمان", "استوديو مشاريع"],
   ),
 
@@ -30,7 +31,7 @@ export const KEYWORDS = {
       "build lean prove scale", "problem-first products", "startup ideas", "co-found a startup",
       "partner with a startup studio", "RoadLens", "vexoro Digital",
     ],
-    near(["startup studio", "venture studio", "venture builder", "startups", "startup investment"], ["Oman", "Muscat", "India", "Chennai", "GCC"]),
+    near(["startup studio", "venture studio", "venture builder", "startups", "startup investment"], ["Bengaluru", "Bangalore", "India", "Oman", "Muscat", "GCC"]),
   ),
 
   roadlens: unique(
@@ -55,6 +56,7 @@ export const KEYWORDS = {
       "data licensing", "dataset licence", "data marketplace India",
       "Hivemapper alternative", "Nexar alternative", "Hivemapper India", "Nexar India",
       "pre-seed startup India", "mobility startup India", "data startup India", "deep tech startup India",
+      "Bengaluru startup", "Bangalore startup", "Bangalore mobility startup", "Bengaluru road data", "Bangalore potholes", "Bangalore traffic data", "Namma Bengaluru roads",
       "invest in RoadLens", "RoadLens investor deck",
     ],
     near(["road data", "dashcam", "pothole detection", "road safety", "mobility startup"], INDIA),
@@ -139,5 +141,40 @@ export const KEYWORDS = {
     ],
     near(["website price", "website cost", "cheap website", "affordable web design", "web design packages"], ["Oman", "Muscat", "Salalah", "Sohar"]),
     ["سعر تصميم موقع", "أسعار تصميم المواقع عمان", "تصميم موقع رخيص"],
+  ),
+
+  investors: unique(
+    [
+      "invest in RoadLens", "RoadLens investors", "RoadLens investor deck", "RoadLens pre-seed",
+      "invest in startups", "startup investment opportunity", "pre-seed round", "pre-seed funding",
+      "pre-seed startup", "early-stage startup investment", "angel investment", "angel investors",
+      "startups raising funds", "startup fundraising", "seed funding", "venture capital", "VC funding",
+      "family office investment", "strategic investors", "stage-gated investment", "tranche funding",
+      "invest in mobility startups", "invest in data startups", "invest in deep tech", "invest in road safety",
+      "invest in AI startups", "dashcam startup investment", "mobility data startup", "road data startup",
+      "Hivemapper India", "Nexar India", "vexoro investors", "venture studio investment",
+    ],
+    near(["startups raising", "pre-seed startup", "angel investment", "invest in startups", "mobility startup", "startup funding"], BLR),
+    near(["startup investment", "angel investors"], ["India", "Oman", "GCC", "Middle East"]),
+  ),
+
+  roadlensData: unique(
+    [
+      "road data", "road data India", "Indian road data", "Indian road dataset", "Indian driving dataset",
+      "Indian traffic dataset", "Indian traffic video", "dashcam footage", "dashcam footage India", "dashcam video dataset",
+      "buy dashcam data", "buy driving data", "driving data provider", "road data provider", "road data API",
+      "ADAS training data", "ADAS dataset India", "ADAS validation data", "autonomous driving dataset India",
+      "self-driving training data", "computer vision training data", "video training data", "edge case driving data",
+      "near-miss clips", "accident clips", "crash video data", "event clips",
+      "insurance telematics data", "insurance risk data India", "area risk scores", "claims evidence video",
+      "underwriting data India", "motor insurance analytics",
+      "map update data", "HD map data India", "navigation data", "road change detection", "road closures data",
+      "street-level imagery India", "street view imagery India",
+      "pothole data", "pothole detection data", "waterlogging data", "road hazard data", "smart city data India",
+      "city hazard feed", "road condition monitoring", "road infrastructure data",
+      "privacy-safe video data", "DPDP compliant data", "anonymised dashcam data", "data licensing India",
+      "pilot data buyer", "RoadLens data",
+    ],
+    near(["road data", "dashcam data", "traffic data", "pothole data", "ADAS data", "street-level imagery"], BLR),
   ),
 };

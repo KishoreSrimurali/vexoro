@@ -7,7 +7,7 @@ import { FOUNDER } from "@/lib/ventures";
 
 const TITLE = "RoadLens: India's Road-Data Network from Ride-Hailing Dashcams";
 const DESCRIPTION =
-  "RoadLens, a vexoro venture, turns India's cab fleet into a live road-data network. Drivers earn from dashcam footage; carmakers, insurers, mapping and city teams get privacy-safe road data.";
+  "RoadLens, a Bengaluru-based vexoro venture, turns India's cab fleet into a live road-data network. Drivers earn from dashcam footage; carmakers, insurers, mapping and city teams get privacy-safe road data.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/ventures/roadlens",
@@ -46,10 +46,10 @@ const PRIVACY = [
 ];
 
 const ROADMAP = [
-  { when: "Months 0–3", name: "Pilot", detail: "50 drivers in Chennai. Measure real costs and footage quality." },
+  { when: "Months 0–3", name: "Pilot", detail: "50 drivers in Bengaluru. Measure real costs and footage quality." },
   { when: "Months 3–6", name: "Validate", detail: "Grow to 200 drivers and launch the Plus and Pro driver plans." },
-  { when: "Months 6–18", name: "Scale", detail: "1,000 drivers across Chennai, with hazard feeds for insurers." },
-  { when: "Month 18+", name: "Expand", detail: "Bengaluru and Hyderabad next, on the way to 10,000 drivers." },
+  { when: "Months 6–18", name: "Scale", detail: "1,000 drivers across Bengaluru, with hazard feeds for insurers." },
+  { when: "Month 18+", name: "Expand", detail: "Chennai and Hyderabad next, on the way to 10,000 drivers." },
 ];
 
 export default function Page() {
@@ -68,9 +68,10 @@ export default function Page() {
           </nav>
           <span className="venture-status">A vexoro venture · Raising pre-seed</span>
           <h1 className="page-title">RoadLens<span className="sq" aria-hidden="true" /></h1>
-          <p className="page-lede">India&apos;s road-data network, built on the cars already driving it. RoadLens turns ride-hailing cars into a live road-data network with low-cost dashcams.</p>
+          <p className="page-lede">India&apos;s road-data network, built on the cars already driving it. Based in Bengaluru, RoadLens turns ride-hailing cars into a live road-data network with low-cost dashcams.</p>
           <div className="hero-links intro-links">
             <a className="btn" href={DECK}>Request the investor deck</a>
+            <Link className="text-link" href="/ventures/roadlens/data">Buy road data</Link>
             <a className="text-link" href="mailto:hello@vexoro.dev?subject=Driving%20with%20RoadLens">Drive with RoadLens</a>
           </div>
         </div>
@@ -164,7 +165,7 @@ export default function Page() {
         <div className="wrap">
           <div className="panel">
             <div className="section-head">
-              <h2 id="roadmap-title">Prove it in Chennai, then scale</h2>
+              <h2 id="roadmap-title">Prove it in Bengaluru, then scale</h2>
               <p>Each stage has a gate it must pass before the next one is funded. We reach drivers through taxi hubs, fleet owners, driver unions and referrals.</p>
             </div>
             <ol className="steps">
@@ -192,6 +193,7 @@ export default function Page() {
             <h3>{FOUNDER.name}</h3>
             <p>Founded and runs vexoro. Built three ventures end to end, and owns strategy, finance and buyer sales at RoadLens.</p>
             <a className="btn" href={DECK}>Request the investor deck</a>
+            <Link className="text-link" href="/investors">Investor details</Link>
           </div>
         </div>
       </section>
