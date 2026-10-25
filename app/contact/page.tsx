@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactSection } from "@/components/sections";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/contact",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["contact vexoro", "invest in RoadLens", "free AI consultation", "website quote Oman", "hire web designer Oman", "partner with vexoro"],
+  keywords: KEYWORDS.contact,
 });
 
 export default function Page() {

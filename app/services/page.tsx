@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ServicesSection, ContactSection } from "@/components/sections";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/services",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["web design Oman", "web development Oman", "branding Oman", "website design Muscat", "landing page design", "online store development", "Shopify developer Oman", "web app development", "SEO audit", "website maintenance"],
+  keywords: KEYWORDS.services,
 });
 
 export default function Page() {

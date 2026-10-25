@@ -5,6 +5,7 @@ import { Skiper31 } from "@/components/ui/text-scroll-animation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { homeStructuredData } from "@/lib/structured-data";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["venture group Oman", "startup studio", "products that solve real problems", "road data India", "dashcam data network", "AI solutions Oman", "branding and web development Oman", "AI startups", "build ventures"],
+  keywords: KEYWORDS.home,
 });
 
 export default function Home() {

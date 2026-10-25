@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { roadlensStructuredData } from "@/lib/structured-data";
 import { FOUNDER } from "@/lib/ventures";
@@ -12,7 +13,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/ventures/roadlens",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["RoadLens", "RoadLens India", "dashcam network India", "road data India", "ride-hailing dashcam", "ADAS training data India", "Indian driving dataset", "road safety India", "pothole detection", "insurance telematics India", "mapping data India", "dashcam for cab drivers", "earn money driving Ola Uber Rapido", "Chennai startup", "pre-seed startup India", "DPDP Act compliant data"],
+  keywords: KEYWORDS.roadlens,
 });
 
 const DECK = "mailto:hello@vexoro.dev?subject=RoadLens%20investor%20deck";

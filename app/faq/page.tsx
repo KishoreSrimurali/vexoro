@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FaqPageSection, ContactSection } from "@/components/sections";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/faq",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["website cost Oman", "AI solution cost", "web design FAQ", "AI FAQ", "vexoro FAQ", "who owns my website", "RoadLens FAQ"],
+  keywords: KEYWORDS.faq,
 });
 
 export default function Page() {

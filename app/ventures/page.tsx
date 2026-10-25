@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ContactSection } from "@/components/sections";
 import { ApproachSection, RoadLensTeaser, VenturesSection } from "@/components/ventures";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/ventures",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["vexoro ventures", "venture builder", "startup studio Oman", "startup studio India", "new ventures", "invest in startups", "pre-seed startups", "lean startups"],
+  keywords: KEYWORDS.ventures,
 });
 
 export default function Page() {

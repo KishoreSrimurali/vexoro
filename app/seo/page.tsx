@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SeoSection, ContactSection } from "@/components/sections";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/seo",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["SEO Oman", "technical SEO", "schema markup", "Google Search Console setup", "website SEO setup", "structured data", "sitemap and robots.txt"],
+  keywords: KEYWORDS.seo,
 });
 
 export default function Page() {

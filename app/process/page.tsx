@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ProcessSection, ContactSection } from "@/components/sections";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/process",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["website design process", "web project timeline", "how long does a website take", "website discovery design build launch"],
+  keywords: KEYWORDS.process,
 });
 
 export default function Page() {

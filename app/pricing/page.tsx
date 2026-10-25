@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ADD_ONS, PACKAGES } from "@/lib/pricing";
 import { pricingStructuredData } from "@/lib/structured-data";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 
 const TITLE = "Website Design Packages & Prices in Oman (OMR)";
@@ -12,7 +13,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/pricing",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["website price Oman", "website packages OMR", "cheap website Oman", "web design pricing", "website cost OMR", "affordable web design Muscat", "landing page price"],
+  keywords: KEYWORDS.pricing,
 });
 
 export default function PricingPage() {

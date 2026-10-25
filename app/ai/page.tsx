@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AiSection, ContactSection } from "@/components/sections";
+import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/ai",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["AI solutions Oman", "AI company Oman", "AI assistant for business", "WhatsApp AI chatbot", "AI chatbot Oman", "workflow automation", "AI document processing", "AI knowledge base", "custom AI integration", "AI consulting Oman", "AI for small business", "AI Muscat"],
+  keywords: KEYWORDS.ai,
 });
 
 export default function Page() {
