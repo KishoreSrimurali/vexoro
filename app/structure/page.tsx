@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ContactSection } from "@/components/sections";
-import { StructureSection } from "@/components/structure";
+import { StructureDetail, StructureSection } from "@/components/structure";
 import { TeamSection } from "@/components/ventures";
 import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
@@ -25,6 +25,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(subpageStructuredData("/structure", "Business structure", `${TITLE} | vexoro`, DESCRIPTION)) }}
       />
       <StructureSection h1 />
+      <StructureDetail />
       <TeamSection />
       <ContactSection />
     </main>
