@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       images: [`${SITE.url}${SITE.ogImage}`],
     },
-    ...["ventures", "ventures/roadlens", "investors", "ventures/roadlens/data"].map((p) => ({
+    ...["ventures", "ventures/roadlens", "investors", "ventures/roadlens/data", "structure"].map((p) => ({
       url: `${SITE.url}/${p}`,
       lastModified: new Date("2026-10-21"),
       changeFrequency: "monthly" as const,

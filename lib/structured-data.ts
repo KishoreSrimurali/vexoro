@@ -58,7 +58,7 @@ const organization = {
   email: SITE.email,
   description: SITE.description,
   founder: { "@id": FOUNDER_ID },
-  subOrganization: [{ "@id": ROADLENS_ID }],
+  subOrganization: [{ "@id": SERVICE_ID }, { "@id": ROADLENS_ID }],
   location: [
     { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
     { "@type": "Place", name: "Oman", address: { "@type": "PostalAddress", addressCountry: "OM" } },

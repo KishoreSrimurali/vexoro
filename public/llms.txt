@@ -15,6 +15,7 @@ Contact: hello@vexoro.dev
 - [Home](https://vexoro.dev/): ventures, RoadLens, how we build, vexoro Digital, FAQ and contact form
 - [Ventures](https://vexoro.dev/ventures): our ventures and how we build them
 - [RoadLens](https://vexoro.dev/ventures/roadlens): the problem, how it works, buyers, privacy, roadmap and investor contact
+- [Business structure](https://vexoro.dev/structure): org chart of the vexoro group (founder and CEO Kishore Srimuralikrishnan) and its ventures: vexoro Digital, RoadLens and what's next
 - [Investors](https://vexoro.dev/investors): RoadLens pre-seed round, milestones, investor FAQ and how to request the deck
 - [Road data for buyers](https://vexoro.dev/ventures/roadlens/data): ADAS datasets, event clips, insurance risk feeds, map updates and city hazard feeds from Indian roads; request a sample data pack
 - [AI Solutions](https://vexoro.dev/ai): AI assistants, automation, document processing, knowledge assistants, custom AI and strategy

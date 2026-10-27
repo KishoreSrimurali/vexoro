@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/ventures", label: "Ventures" },
   { href: "/ventures/roadlens", label: "RoadLens" },
   { href: "/investors", label: "Investors" },
+  { href: "/structure", label: "Structure" },
   { href: "/ai", label: "AI Solutions" },
   { href: "/services", label: "Brand & Web" },
   { href: "/pricing", label: "Pricing" },

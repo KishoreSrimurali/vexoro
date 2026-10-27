@@ -143,6 +143,13 @@ export const KEYWORDS = {
     ["سعر تصميم موقع", "أسعار تصميم المواقع عمان", "تصميم موقع رخيص"],
   ),
 
+  structure: [
+    "vexoro business structure", "vexoro group structure", "vexoro organisation", "vexoro org chart",
+    "vexoro group", "vexoro ventures", "vexoro Digital", "RoadLens", "RoadLens parent company",
+    "who owns RoadLens", "vexoro founder", "vexoro CEO", "Kishore Srimuralikrishnan", "venture group structure",
+    "holding group", "group of companies", "venture studio structure", "company structure",
+  ],
+
   investors: unique(
     [
       "invest in RoadLens", "RoadLens investors", "RoadLens investor deck", "RoadLens pre-seed",

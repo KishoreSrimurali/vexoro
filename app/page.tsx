@@ -1,6 +1,7 @@
 import { Mark } from "@/components/brand";
 import { ContactSection, FaqPageSection } from "@/components/sections";
-import { ApproachSection, DigitalSection, RoadLensTeaser, VenturesSection } from "@/components/ventures";
+import { StructureSection } from "@/components/structure";
+import { ApproachSection, DigitalSection, RoadLensTeaser } from "@/components/ventures";
 import { Skiper31 } from "@/components/ui/text-scroll-animation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export default function Home() {
 
       <Skiper31 />
 
-      <VenturesSection />
+      <StructureSection />
       <RoadLensTeaser />
       <ApproachSection />
       <DigitalSection />

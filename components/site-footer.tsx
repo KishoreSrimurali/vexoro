@@ -9,6 +9,7 @@ export function SiteFooter() {
           <a href="/ventures">Ventures</a>
           <a href="/ventures/roadlens">RoadLens</a>
           <a href="/investors">Investors</a>
+          <a href="/structure">Structure</a>
           <a href="/ventures/roadlens/data">Road data</a>
           <a href="/ai">AI Solutions</a>
           <a href="/services">Brand &amp; Web</a>
