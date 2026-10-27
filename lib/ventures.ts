@@ -2,7 +2,7 @@
 export type Venture = {
   id: string;
   name: string;
-  status: "Live" | "Raising now" | "Next";
+  status: string;
   summary: string;
   href?: string;
   cta?: string;
@@ -13,22 +13,22 @@ export const VENTURES: Venture[] = [
     id: "digital",
     name: "vexoro Digital",
     status: "Live",
-    summary: "AI solutions, branding and websites for businesses, startups and creators.",
+    summary: "Websites, design and digital solutions for businesses, startups and creators.",
     href: "/ai",
     cta: "See what we build",
   },
   {
     id: "roadlens",
     name: "RoadLens",
-    status: "Raising now",
-    summary: "A road-data network for India, based in Bengaluru and built on ride-hailing dashcams.",
+    status: "Launching in Bengaluru",
+    summary: "India's road-data network, built on ride-hailing dashcams.",
     href: "/ventures/roadlens",
     cta: "Meet RoadLens",
   },
   {
     id: "next",
-    name: "Future ventures",
-    status: "Next",
+    name: "What's next",
+    status: "Coming soon",
     summary: "New problems, same approach: build lean, prove it, then scale.",
     href: "/contact",
     cta: "Bring us a problem",
@@ -46,3 +46,6 @@ export const FOUNDER = {
   name: "Kishore Srimuralikrishnan",
   role: "Founder & CEO",
 };
+
+// Add the co-founder here once their name and title are confirmed.
+export const TEAM = [FOUNDER];

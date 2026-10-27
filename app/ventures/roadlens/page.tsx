@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DriverWaitlist } from "@/components/driver-waitlist";
+import { TeamSection } from "@/components/ventures";
 import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { roadlensStructuredData } from "@/lib/structured-data";
-import { FOUNDER } from "@/lib/ventures";
 
-const TITLE = "RoadLens: India's Road-Data Network from Ride-Hailing Dashcams";
+const TITLE = "RoadLens: Every Ride Maps India. Dashcam Road Data from Bengaluru";
 const DESCRIPTION =
-  "RoadLens, a Bengaluru-based vexoro venture, turns India's cab fleet into a live road-data network. Drivers earn from dashcam footage; carmakers, insurers, mapping and city teams get privacy-safe road data.";
+  "RoadLens turns everyday cab rides into road-safety data. Ride-hailing drivers in Bengaluru earn from dashcam footage; insurers, mapping companies, cities and carmakers get privacy-safe road data.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/ventures/roadlens",
@@ -16,40 +17,35 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.roadlens,
 });
 
-const DECK = "mailto:hello@vexoro.dev?subject=RoadLens%20investor%20deck";
-
-const SOLUTION = [
-  { name: "Drivers earn", detail: "Extra income for routes they already drive, plus tools that protect them." },
-  { name: "Buyers get real data", detail: "Fresh, privacy-safe footage of Indian roads, tagged and ready to use." },
-  { name: "Roads get safer", detail: "Better safety systems, faster pothole fixes and evidence after accidents." },
-];
+const SAMPLE = "mailto:hello@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
 
 const STEPS = [
-  { name: "Driver joins", detail: "Signs up in the app and gets a free dashcam on a small refundable deposit." },
-  { name: "Drives as usual", detail: "The camera records with GPS during normal trips. Nothing changes for them." },
-  { name: "We process", detail: "Footage is uploaded, faces and plates are blurred, and hazards are tagged." },
-  { name: "We sell", detail: "Datasets, event clips and hazard feeds go to safety, insurance and mapping teams." },
+  { name: "Drivers join", detail: "and get a dashcam on a small refundable deposit." },
+  { name: "They drive as usual", detail: "The camera records with GPS during normal trips." },
+  { name: "Footage uploads over Wi-Fi", detail: "with no mobile data used." },
+  { name: "We protect privacy", detail: "Every face and number plate is blurred." },
+  { name: "The data goes to work", detail: "for safer roads and smarter insurance." },
 ];
 
-const BUYERS = [
-  { name: "Carmakers and ADAS", detail: "Indian traffic data to train and test safety systems", time: "Dataset licences" },
-  { name: "Insurers", detail: "Area risk scores, accident evidence and claim checks", time: "Clips + monthly feed" },
-  { name: "Mapping and navigation", detail: "Fresh road changes, closures and conditions", time: "Per-km licence" },
-  { name: "City authorities", detail: "Potholes, waterlogging and hazard hotspots", time: "Monthly hazard feed" },
+const AUDIENCES = [
+  { name: "Insurers", detail: "Road risk insights and accident evidence." },
+  { name: "Mapping companies", detail: "Fresh road changes and hazards." },
+  { name: "Cities", detail: "Pothole and waterlogging maps." },
+  { name: "Carmakers", detail: "Real Indian traffic data for safer vehicles." },
 ];
 
-const PRIVACY = [
-  "Clear consent: drivers opt in to data sharing, in line with India's DPDP Act",
-  "Automatic blurring: faces and number plates are removed before any footage is sold",
-  "No pay-to-earn: earnings depend on footage quality, never on a plan a driver buys",
-  "Lean pipeline: hazard clips upload live; bulk footage moves over Wi-Fi at hubs",
+const DRIVER_PERKS = [
+  "Earn extra just by driving: paid per km, with bonuses for new roads, night or rain driving, and verified hazards",
+  "Up to ₹4,500 extra a month*",
+  "Optional app plans for dispute evidence, SOS and incident backup",
+  "Your earnings never depend on the plan you choose",
 ];
 
 const ROADMAP = [
-  { when: "Months 0–3", name: "Pilot", detail: "50 drivers in Bengaluru. Measure real costs and footage quality." },
-  { when: "Months 3–6", name: "Validate", detail: "Grow to 200 drivers and launch the Plus and Pro driver plans." },
-  { when: "Months 6–18", name: "Scale", detail: "1,000 drivers across Bengaluru, with hazard feeds for insurers." },
-  { when: "Month 18+", name: "Expand", detail: "Chennai and Hyderabad next, on the way to 10,000 drivers." },
+  { when: "First", name: "Pilot", detail: "50 drivers in Bengaluru. Measure real costs and footage quality." },
+  { when: "Next", name: "Validate", detail: "Grow to 200 drivers and launch the optional driver app plans." },
+  { when: "Then", name: "Scale", detail: "1,000 drivers across Bengaluru, with hazard feeds for insurers." },
+  { when: "Later", name: "Expand", detail: "Chennai and Hyderabad next, on the way to 10,000 drivers." },
 ];
 
 export default function Page() {
@@ -66,13 +62,14 @@ export default function Page() {
               <li aria-current="page">RoadLens</li>
             </ol>
           </nav>
-          <span className="venture-status">A vexoro venture · Raising pre-seed</span>
-          <h1 className="page-title">RoadLens<span className="sq" aria-hidden="true" /></h1>
-          <p className="page-lede">India&apos;s road-data network, built on the cars already driving it. Based in Bengaluru, RoadLens turns ride-hailing cars into a live road-data network with low-cost dashcams.</p>
+          <span className="venture-status">A vexoro venture · Launching in Bengaluru</span>
+          <h1 className="page-title">RoadLens: Every ride maps India<span className="sq" aria-hidden="true" /></h1>
+          <p className="page-lede">
+            RoadLens turns everyday cab rides into road-safety data. We put dashcams in ride-hailing cars and pay drivers for the footage they record. That footage becomes privacy-safe data on real Indian roads.
+          </p>
           <div className="hero-links intro-links">
-            <a className="btn" href={DECK}>Request the investor deck</a>
-            <Link className="text-link" href="/ventures/roadlens/data">Buy road data</Link>
-            <a className="text-link" href="mailto:hello@vexoro.dev?subject=Driving%20with%20RoadLens">Drive with RoadLens</a>
+            <a className="btn" href="#drivers">Join the driver waitlist</a>
+            <a className="text-link" href={SAMPLE}>Request a sample data pack</a>
           </div>
         </div>
       </section>
@@ -80,8 +77,8 @@ export default function Page() {
       <section className="section" aria-labelledby="problem-title">
         <div className="wrap roadlens-teaser">
           <div>
-            <h2 id="problem-title">Indian roads are deadly, and machines can&apos;t read them</h2>
-            <p className="teaser-lede">Most driving datasets come from orderly Western roads with clear lanes. India has two-wheelers, autos, cattle, potholes and missing lane markings, and test fleets and survey vans are slow, costly and cover few roads.</p>
+            <h2 id="problem-title">Why it matters</h2>
+            <p className="teaser-lede">Indian roads are among the deadliest in the world, and most driving data comes from orderly Western roads. Ride-hailing cars already drive every kind of Indian road, day and night. RoadLens records what they see.</p>
           </div>
           <div>
             <dl className="stats">
@@ -93,31 +90,14 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="insight-title">
-        <div className="wrap">
-          <div className="section-head">
-            <h2 id="insight-title">The data collectors are already on the road</h2>
-            <p>A typical ride-hailing driver covers around 150 km a day, on every kind of road, day and night. All that mileage goes unrecorded today. A ₹2,500 camera changes that.</p>
-          </div>
-          <ul className="venture-grid">
-            {SOLUTION.map((s, i) => (
-              <li key={s.name} className={i === 1 ? "venture-card featured" : "venture-card"}>
-                <h3>{s.name}</h3>
-                <p>{s.detail}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       <section className="section" aria-labelledby="how-title">
         <div className="wrap">
           <div className="panel">
             <div className="section-head">
-              <h2 id="how-title">From a driver&apos;s dashboard to a buyer&apos;s dataset</h2>
-              <p>Two cameras, Basic (2K) and Pro (4K front and inside), and one app for earnings, uploads, incident clips and SOS.</p>
+              <h2 id="how-title">How it works</h2>
+              <p>Nothing changes for the driver. The camera does the work on trips they already take.</p>
             </div>
-            <ol className="steps">
+            <ol className="steps steps-5">
               {STEPS.map((s, i) => (
                 <li key={s.name}>
                   <span className="step-n">{String(i + 1).padStart(2, "0")}</span>
@@ -130,33 +110,53 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="buyers-title">
+      <section className="section" aria-labelledby="for-title">
         <div className="wrap">
           <div className="section-head">
-            <h2 id="buyers-title">Four buyers for the same footage</h2>
-            <p>The same footage is licensed non-exclusively to several buyers. Drivers are paid for useful footage, not just kilometres, and earnings never depend on a plan they buy.</p>
+            <h2 id="for-title">Who it&apos;s for</h2>
+            <p>
+              The same privacy-safe footage serves four kinds of buyer. <Link className="text-link" href="/ventures/roadlens/data">See the data products</Link>.
+            </p>
           </div>
-          <table className="services">
-            <thead>
-              <tr><th scope="col">Buyer</th><th scope="col">What they need</th><th scope="col">How they buy</th></tr>
-            </thead>
-            <tbody>
-              {BUYERS.map((b) => (
-                <tr key={b.name}><th scope="row">{b.name}</th><td>{b.detail}</td><td>{b.time}</td></tr>
-              ))}
-            </tbody>
-          </table>
+          <ul className="venture-grid venture-grid-2">
+            {AUDIENCES.map((a) => (
+              <li key={a.name} className="venture-card">
+                <h3>{a.name}</h3>
+                <p>{a.detail}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="section" id="drivers" aria-labelledby="drivers-title">
+        <div className="wrap contact">
+          <div className="contact-text">
+            <span className="venture-status">Drivers in Bengaluru</span>
+            <h2 id="drivers-title">For drivers</h2>
+            <ul className="plain-list">
+              {DRIVER_PERKS.map((p) => <li key={p}>{p}</li>)}
+            </ul>
+            <p className="code-note">*Estimated for a Pro camera at about 150 km a day. Final rates are announced at launch.</p>
+          </div>
+          <div>
+            <h3 className="form-title">Join the waitlist for a RoadLens dashcam</h3>
+            <DriverWaitlist />
+          </div>
         </div>
       </section>
 
       <section className="section" aria-labelledby="privacy-title">
         <div className="wrap seo">
           <div className="seo-text">
-            <h2 id="privacy-title">Privacy is built in, not bolted on</h2>
-            <p>Footage is only useful if it is lawful and safe to share. RoadLens is designed around India&apos;s DPDP Act from day one.</p>
+            <h2 id="privacy-title">Privacy first</h2>
+            <p>Drivers opt in, passengers are informed, and every face and number plate is blurred before any data is used.</p>
           </div>
           <ul className="plain-list">
-            {PRIVACY.map((p) => <li key={p}>{p}</li>)}
+            <li>Drivers opt in to data sharing, in line with India&apos;s DPDP Act</li>
+            <li>Passengers are informed that the car has a dashcam</li>
+            <li>Faces and number plates are blurred before any data is used</li>
+            <li>Driver earnings depend on footage quality, never on a paid plan</li>
           </ul>
         </div>
       </section>
@@ -165,8 +165,8 @@ export default function Page() {
         <div className="wrap">
           <div className="panel">
             <div className="section-head">
-              <h2 id="roadmap-title">Prove it in Bengaluru, then scale</h2>
-              <p>Each stage has a gate it must pass before the next one is funded. We reach drivers through taxi hubs, fleet owners, driver unions and referrals.</p>
+              <h2 id="roadmap-title">Starting in Bengaluru, then scaling</h2>
+              <p>Each stage has to prove itself before the next begins.</p>
             </div>
             <ol className="steps">
               {ROADMAP.map((s) => (
@@ -181,20 +181,36 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section" id="invest" aria-labelledby="invest-title">
-        <div className="wrap contact">
-          <div className="contact-text">
-            <h2 id="invest-title">Raising pre-seed</h2>
-            <p>RoadLens is raising a pre-seed round, released in tranches at each stage gate. Investors, fleet owners and data buyers: we&apos;d like to talk.</p>
-            <p className="contact-mail"><a href={DECK}>hello@vexoro.dev</a></p>
+      <TeamSection />
+
+      <section className="section" id="get-involved" aria-labelledby="involved-title">
+        <div className="wrap">
+          <div className="section-head">
+            <h2 id="involved-title">Get involved</h2>
+            <p>
+              Or email <a className="text-link" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>.
+            </p>
           </div>
-          <div className="founder">
-            <span className="venture-status">{FOUNDER.role}</span>
-            <h3>{FOUNDER.name}</h3>
-            <p>Founded and runs vexoro. Built three ventures end to end, and owns strategy, finance and buyer sales at RoadLens.</p>
-            <a className="btn" href={DECK}>Request the investor deck</a>
-            <Link className="text-link" href="/investors">Investor details</Link>
-          </div>
+          <ul className="venture-grid">
+            <li className="venture-card featured">
+              <span className="venture-status">Drivers in Bengaluru</span>
+              <h3>Get a dashcam</h3>
+              <p>Join the waitlist for a RoadLens dashcam and start earning from the trips you already drive.</p>
+              <a className="text-link" href="#drivers">Join the waitlist</a>
+            </li>
+            <li className="venture-card">
+              <span className="venture-status">Insurers and partners</span>
+              <h3>See the data</h3>
+              <p>Request a sample data pack and tell us which roads, conditions or events you need.</p>
+              <a className="text-link" href={SAMPLE}>Request a sample data pack</a>
+            </li>
+            <li className="venture-card">
+              <span className="venture-status">Investors</span>
+              <h3>Back RoadLens</h3>
+              <p>Learn why we&apos;re building RoadLens and request the investor deck.</p>
+              <Link className="text-link" href="/investors">For investors</Link>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

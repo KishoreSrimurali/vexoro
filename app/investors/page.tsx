@@ -8,7 +8,7 @@ import { FOUNDER } from "@/lib/ventures";
 
 const TITLE = "Investors: Invest in RoadLens, a Pre-Seed Road-Data Startup in India";
 const DESCRIPTION =
-  "RoadLens by vexoro is raising pre-seed: a dashcam road-data network on India's ride-hailing cars, with stage-gated tranches. Request the investor deck.";
+  "RoadLens by vexoro is raising pre-seed: a dashcam road-data network on India's ride-hailing cars, launching in Bengaluru. Request the investor deck.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/investors",
@@ -27,10 +27,10 @@ const WHY = [
 ];
 
 const GATES = [
-  { when: "Months 0–3", name: "Pilot", detail: "50 drivers in Bengaluru. Gate: 80%+ camera uptime and one buyer letter of intent." },
-  { when: "Months 3–6", name: "Validate", detail: "200 drivers and paid driver plans. Gate: two paying buyers." },
-  { when: "Months 6–18", name: "Scale", detail: "1,000 drivers across Bengaluru, with hazard feeds for insurers." },
-  { when: "Month 18+", name: "Expand", detail: "Chennai and Hyderabad, funded from revenue or a seed round." },
+  { when: "First", name: "Pilot", detail: "50 drivers in Bengaluru. Prove camera uptime and sign a first data buyer." },
+  { when: "Next", name: "Validate", detail: "200 drivers, optional driver app plans and paying data buyers." },
+  { when: "Then", name: "Scale", detail: "1,000 drivers across Bengaluru, with hazard feeds for insurers." },
+  { when: "Later", name: "Expand", detail: "Chennai and Hyderabad, on the way to 10,000 drivers." },
 ];
 
 const INVESTOR_FAQS = [
@@ -39,12 +39,12 @@ const INVESTOR_FAQS = [
     answer: "vexoro is raising a pre-seed round for RoadLens, a road-data network built on dashcams in India's ride-hailing cars.",
   },
   {
-    question: "How is the investment released?",
-    answer: "In three tranches, one at each stage gate: Pilot, Validate and Scale. Each tranche is released only after the previous gate is passed.",
+    question: "What stage is RoadLens at?",
+    answer: "RoadLens is launching in Bengaluru, starting with a pilot of 50 ride-hailing drivers before growing to 200 and then 1,000.",
   },
   {
-    question: "How is investor risk limited?",
-    answer: "Stage gates cap the capital at risk until buyers pay. The pilot must reach 80%+ camera uptime and sign a buyer letter of intent before the next tranche.",
+    question: "How is privacy handled?",
+    answer: "Drivers opt in, passengers are informed, and every face and number plate is blurred before any data is used, in line with India's DPDP Act.",
   },
   {
     question: "How does RoadLens make money?",
@@ -109,8 +109,8 @@ export default function Page() {
         <div className="wrap">
           <div className="panel">
             <div className="section-head">
-              <h2 id="gates-title">Money released stage by stage</h2>
-              <p>Three tranches, each released only when the stage before it passes its gate.</p>
+              <h2 id="gates-title">Milestones, stage by stage</h2>
+              <p>Each stage has to prove itself before the next one begins.</p>
             </div>
             <ol className="steps">
               {GATES.map((g) => (

@@ -5,7 +5,7 @@ export const FAQS: Faq[] = [
   {
     id: "v1",
     question: "What is vexoro?",
-    answer: "vexoro is a venture group. We find real problems and build focused products to solve them. Each venture runs on its own, backed by the vexoro team: vexoro Digital is live and RoadLens is raising now.",
+    answer: "vexoro is a group that builds focused solutions to real problems. Each venture runs as its own business, backed by the vexoro team: vexoro Digital is live and RoadLens is launching in Bengaluru.",
   },
   {
     id: "v2",
@@ -15,7 +15,7 @@ export const FAQS: Faq[] = [
   {
     id: "v3",
     question: "How can I invest in or partner with a vexoro venture?",
-    answer: "Email hello@vexoro.dev. RoadLens is raising a pre-seed round, and we share the investor deck on request. Fleet owners, data buyers and partners are welcome too.",
+    answer: "Email hello@vexoro.dev. RoadLens is raising a pre-seed round, and we share the investor deck on request. Drivers in Bengaluru can join the RoadLens waitlist, and insurers and partners can request a sample data pack.",
   },
   {
     id: "ai1",

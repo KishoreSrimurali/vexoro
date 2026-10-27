@@ -7,7 +7,7 @@ import { roadlensDataStructuredData } from "@/lib/structured-data";
 
 const TITLE = "Indian Road Data: Dashcam Footage, ADAS Datasets and Hazard Feeds";
 const DESCRIPTION =
-  "Privacy-safe dashcam footage of Indian roads from RoadLens: ADAS training datasets, accident and near-miss clips, insurance risk feeds, map updates and pothole data. Join as a pilot buyer.";
+  "Privacy-safe dashcam footage of Indian roads from RoadLens: ADAS training datasets, accident and near-miss clips, insurance risk feeds, map updates and pothole data. Request a sample data pack.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/ventures/roadlens/data",
@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.roadlensData,
 });
 
-const LOI = "mailto:hello@vexoro.dev?subject=RoadLens%20data%3A%20pilot%20buyer";
+const LOI = "mailto:hello@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
 
 const PRODUCTS = [
   { name: "ADAS and autonomy datasets", detail: "Indian traffic footage with GPS to train and test safety systems: two-wheelers, autos, cattle, potholes and missing lane markings.", time: "Dataset licence" },
@@ -29,9 +29,9 @@ const PRODUCTS = [
 const FAQS = [
   { question: "What data does RoadLens collect?", answer: "Dashcam video with GPS from ride-hailing cars during normal trips, from 2K and 4K cameras, with hazards tagged and faces and number plates blurred." },
   { question: "Which cities does it cover?", answer: "Bengaluru first, then Chennai and Hyderabad as the network grows." },
-  { question: "How is privacy handled?", answer: "Drivers opt in to data sharing in line with India's DPDP Act, and faces and number plates are removed before any footage is sold." },
+  { question: "How is privacy handled?", answer: "Drivers opt in, passengers are informed, and every face and number plate is blurred before any data is used, in line with India's DPDP Act." },
   { question: "Are licences exclusive?", answer: "Licences are non-exclusive by default. Talk to us if you need a specific route, area or exclusive window." },
-  { question: "Can we join as a pilot buyer?", answer: "Yes. Pilot buyers help set what is collected and get early pricing. Email hello@vexoro.dev to discuss a letter of intent." },
+  { question: "Can we join as a pilot buyer?", answer: "Yes. Pilot buyers help set what is collected and get early pricing. Email hello@vexoro.dev to request a sample data pack." },
 ];
 
 export default function Page() {
@@ -58,7 +58,7 @@ export default function Page() {
             Fresh, privacy-safe dashcam footage of real Indian roads, from ride-hailing cars that drive them every day. For carmakers and ADAS teams, insurers, mapping companies and cities.
           </p>
           <div className="hero-links intro-links">
-            <a className="btn" href={LOI}>Become a pilot buyer</a>
+            <a className="btn" href={LOI}>Request a sample data pack</a>
             <Link className="text-link" href="/ventures/roadlens">How RoadLens works</Link>
           </div>
         </div>

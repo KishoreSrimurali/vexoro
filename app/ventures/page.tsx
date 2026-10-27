@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { ContactSection } from "@/components/sections";
-import { ApproachSection, RoadLensTeaser, VenturesSection } from "@/components/ventures";
+import { ApproachSection, RoadLensTeaser, TeamSection, VenturesSection } from "@/components/ventures";
 import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
 const TITLE = "Ventures: Products We Build to Solve Real Problems";
-const DESCRIPTION = "vexoro is a venture group. We find real problems and build focused products to solve them: vexoro Digital (live), RoadLens (raising now) and future ventures.";
+const DESCRIPTION = "vexoro is a venture group. We find real problems and build focused products to solve them: vexoro Digital (live), RoadLens (launching in Bengaluru) and what's next.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/ventures",
@@ -25,6 +25,7 @@ export default function Page() {
       <VenturesSection h1 />
       <RoadLensTeaser />
       <ApproachSection />
+      <TeamSection />
       <ContactSection />
     </main>
   );

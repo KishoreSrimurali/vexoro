@@ -6,17 +6,17 @@ Contact: hello@vexoro.dev
 
 ## Ventures
 
-- vexoro Digital (live): AI solutions, branding and websites for businesses, startups and creators, in Oman and worldwide
-- RoadLens (raising pre-seed): India's road-data network, built on ride-hailing dashcams. Drivers earn from useful footage; carmakers and ADAS teams, insurers, mapping companies and city authorities buy privacy-safe road data (faces and plates blurred, DPDP Act consent). Based in Bengaluru, India. Pilot: 50 drivers in Bengaluru, then Chennai and Hyderabad.
-- Future ventures: new problems, same approach (build lean, prove it, then scale)
+- vexoro Digital (live): websites, design and digital solutions (including AI) for businesses, startups and creators, in Oman and worldwide
+- RoadLens (launching in Bengaluru): India's road-data network, built on ride-hailing dashcams. "Every ride maps India." Drivers get a dashcam on a small refundable deposit, footage uploads over Wi-Fi, and drivers earn per km (up to about ₹4,500 extra a month, estimated; final rates at launch). Drivers in Bengaluru can join the waitlist; insurers and partners can request a sample data pack. Drivers earn from useful footage; carmakers and ADAS teams, insurers, mapping companies and city authorities buy privacy-safe road data (faces and plates blurred, DPDP Act consent). Based in Bengaluru, India. Pilot: 50 drivers in Bengaluru, then Chennai and Hyderabad.
+- What's next (coming soon): new problems, same approach (build lean, prove it, then scale)
 
 ## Pages
 
 - [Home](https://vexoro.dev/): ventures, RoadLens, how we build, vexoro Digital, FAQ and contact form
 - [Ventures](https://vexoro.dev/ventures): our ventures and how we build them
 - [RoadLens](https://vexoro.dev/ventures/roadlens): the problem, how it works, buyers, privacy, roadmap and investor contact
-- [Investors](https://vexoro.dev/investors): RoadLens pre-seed round, stage-gated tranches, investor FAQ and how to request the deck
-- [Road data for buyers](https://vexoro.dev/ventures/roadlens/data): ADAS datasets, event clips, insurance risk feeds, map updates and city hazard feeds from Indian roads; pilot buyers welcome
+- [Investors](https://vexoro.dev/investors): RoadLens pre-seed round, milestones, investor FAQ and how to request the deck
+- [Road data for buyers](https://vexoro.dev/ventures/roadlens/data): ADAS datasets, event clips, insurance risk feeds, map updates and city hazard feeds from Indian roads; request a sample data pack
 - [AI Solutions](https://vexoro.dev/ai): AI assistants, automation, document processing, knowledge assistants, custom AI and strategy
 - [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
 - [Brand & Web](https://vexoro.dev/services): branding and website services with typical timelines

@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
           <div className="hero-foot">
             <p className="hero-text">
-              vexoro is a group that creates solutions. We find real problems, build focused products to solve them, and give each venture its own team, backed by ours.
+              vexoro is a group that builds focused solutions to real problems. Each venture runs as its own business, backed by the vexoro team.
             </p>
             <div className="hero-links">
               <Link className="btn" href="/ventures">See our ventures</Link>

@@ -56,7 +56,7 @@ export const KEYWORDS = {
       "data licensing", "dataset licence", "data marketplace India",
       "Hivemapper alternative", "Nexar alternative", "Hivemapper India", "Nexar India",
       "pre-seed startup India", "mobility startup India", "data startup India", "deep tech startup India",
-      "Bengaluru startup", "Bangalore startup", "Bangalore mobility startup", "Bengaluru road data", "Bangalore potholes", "Bangalore traffic data", "Namma Bengaluru roads",
+      "Every ride maps India", "RoadLens driver waitlist", "dashcam driver job Bangalore", "earn money driving Bangalore", "extra income cab drivers Bengaluru", "Ola driver extra income Bangalore", "Uber driver extra income Bangalore", "Rapido driver extra income Bangalore", "refundable deposit dashcam", "sample road data pack", "Bengaluru startup", "Bangalore startup", "Bangalore mobility startup", "Bengaluru road data", "Bangalore potholes", "Bangalore traffic data", "Namma Bengaluru roads",
       "invest in RoadLens", "RoadLens investor deck",
     ],
     near(["road data", "dashcam", "pothole detection", "road safety", "mobility startup"], INDIA),
