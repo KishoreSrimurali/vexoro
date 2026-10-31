@@ -2,7 +2,7 @@
 export const SITE = {
   name: "vexoro",
   url: "https://vexoro.dev",
-  email: "hello@vexoro.dev",
+  email: "ceo@vexoro.dev",
   description:
     "vexoro is a venture group that finds real problems and builds focused products to solve them: RoadLens, a road-data network for India, and vexoro Digital for AI, branding and websites.",
   ogImage: "/assets/img/og-image.png",

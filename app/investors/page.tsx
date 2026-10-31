@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.investors,
 });
 
-const DECK = "mailto:hello@vexoro.dev?subject=Investor%20enquiry%3A%20RoadLens%20deck";
+const DECK = "mailto:ceo@vexoro.dev?subject=Investor%20enquiry%3A%20RoadLens%20deck";
 
 const WHY = [
   { name: "A large, unsolved problem", detail: "India recorded 4.80 lakh road accidents and 1.72 lakh deaths in 2023, and most driving data comes from orderly Western roads." },
@@ -56,7 +56,7 @@ const INVESTOR_FAQS = [
   },
   {
     question: "How do I get the investor deck?",
-    answer: "Email hello@vexoro.dev with a line about yourself or your fund, and we'll send the deck and set up a call.",
+    answer: "Email ceo@vexoro.dev with a line about yourself or your fund, and we'll send the deck and set up a call.",
   },
 ];
 
@@ -132,7 +132,7 @@ export default function Page() {
           <div className="contact-text">
             <h2 id="invest-title">Talk to the founder</h2>
             <p>Angel investors, venture funds, family offices and strategic partners: send a line about yourself and we&apos;ll share the deck.</p>
-            <p className="contact-mail"><a href={DECK}>hello@vexoro.dev</a></p>
+            <p className="contact-mail"><a href={DECK}>ceo@vexoro.dev</a></p>
           </div>
           <div className="founder">
             <span className="venture-status">{FOUNDER.role}</span>

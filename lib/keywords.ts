@@ -125,7 +125,7 @@ export const KEYWORDS = {
   ],
 
   contact: [
-    "contact vexoro", "vexoro email", "hello@vexoro.dev", "invest in RoadLens", "RoadLens investor deck",
+    "contact vexoro", "vexoro email", "ceo@vexoro.dev", "invest in RoadLens", "RoadLens investor deck",
     "partner with vexoro", "drive with RoadLens", "free AI consultation", "free website consultation",
     "website quote", "website quote Oman", "hire web designer Oman", "hire AI developer", "AI consultation Oman",
     "start a project", "data buyer partnership",

@@ -124,7 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="author" href="/humans.txt" type="text/plain" />
         <link rel="help" href="/llms.txt" type="text/plain" title="Site summary for AI assistants" />
         <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Sitemap" />
-        <link rel="me" href="mailto:hello@vexoro.dev" />
+        <link rel="me" href="mailto:ceo@vexoro.dev" />
       </head>
       <body>
         <SmoothScroll>

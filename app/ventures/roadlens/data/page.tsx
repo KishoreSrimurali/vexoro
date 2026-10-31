@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.roadlensData,
 });
 
-const LOI = "mailto:hello@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
+const LOI = "mailto:ceo@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
 
 const PRODUCTS = [
   { name: "ADAS and autonomy datasets", detail: "Indian traffic footage with GPS to train and test safety systems: two-wheelers, autos, cattle, potholes and missing lane markings.", time: "Dataset licence" },
@@ -31,7 +31,7 @@ const FAQS = [
   { question: "Which cities does it cover?", answer: "Bengaluru first, then Chennai and Hyderabad as the network grows." },
   { question: "How is privacy handled?", answer: "Drivers opt in, passengers are informed, and every face and number plate is blurred before any data is used, in line with India's DPDP Act." },
   { question: "Are licences exclusive?", answer: "Licences are non-exclusive by default. Talk to us if you need a specific route, area or exclusive window." },
-  { question: "Can we join as a pilot buyer?", answer: "Yes. Pilot buyers help set what is collected and get early pricing. Email hello@vexoro.dev to request a sample data pack." },
+  { question: "Can we join as a pilot buyer?", answer: "Yes. Pilot buyers help set what is collected and get early pricing. Email ceo@vexoro.dev to request a sample data pack." },
 ];
 
 export default function Page() {
@@ -90,7 +90,7 @@ export default function Page() {
           <div className="contact-text">
             <h2 id="buy-title">Shape the pilot</h2>
             <p>Tell us which roads, conditions or events you need. Pilot buyers get early pricing and a say in what we collect first.</p>
-            <p className="contact-mail"><a href={LOI}>hello@vexoro.dev</a></p>
+            <p className="contact-mail"><a href={LOI}>ceo@vexoro.dev</a></p>
           </div>
         </div>
       </section>
