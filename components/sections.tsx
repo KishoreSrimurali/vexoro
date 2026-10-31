@@ -80,7 +80,7 @@ const faqData: FaqSectionData = {
   mainSubtitle: (
     <>
       Can&apos;t find your answer? Email{" "}
-      <a className="faq-mail" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>.
+      <a className="faq-mail" href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>.
     </>
   ),
   rows: [
@@ -244,7 +244,7 @@ export function ContactSection({ h1 = false }: { h1?: boolean }) {
         <H id="contact-title">Start a conversation</H>
         <p>Investing, partnering, driving with RoadLens or starting a project with vexoro Digital: tell us what you have in mind. We reply within one business day.</p>
         <p className="contact-mail">
-          <a href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>
+          <a href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>
         </p>
       </div>
       <ContactForm />

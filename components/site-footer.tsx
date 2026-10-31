@@ -17,7 +17,7 @@ export function SiteFooter() {
           <a href="/seo">SEO</a>
           <a href="/faq">FAQ</a>
           <a href="/pricing">Pricing</a>
-          <a href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>
+          <a href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>
         </nav>
         <p className="footer-legal">
           © {new Date().getFullYear()} vexoro ·{" "}

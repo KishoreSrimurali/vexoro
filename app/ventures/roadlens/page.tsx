@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.roadlens,
 });
 
-const SAMPLE = "mailto:hello@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
+const SAMPLE = "mailto:ceo@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
 
 const STEPS = [
   { name: "Drivers join", detail: "and get a dashcam on a small refundable deposit." },
@@ -188,7 +188,7 @@ export default function Page() {
           <div className="section-head">
             <h2 id="involved-title">Get involved</h2>
             <p>
-              Or email <a className="text-link" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>.
+              Or email <a className="text-link" href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>.
             </p>
           </div>
           <ul className="venture-grid">

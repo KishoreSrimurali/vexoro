@@ -16,7 +16,7 @@ export function DriverWaitlist() {
       `Drives for: ${d.get("app")}`,
       `Average km a day: ${d.get("km") || "-"}`,
     ].join("\n");
-    window.location.href = `mailto:hello@vexoro.dev?subject=${encodeURIComponent("RoadLens driver waitlist")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ceo@vexoro.dev?subject=${encodeURIComponent("RoadLens driver waitlist")}&body=${encodeURIComponent(body)}`;
   }
 
   return (

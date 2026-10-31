@@ -15,7 +15,7 @@ export const FAQS: Faq[] = [
   {
     id: "v3",
     question: "How can I invest in or partner with a vexoro venture?",
-    answer: "Email hello@vexoro.dev. RoadLens is raising a pre-seed round, and we share the investor deck on request. Drivers in Bengaluru can join the RoadLens waitlist, and insurers and partners can request a sample data pack.",
+    answer: "Email ceo@vexoro.dev. RoadLens is raising a pre-seed round, and we share the investor deck on request. Drivers in Bengaluru can join the RoadLens waitlist, and insurers and partners can request a sample data pack.",
   },
   {
     id: "ai1",
