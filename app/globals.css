@@ -631,6 +631,7 @@ h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.3; }
 }
 @media (max-width: 760px) {
   .layer-grid, .vd-facts { grid-template-columns: 1fr; }
+  .layer-grid > div + div > .layer-label:first-child { margin-top: 32px; }
   .unit-grid-2, .unit-grid-3, .unit-grid-4, .flow { grid-template-columns: 1fr; }
   .flow { gap: 28px; }
   .flow li:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -24px; transform: translateX(-50%); }
