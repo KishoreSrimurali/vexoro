@@ -4,7 +4,7 @@ import type { FormEvent } from "react";
 
 const APPS = ["Ola", "Uber", "Rapido", "More than one", "Other"];
 
-/** RoadLens driver waitlist. Opens the visitor's email app with the details filled in. */
+/** Project Z driver waitlist. Opens the visitor's email app with the details filled in. */
 export function DriverWaitlist() {
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -16,11 +16,11 @@ export function DriverWaitlist() {
       `Drives for: ${d.get("app")}`,
       `Average km a day: ${d.get("km") || "-"}`,
     ].join("\n");
-    window.location.href = `mailto:hello@vexoro.dev?subject=${encodeURIComponent("RoadLens driver waitlist")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:hello@vexoro.dev?subject=${encodeURIComponent("Project Z driver waitlist")}&body=${encodeURIComponent(body)}`;
   }
 
   return (
-    <form className="contact-form" id="driver-waitlist" onSubmit={onSubmit} aria-label="RoadLens driver waitlist">
+    <form className="contact-form" id="driver-waitlist" onSubmit={onSubmit} aria-label="Project Z driver waitlist">
       <div className="field">
         <label htmlFor="dw-name">Name</label>
         <input id="dw-name" name="name" type="text" autoComplete="name" required />

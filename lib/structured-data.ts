@@ -8,7 +8,7 @@ const ORG_ID = abs("/#organization");
 const SITE_ID = abs("/#website");
 const SERVICE_ID = abs("/#service");
 const FOUNDER_ID = abs("/#founder");
-const ROADLENS_ID = abs("/ventures/roadlens#organization");
+const PROJECT_Z_ID = abs("/ventures/project-z#organization");
 
 const founder = {
   "@type": "Person",
@@ -18,12 +18,12 @@ const founder = {
   worksFor: { "@id": ORG_ID },
 };
 
-const roadlens = {
+const projectZ = {
   "@type": "Organization",
-  "@id": ROADLENS_ID,
-  name: "RoadLens",
-  alternateName: "RoadLens by vexoro",
-  url: abs("/ventures/roadlens"),
+  "@id": PROJECT_Z_ID,
+  name: "Project Z",
+  alternateName: "Project Z by vexoro",
+  url: abs("/ventures/project-z"),
   description: "A road-data network for India, built on ride-hailing dashcams. Drivers earn from footage; carmakers, insurers, mapping companies and cities get privacy-safe road data.",
   parentOrganization: { "@id": ORG_ID },
   founder: { "@id": FOUNDER_ID },
@@ -58,7 +58,7 @@ const organization = {
   email: SITE.email,
   description: SITE.description,
   founder: { "@id": FOUNDER_ID },
-  subOrganization: [{ "@id": SERVICE_ID }, { "@id": ROADLENS_ID }],
+  subOrganization: [{ "@id": SERVICE_ID }, { "@id": PROJECT_Z_ID }],
   location: [
     { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
     { "@type": "Place", name: "Oman", address: { "@type": "PostalAddress", addressCountry: "OM" } },
@@ -157,7 +157,7 @@ export const homeStructuredData = (title: string, description: string) => ({
   "@graph": [
     organization,
     founder,
-    roadlens,
+    projectZ,
     website,
     professionalService,
     webPage("/", title, description),
@@ -187,14 +187,14 @@ export const pricingStructuredData = (title: string, description: string) => ({
   ],
 });
 
-export const roadlensStructuredData = (title: string, description: string) => ({
+export const projectZStructuredData = (title: string, description: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     organization,
     founder,
-    roadlens,
-    webPage("/ventures/roadlens", title, description, { about: { "@id": ROADLENS_ID }, breadcrumb: { "@id": abs("/ventures/roadlens#breadcrumb") } }),
-    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["RoadLens", "/ventures/roadlens"]]), "@id": abs("/ventures/roadlens#breadcrumb") },
+    projectZ,
+    webPage("/ventures/project-z", title, description, { about: { "@id": PROJECT_Z_ID }, breadcrumb: { "@id": abs("/ventures/project-z#breadcrumb") } }),
+    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Project Z", "/ventures/project-z"]]), "@id": abs("/ventures/project-z#breadcrumb") },
   ],
 });
 
@@ -211,9 +211,9 @@ export const investorsStructuredData = (title: string, description: string, faqs
   "@graph": [
     organization,
     founder,
-    roadlens,
+    projectZ,
     webPage("/investors", title, description, {
-      about: [{ "@id": ORG_ID }, { "@id": ROADLENS_ID }],
+      about: [{ "@id": ORG_ID }, { "@id": PROJECT_Z_ID }],
       audience: { "@type": "Audience", audienceType: "Investors, angel investors, venture capital funds" },
       breadcrumb: { "@id": abs("/investors#breadcrumb") },
     }),
@@ -222,8 +222,8 @@ export const investorsStructuredData = (title: string, description: string, faqs
   ],
 });
 
-/** /ventures/roadlens/data: the data products RoadLens sells. */
-export const roadlensDataStructuredData = (
+/** /ventures/project-z/data: the data products Project Z sells. */
+export const projectZDataStructuredData = (
   title: string,
   description: string,
   products: { name: string; detail: string; time: string }[],
@@ -232,28 +232,28 @@ export const roadlensDataStructuredData = (
   "@context": "https://schema.org",
   "@graph": [
     organization,
-    roadlens,
-    webPage("/ventures/roadlens/data", title, description, {
-      about: { "@id": ROADLENS_ID },
+    projectZ,
+    webPage("/ventures/project-z/data", title, description, {
+      about: { "@id": PROJECT_Z_ID },
       audience: { "@type": "BusinessAudience", audienceType: "Carmakers, ADAS teams, insurers, mapping companies and city authorities" },
-      breadcrumb: { "@id": abs("/ventures/roadlens/data#breadcrumb") },
+      breadcrumb: { "@id": abs("/ventures/project-z/data#breadcrumb") },
     }),
     {
-      ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["RoadLens", "/ventures/roadlens"], ["Road data", "/ventures/roadlens/data"]]),
-      "@id": abs("/ventures/roadlens/data#breadcrumb"),
+      ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Project Z", "/ventures/project-z"], ["Road data", "/ventures/project-z/data"]]),
+      "@id": abs("/ventures/project-z/data#breadcrumb"),
     },
     {
       "@type": "Service",
-      "@id": abs("/ventures/roadlens/data#service"),
-      name: "RoadLens road data for India",
+      "@id": abs("/ventures/project-z/data#service"),
+      name: "Project Z road data for India",
       serviceType: "Road data, dashcam footage and hazard feeds",
       description,
-      provider: { "@id": ROADLENS_ID },
+      provider: { "@id": PROJECT_Z_ID },
       areaServed: { "@type": "Country", name: "India" },
       audience: { "@type": "BusinessAudience", audienceType: "Carmakers, ADAS teams, insurers, mapping companies and city authorities" },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "RoadLens data products",
+        name: "Project Z data products",
         itemListElement: products.map((p) => ({
           "@type": "Offer",
           itemOffered: { "@type": "Service", name: p.name, description: p.detail },
@@ -261,7 +261,7 @@ export const roadlensDataStructuredData = (
         })),
       },
     },
-    faqPage("/ventures/roadlens/data", faqs),
+    faqPage("/ventures/project-z/data", faqs),
   ],
 });
 

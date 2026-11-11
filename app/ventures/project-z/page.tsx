@@ -4,20 +4,20 @@ import { DriverWaitlist } from "@/components/driver-waitlist";
 import { TeamSection } from "@/components/ventures";
 import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
-import { roadlensStructuredData } from "@/lib/structured-data";
+import { projectZStructuredData } from "@/lib/structured-data";
 
-const TITLE = "RoadLens: Every Ride Maps India. Dashcam Road Data from Bengaluru";
+const TITLE = "Project Z: Every Ride Maps India. Dashcam Road Data from Bengaluru";
 const DESCRIPTION =
-  "RoadLens turns everyday cab rides into road-safety data. Ride-hailing drivers in Bengaluru earn from dashcam footage; insurers, mapping companies, cities and carmakers get privacy-safe road data.";
+  "Project Z turns everyday cab rides into road-safety data. Ride-hailing drivers in Bengaluru earn from dashcam footage; insurers, mapping companies, cities and carmakers get privacy-safe road data.";
 
 export const metadata: Metadata = pageMetadata({
-  path: "/ventures/roadlens",
+  path: "/ventures/project-z",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: KEYWORDS.roadlens,
+  keywords: KEYWORDS.projectZ,
 });
 
-const SAMPLE = "mailto:hello@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
+const SAMPLE = "mailto:hello@vexoro.dev?subject=Project%20Z%3A%20sample%20data%20pack";
 
 const STEPS = [
   { name: "Drivers join", detail: "and get a dashcam on a small refundable deposit." },
@@ -51,7 +51,7 @@ const ROADMAP = [
 export default function Page() {
   return (
     <main id="main" className="subpage">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(roadlensStructuredData(`${TITLE} | vexoro`, DESCRIPTION)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectZStructuredData(`${TITLE} | vexoro`, DESCRIPTION)) }} />
 
       <section className="page-intro">
         <div className="wrap">
@@ -59,13 +59,13 @@ export default function Page() {
             <ol>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/ventures">Ventures</Link></li>
-              <li aria-current="page">RoadLens</li>
+              <li aria-current="page">Project Z</li>
             </ol>
           </nav>
           <span className="venture-status">A vexoro venture · Launching in Bengaluru</span>
-          <h1 className="page-title">RoadLens: Every ride maps India<span className="sq" aria-hidden="true" /></h1>
+          <h1 className="page-title">Project Z: Every ride maps India<span className="sq" aria-hidden="true" /></h1>
           <p className="page-lede">
-            RoadLens turns everyday cab rides into road-safety data. We put dashcams in ride-hailing cars and pay drivers for the footage they record. That footage becomes privacy-safe data on real Indian roads.
+            Project Z turns everyday cab rides into road-safety data. We put dashcams in ride-hailing cars and pay drivers for the footage they record. That footage becomes privacy-safe data on real Indian roads.
           </p>
           <div className="hero-links intro-links">
             <a className="btn" href="#drivers">Join the driver waitlist</a>
@@ -75,10 +75,10 @@ export default function Page() {
       </section>
 
       <section className="section" aria-labelledby="problem-title">
-        <div className="wrap roadlens-teaser">
+        <div className="wrap project-z-teaser">
           <div>
             <h2 id="problem-title">Why it matters</h2>
-            <p className="teaser-lede">Indian roads are among the deadliest in the world, and most driving data comes from orderly Western roads. Ride-hailing cars already drive every kind of Indian road, day and night. RoadLens records what they see.</p>
+            <p className="teaser-lede">Indian roads are among the deadliest in the world, and most driving data comes from orderly Western roads. Ride-hailing cars already drive every kind of Indian road, day and night. Project Z records what they see.</p>
           </div>
           <div>
             <dl className="stats">
@@ -115,7 +115,7 @@ export default function Page() {
           <div className="section-head">
             <h2 id="for-title">Who it&apos;s for</h2>
             <p>
-              The same privacy-safe footage serves four kinds of buyer. <Link className="text-link" href="/ventures/roadlens/data">See the data products</Link>.
+              The same privacy-safe footage serves four kinds of buyer. <Link className="text-link" href="/ventures/project-z/data">See the data products</Link>.
             </p>
           </div>
           <ul className="venture-grid venture-grid-2">
@@ -140,7 +140,7 @@ export default function Page() {
             <p className="code-note">*Estimated for a Pro camera at about 150 km a day. Final rates are announced at launch.</p>
           </div>
           <div>
-            <h3 className="form-title">Join the waitlist for a RoadLens dashcam</h3>
+            <h3 className="form-title">Join the waitlist for a Project Z dashcam</h3>
             <DriverWaitlist />
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function Page() {
             <li className="venture-card featured">
               <span className="venture-status">Drivers in Bengaluru</span>
               <h3>Get a dashcam</h3>
-              <p>Join the waitlist for a RoadLens dashcam and start earning from the trips you already drive.</p>
+              <p>Join the waitlist for a Project Z dashcam and start earning from the trips you already drive.</p>
               <a className="text-link" href="#drivers">Join the waitlist</a>
             </li>
             <li className="venture-card">
@@ -206,8 +206,8 @@ export default function Page() {
             </li>
             <li className="venture-card">
               <span className="venture-status">Investors</span>
-              <h3>Back RoadLens</h3>
-              <p>Learn why we&apos;re building RoadLens and request the investor deck.</p>
+              <h3>Back Project Z</h3>
+              <p>Learn why we&apos;re building Project Z and request the investor deck.</p>
               <Link className="text-link" href="/investors">For investors</Link>
             </li>
           </ul>

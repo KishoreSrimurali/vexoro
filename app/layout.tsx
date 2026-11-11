@@ -10,7 +10,7 @@ import { FOUNDER } from "@/lib/ventures";
 
 const title = "vexoro | A Venture Group Building Products for Real Problems";
 const shareTitle = "vexoro | We build ventures that solve real problems";
-const shareDescription = "RoadLens, India's road-data network, and vexoro Digital for AI, branding and websites.";
+const shareDescription = "Project Z, India's road-data network, and vexoro Digital for AI, branding and websites.";
 const ogImage = {
   url: "/assets/img/og-image.png",
   secureUrl: `${SITE.url}/assets/img/og-image.png`,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     "contact": SITE.email,
     url: SITE.url,
     "identifier-URL": SITE.url,
-    subject: "Ventures that solve real problems: RoadLens and vexoro Digital",
+    subject: "Ventures that solve real problems: Project Z and vexoro Digital",
     topic: "Venture building, road data, AI solutions, branding and web development",
     summary: SITE.description,
     abstract: SITE.description,

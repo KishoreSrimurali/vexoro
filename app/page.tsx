@@ -1,7 +1,7 @@
 import { Mark } from "@/components/brand";
 import { ContactSection, FaqPageSection } from "@/components/sections";
 import { StructureSection } from "@/components/structure";
-import { ApproachSection, DigitalSection, RoadLensTeaser } from "@/components/ventures";
+import { ApproachSection, DigitalSection, ProjectZTeaser } from "@/components/ventures";
 import { Skiper31 } from "@/components/ui/text-scroll-animation";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/site";
 
 const TITLE = "vexoro | A Venture Group Building Products for Real Problems";
 const DESCRIPTION =
-  "vexoro finds real problems and builds focused ventures to solve them: RoadLens, India's road-data network, and vexoro Digital for AI, branding and websites.";
+  "vexoro finds real problems and builds focused ventures to solve them: Project Z, India's road-data network, and vexoro Digital for AI, branding and websites.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/",
@@ -37,7 +37,7 @@ export default function Home() {
             </p>
             <div className="hero-links">
               <Link className="btn" href="/ventures">See our ventures</Link>
-              <Link className="text-link" href="/ventures/roadlens">Meet RoadLens</Link>
+              <Link className="text-link" href="/ventures/project-z">Meet Project Z</Link>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
       <Skiper31 />
 
       <StructureSection />
-      <RoadLensTeaser />
+      <ProjectZTeaser />
       <ApproachSection />
       <DigitalSection />
       <FaqPageSection />

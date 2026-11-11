@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://vexoro.dev",
   email: "hello@vexoro.dev",
   description:
-    "vexoro is a venture group that finds real problems and builds focused products to solve them: RoadLens, a road-data network for India, and vexoro Digital for AI, branding and websites.",
+    "vexoro is a venture group that finds real problems and builds focused products to solve them: Project Z, a road-data network for India, and vexoro Digital for AI, branding and websites.",
   ogImage: "/assets/img/og-image.png",
   logo: "/assets/brand/vexoro-mark.png",
   areaServed: ["Oman", "India", "Bengaluru", "Worldwide"],
@@ -29,7 +29,7 @@ export const BASE_KEYWORDS = [
   "vexoro ventures",
   "venture group",
   "venture studio",
-  "RoadLens",
+  "Project Z",
   "vexoro Digital",
   "Kishore Srimuralikrishnan",
 ];
