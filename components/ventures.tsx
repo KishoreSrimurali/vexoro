@@ -13,7 +13,7 @@ export function VenturesSection({ h1 = false }: { h1?: boolean }) {
         </div>
         <ul className="venture-grid">
           {VENTURES.map((v) => (
-            <li key={v.id} className={v.id === "roadlens" ? "venture-card featured" : "venture-card"}>
+            <li key={v.id} className={v.id === "project-z" ? "venture-card featured" : "venture-card"}>
               <span className="venture-status">{v.status}</span>
               <h3>{v.name}</h3>
               <p>{v.summary}</p>
@@ -55,18 +55,18 @@ export function ApproachSection() {
   );
 }
 
-export function RoadLensTeaser() {
+export function ProjectZTeaser() {
   return (
-    <section className="section" id="roadlens" aria-labelledby="roadlens-title">
-      <div className="wrap roadlens-teaser">
+    <section className="section" id="project-z" aria-labelledby="project-z-title">
+      <div className="wrap project-z-teaser">
         <div>
           <span className="venture-status">A vexoro venture · Launching in Bengaluru</span>
-          <h2 id="roadlens-title">RoadLens<span className="sq" aria-hidden="true" /></h2>
-          <p className="teaser-lede">Every ride maps India. RoadLens turns everyday cab rides into road-safety data: we put dashcams in ride-hailing cars and pay drivers for the footage they record. That footage becomes privacy-safe data on real Indian roads.</p>
+          <h2 id="project-z-title">Project Z<span className="sq" aria-hidden="true" /></h2>
+          <p className="teaser-lede">Every ride maps India. Project Z turns everyday cab rides into road-safety data: we put dashcams in ride-hailing cars and pay drivers for the footage they record. That footage becomes privacy-safe data on real Indian roads.</p>
           <div className="hero-links">
-            <Link className="btn" href="/ventures/roadlens">Meet RoadLens</Link>
+            <Link className="btn" href="/ventures/project-z">Meet Project Z</Link>
             <Link className="text-link" href="/investors">For investors</Link>
-            <Link className="text-link" href="/ventures/roadlens/data">For data buyers</Link>
+            <Link className="text-link" href="/ventures/project-z/data">For data buyers</Link>
           </div>
         </div>
         <dl className="stats">

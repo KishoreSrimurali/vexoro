@@ -1,7 +1,7 @@
 {
   "name": "vexoro | Ventures that solve real problems",
   "short_name": "vexoro",
-  "description": "vexoro is a venture group: RoadLens, India's road-data network, and vexoro Digital for AI, branding and websites.",
+  "description": "vexoro is a venture group: Project Z, India's road-data network, and vexoro Digital for AI, branding and websites.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A0A0B",
@@ -40,8 +40,8 @@
       "url": "/ventures"
     },
     {
-      "name": "RoadLens",
-      "url": "/ventures/roadlens"
+      "name": "Project Z",
+      "url": "/ventures/project-z"
     },
     {
       "name": "AI Solutions",

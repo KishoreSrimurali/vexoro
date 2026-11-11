@@ -16,7 +16,7 @@ export const KEYWORDS = {
       "venture group", "venture studio", "venture builder", "startup studio", "startup builder", "company builder",
       "product studio", "build ventures", "products that solve real problems", "problem-first startups",
       "lean startup", "bootstrapped startups", "new ventures", "tech ventures", "tech startup",
-      "RoadLens", "vexoro Digital", "road data India", "dashcam network", "AI solutions", "AI company",
+      "Project Z", "vexoro Digital", "road data India", "dashcam network", "AI solutions", "AI company",
       "branding and web development", "web design studio", "digital studio", "founder-led company",
     ],
     near(["venture studio", "startup studio", "AI company", "tech company", "digital agency"], ["Oman", "Muscat", "Bengaluru", "Bangalore", "India"]),
@@ -29,14 +29,14 @@ export const KEYWORDS = {
       "startup portfolio", "new ventures", "pre-seed startups", "invest in startups", "angel investment",
       "startup investment opportunity", "early-stage startups", "lean startups", "stage-gated startup",
       "build lean prove scale", "problem-first products", "startup ideas", "co-found a startup",
-      "partner with a startup studio", "RoadLens", "vexoro Digital",
+      "partner with a startup studio", "Project Z", "vexoro Digital",
     ],
     near(["startup studio", "venture studio", "venture builder", "startups", "startup investment"], ["Bengaluru", "Bangalore", "India", "Oman", "Muscat", "GCC"]),
   ),
 
-  roadlens: unique(
+  projectZ: unique(
     [
-      "RoadLens", "RoadLens India", "RoadLens by vexoro", "RoadLens dashcam", "RoadLens app",
+      "Project Z", "Project Z India", "Project Z by vexoro", "Project Z dashcam", "Project Z app",
       "dashcam network", "dashcam data", "dashcam data network", "crowdsourced road data", "road data",
       "road data platform", "road imagery", "street-level imagery", "street view data", "road condition data",
       "ride-hailing dashcam", "cab dashcam", "taxi dashcam", "dashcam for cab drivers", "dashcam for taxi drivers",
@@ -56,8 +56,8 @@ export const KEYWORDS = {
       "data licensing", "dataset licence", "data marketplace India",
       "Hivemapper alternative", "Nexar alternative", "Hivemapper India", "Nexar India",
       "pre-seed startup India", "mobility startup India", "data startup India", "deep tech startup India",
-      "Every ride maps India", "RoadLens driver waitlist", "dashcam driver job Bangalore", "earn money driving Bangalore", "extra income cab drivers Bengaluru", "Ola driver extra income Bangalore", "Uber driver extra income Bangalore", "Rapido driver extra income Bangalore", "refundable deposit dashcam", "sample road data pack", "Bengaluru startup", "Bangalore startup", "Bangalore mobility startup", "Bengaluru road data", "Bangalore potholes", "Bangalore traffic data", "Namma Bengaluru roads",
-      "invest in RoadLens", "RoadLens investor deck",
+      "Every ride maps India", "Project Z driver waitlist", "dashcam driver job Bangalore", "earn money driving Bangalore", "extra income cab drivers Bengaluru", "Ola driver extra income Bangalore", "Uber driver extra income Bangalore", "Rapido driver extra income Bangalore", "refundable deposit dashcam", "sample road data pack", "Bengaluru startup", "Bangalore startup", "Bangalore mobility startup", "Bengaluru road data", "Bangalore potholes", "Bangalore traffic data", "Namma Bengaluru roads",
+      "invest in Project Z", "Project Z investor deck",
     ],
     near(["road data", "dashcam", "pothole detection", "road safety", "mobility startup"], INDIA),
   ),
@@ -120,13 +120,13 @@ export const KEYWORDS = {
   faq: [
     "website cost", "how much does a website cost", "website cost Oman", "AI solution cost", "AI chatbot cost",
     "who owns my website", "can I edit my website", "is SEO included", "how long does a website take",
-    "web design FAQ", "AI FAQ", "vexoro FAQ", "RoadLens FAQ", "what is RoadLens", "what is vexoro",
-    "how to invest in RoadLens", "web design questions", "website ownership",
+    "web design FAQ", "AI FAQ", "vexoro FAQ", "Project Z FAQ", "what is Project Z", "what is vexoro",
+    "how to invest in Project Z", "web design questions", "website ownership",
   ],
 
   contact: [
-    "contact vexoro", "vexoro email", "hello@vexoro.dev", "invest in RoadLens", "RoadLens investor deck",
-    "partner with vexoro", "drive with RoadLens", "free AI consultation", "free website consultation",
+    "contact vexoro", "vexoro email", "hello@vexoro.dev", "invest in Project Z", "Project Z investor deck",
+    "partner with vexoro", "drive with Project Z", "free AI consultation", "free website consultation",
     "website quote", "website quote Oman", "hire web designer Oman", "hire AI developer", "AI consultation Oman",
     "start a project", "data buyer partnership",
   ],
@@ -145,14 +145,14 @@ export const KEYWORDS = {
 
   structure: [
     "vexoro business structure", "vexoro group structure", "vexoro organisation", "vexoro org chart",
-    "vexoro group", "vexoro ventures", "vexoro Digital", "RoadLens", "RoadLens parent company",
-    "who owns RoadLens", "vexoro founder", "vexoro CEO", "Kishore Srimuralikrishnan", "venture group structure",
+    "vexoro group", "vexoro ventures", "vexoro Digital", "Project Z", "Project Z parent company",
+    "who owns Project Z", "vexoro founder", "vexoro CEO", "Kishore Srimuralikrishnan", "venture group structure",
     "holding group", "group of companies", "venture studio structure", "company structure",
   ],
 
   investors: unique(
     [
-      "invest in RoadLens", "RoadLens investors", "RoadLens investor deck", "RoadLens pre-seed",
+      "invest in Project Z", "Project Z investors", "Project Z investor deck", "Project Z pre-seed",
       "invest in startups", "startup investment opportunity", "pre-seed round", "pre-seed funding",
       "pre-seed startup", "early-stage startup investment", "angel investment", "angel investors",
       "startups raising funds", "startup fundraising", "seed funding", "venture capital", "VC funding",
@@ -165,7 +165,7 @@ export const KEYWORDS = {
     near(["startup investment", "angel investors"], ["India", "Oman", "GCC", "Middle East"]),
   ),
 
-  roadlensData: unique(
+  projectZData: unique(
     [
       "road data", "road data India", "Indian road data", "Indian road dataset", "Indian driving dataset",
       "Indian traffic dataset", "Indian traffic video", "dashcam footage", "dashcam footage India", "dashcam video dataset",
@@ -180,7 +180,7 @@ export const KEYWORDS = {
       "pothole data", "pothole detection data", "waterlogging data", "road hazard data", "smart city data India",
       "city hazard feed", "road condition monitoring", "road infrastructure data",
       "privacy-safe video data", "DPDP compliant data", "anonymised dashcam data", "data licensing India",
-      "pilot data buyer", "RoadLens data",
+      "pilot data buyer", "Project Z data",
     ],
     near(["road data", "dashcam data", "traffic data", "pothole data", "ADAS data", "street-level imagery"], BLR),
   ),

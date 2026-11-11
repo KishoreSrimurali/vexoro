@@ -3,20 +3,20 @@ import Link from "next/link";
 import { QaList } from "@/components/qa-list";
 import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
-import { roadlensDataStructuredData } from "@/lib/structured-data";
+import { projectZDataStructuredData } from "@/lib/structured-data";
 
 const TITLE = "Indian Road Data: Dashcam Footage, ADAS Datasets and Hazard Feeds";
 const DESCRIPTION =
-  "Privacy-safe dashcam footage of Indian roads from RoadLens: ADAS training datasets, accident and near-miss clips, insurance risk feeds, map updates and pothole data. Request a sample data pack.";
+  "Privacy-safe dashcam footage of Indian roads from Project Z: ADAS training datasets, accident and near-miss clips, insurance risk feeds, map updates and pothole data. Request a sample data pack.";
 
 export const metadata: Metadata = pageMetadata({
-  path: "/ventures/roadlens/data",
+  path: "/ventures/project-z/data",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: KEYWORDS.roadlensData,
+  keywords: KEYWORDS.projectZData,
 });
 
-const LOI = "mailto:hello@vexoro.dev?subject=RoadLens%3A%20sample%20data%20pack";
+const LOI = "mailto:hello@vexoro.dev?subject=Project Z%3A%20sample%20data%20pack";
 
 const PRODUCTS = [
   { name: "ADAS and autonomy datasets", detail: "Indian traffic footage with GPS to train and test safety systems: two-wheelers, autos, cattle, potholes and missing lane markings.", time: "Dataset licence" },
@@ -27,7 +27,7 @@ const PRODUCTS = [
 ];
 
 const FAQS = [
-  { question: "What data does RoadLens collect?", answer: "Dashcam video with GPS from ride-hailing cars during normal trips, from 2K and 4K cameras, with hazards tagged and faces and number plates blurred." },
+  { question: "What data does Project Z collect?", answer: "Dashcam video with GPS from ride-hailing cars during normal trips, from 2K and 4K cameras, with hazards tagged and faces and number plates blurred." },
   { question: "Which cities does it cover?", answer: "Bengaluru first, then Chennai and Hyderabad as the network grows." },
   { question: "How is privacy handled?", answer: "Drivers opt in, passengers are informed, and every face and number plate is blurred before any data is used, in line with India's DPDP Act." },
   { question: "Are licences exclusive?", answer: "Licences are non-exclusive by default. Talk to us if you need a specific route, area or exclusive window." },
@@ -39,7 +39,7 @@ export default function Page() {
     <main id="main" className="subpage">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(roadlensDataStructuredData(`${TITLE} | vexoro`, DESCRIPTION, PRODUCTS, FAQS)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectZDataStructuredData(`${TITLE} | vexoro`, DESCRIPTION, PRODUCTS, FAQS)) }}
       />
 
       <section className="page-intro">
@@ -48,18 +48,18 @@ export default function Page() {
             <ol>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/ventures">Ventures</Link></li>
-              <li><Link href="/ventures/roadlens">RoadLens</Link></li>
+              <li><Link href="/ventures/project-z">Project Z</Link></li>
               <li aria-current="page">Road data</li>
             </ol>
           </nav>
-          <span className="venture-status">For data buyers · RoadLens</span>
+          <span className="venture-status">For data buyers · Project Z</span>
           <h1 className="page-title">Road data for India<span className="sq" aria-hidden="true" /></h1>
           <p className="page-lede">
             Fresh, privacy-safe dashcam footage of real Indian roads, from ride-hailing cars that drive them every day. For carmakers and ADAS teams, insurers, mapping companies and cities.
           </p>
           <div className="hero-links intro-links">
             <a className="btn" href={LOI}>Request a sample data pack</a>
-            <Link className="text-link" href="/ventures/roadlens">How RoadLens works</Link>
+            <Link className="text-link" href="/ventures/project-z">How Project Z works</Link>
           </div>
         </div>
       </section>

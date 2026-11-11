@@ -107,7 +107,7 @@ const DEFAULT_ITEMS = [
   { icon: Hammer, label: "Build" },
   { icon: ShieldCheck, label: "Prove" },
   { icon: Rocket, label: "Scale" },
-  { icon: Car, label: "RoadLens" },
+  { icon: Car, label: "Project Z" },
   { icon: Layers, label: "Digital" },
 ];
 

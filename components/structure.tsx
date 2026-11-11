@@ -1,12 +1,12 @@
 // The public business structure as an org chart: the group, its leadership and each venture.
 // Nested lists keep it readable without the visual tree (screen readers, search engines).
 import Link from "next/link";
-import { GROUP, ROADLENS_FLOW, ROADLENS_RETURN, VENTURE_DETAILS } from "@/lib/structure";
+import { GROUP, PROJECT_Z_FLOW, PROJECT_Z_RETURN, VENTURE_DETAILS } from "@/lib/structure";
 import { TEAM, VENTURES } from "@/lib/ventures";
 
 const UNITS: Record<string, string[]> = {
   digital: ["AI solutions", "Brand & web", "Pricing from 15 OMR"],
-  roadlens: ["Driver network in Bengaluru", "Road data for insurers, mapping, cities and carmakers", "Privacy and data processing"],
+  "project-z": ["Driver network in Bengaluru", "Road data for insurers, mapping, cities and carmakers", "Privacy and data processing"],
   next: ["New problems, same approach", "Build lean, prove it, then scale"],
 };
 
@@ -62,7 +62,7 @@ export function StructureSection({ h1 = false }: { h1?: boolean }) {
   );
 }
 
-/** The detailed layers under the org chart: the group, each venture's units, and how value moves through RoadLens. */
+/** The detailed layers under the org chart: the group, each venture's units, and how value moves through Project Z. */
 export function StructureDetail() {
   return (
     <>
@@ -139,15 +139,15 @@ export function StructureDetail() {
               )}
             </div>
 
-            {v.id === "roadlens" && (
+            {v.id === "project-z" && (
               <>
                 <h3 className="layer-label">How value flows</h3>
                 <ol className="flow">
-                  {ROADLENS_FLOW.map((f) => (
+                  {PROJECT_Z_FLOW.map((f) => (
                     <li key={f.name}><strong>{f.name}</strong><span>{f.detail}</span></li>
                   ))}
                 </ol>
-                <p className="flow-return">{ROADLENS_RETURN}</p>
+                <p className="flow-return">{PROJECT_Z_RETURN}</p>
               </>
             )}
 

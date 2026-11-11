@@ -5,17 +5,17 @@ export const FAQS: Faq[] = [
   {
     id: "v1",
     question: "What is vexoro?",
-    answer: "vexoro is a group that builds focused solutions to real problems. Each venture runs as its own business, backed by the vexoro team: vexoro Digital is live and RoadLens is launching in Bengaluru.",
+    answer: "vexoro is a group that builds focused solutions to real problems. Each venture runs as its own business, backed by the vexoro team: vexoro Digital is live and Project Z is launching in Bengaluru.",
   },
   {
     id: "v2",
-    question: "What is RoadLens?",
-    answer: "RoadLens turns India's ride-hailing cars into a live road-data network. Drivers get a dashcam on a small refundable deposit and earn from useful footage; carmakers, insurers, mapping companies and cities buy privacy-safe road data.",
+    question: "What is Project Z?",
+    answer: "Project Z turns India's ride-hailing cars into a live road-data network. Drivers get a dashcam on a small refundable deposit and earn from useful footage; carmakers, insurers, mapping companies and cities buy privacy-safe road data.",
   },
   {
     id: "v3",
     question: "How can I invest in or partner with a vexoro venture?",
-    answer: "Email hello@vexoro.dev. RoadLens is raising a pre-seed round, and we share the investor deck on request. Drivers in Bengaluru can join the RoadLens waitlist, and insurers and partners can request a sample data pack.",
+    answer: "Email hello@vexoro.dev. Project Z is raising a pre-seed round, and we share the investor deck on request. Drivers in Bengaluru can join the Project Z waitlist, and insurers and partners can request a sample data pack.",
   },
   {
     id: "ai1",

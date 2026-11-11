@@ -18,12 +18,12 @@ export const VENTURES: Venture[] = [
     cta: "See what we build",
   },
   {
-    id: "roadlens",
-    name: "RoadLens",
+    id: "project-z",
+    name: "Project Z",
     status: "Launching in Bengaluru",
     summary: "India's road-data network, built on ride-hailing dashcams.",
-    href: "/ventures/roadlens",
-    cta: "Meet RoadLens",
+    href: "/ventures/project-z",
+    cta: "Meet Project Z",
   },
   {
     id: "next",

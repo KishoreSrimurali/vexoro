@@ -6,9 +6,9 @@ import { pageMetadata } from "@/lib/site";
 import { investorsStructuredData } from "@/lib/structured-data";
 import { FOUNDER } from "@/lib/ventures";
 
-const TITLE = "Investors: Invest in RoadLens, a Pre-Seed Road-Data Startup in India";
+const TITLE = "Investors: Invest in Project Z, a Pre-Seed Road-Data Startup in India";
 const DESCRIPTION =
-  "RoadLens by vexoro is raising pre-seed: a dashcam road-data network on India's ride-hailing cars, launching in Bengaluru. Request the investor deck.";
+  "Project Z by vexoro is raising pre-seed: a dashcam road-data network on India's ride-hailing cars, launching in Bengaluru. Request the investor deck.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/investors",
@@ -17,13 +17,13 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.investors,
 });
 
-const DECK = "mailto:hello@vexoro.dev?subject=Investor%20enquiry%3A%20RoadLens%20deck";
+const DECK = "mailto:hello@vexoro.dev?subject=Investor%20enquiry%3A%20Project Z%20deck";
 
 const WHY = [
   { name: "A large, unsolved problem", detail: "India recorded 4.80 lakh road accidents and 1.72 lakh deaths in 2023, and most driving data comes from orderly Western roads." },
   { name: "Collectors already on the road", detail: "Ride-hailing drivers cover around 150 km a day on every kind of road. A ₹2,500 camera turns that mileage into data." },
   { name: "Four buyers, one footage", detail: "Carmakers and ADAS teams, insurers, mapping companies and cities licence the same footage, non-exclusively." },
-  { name: "Proven abroad, open in India", detail: "Dashcam data networks work elsewhere. RoadLens is India-first, with rupee payouts and no crypto tokens." },
+  { name: "Proven abroad, open in India", detail: "Dashcam data networks work elsewhere. Project Z is India-first, with rupee payouts and no crypto tokens." },
 ];
 
 const GATES = [
@@ -36,22 +36,22 @@ const GATES = [
 const INVESTOR_FAQS = [
   {
     question: "What is vexoro raising for?",
-    answer: "vexoro is raising a pre-seed round for RoadLens, a road-data network built on dashcams in India's ride-hailing cars.",
+    answer: "vexoro is raising a pre-seed round for Project Z, a road-data network built on dashcams in India's ride-hailing cars.",
   },
   {
-    question: "What stage is RoadLens at?",
-    answer: "RoadLens is launching in Bengaluru, starting with a pilot of 50 ride-hailing drivers before growing to 200 and then 1,000.",
+    question: "What stage is Project Z at?",
+    answer: "Project Z is launching in Bengaluru, starting with a pilot of 50 ride-hailing drivers before growing to 200 and then 1,000.",
   },
   {
     question: "How is privacy handled?",
     answer: "Drivers opt in, passengers are informed, and every face and number plate is blurred before any data is used, in line with India's DPDP Act.",
   },
   {
-    question: "How does RoadLens make money?",
+    question: "How does Project Z make money?",
     answer: "Four revenue streams from one camera network: data licences, event clips, monthly hazard feeds, and Plus and Pro driver subscriptions.",
   },
   {
-    question: "Who leads RoadLens?",
+    question: "Who leads Project Z?",
     answer: `${FOUNDER.name}, ${FOUNDER.role} of vexoro, leads strategy, finance and buyer sales, with three key hires planned across the pilot, validate and scale stages.`,
   },
   {
@@ -77,13 +77,13 @@ export default function Page() {
             </ol>
           </nav>
           <span className="venture-status">For investors · Raising pre-seed</span>
-          <h1 className="page-title">Invest in RoadLens<span className="sq" aria-hidden="true" /></h1>
+          <h1 className="page-title">Invest in Project Z<span className="sq" aria-hidden="true" /></h1>
           <p className="page-lede">
-            vexoro builds ventures that solve real problems. Our current raise is for RoadLens: India&apos;s road-data network, built on the ride-hailing cars already driving every road.
+            vexoro builds ventures that solve real problems. Our current raise is for Project Z: India&apos;s road-data network, built on the ride-hailing cars already driving every road.
           </p>
           <div className="hero-links intro-links">
             <a className="btn" href={DECK}>Request the investor deck</a>
-            <Link className="text-link" href="/ventures/roadlens">Read about RoadLens</Link>
+            <Link className="text-link" href="/ventures/project-z">Read about Project Z</Link>
           </div>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function Page() {
       <section className="section" aria-labelledby="why-title">
         <div className="wrap">
           <div className="section-head">
-            <h2 id="why-title">Why RoadLens, why now</h2>
+            <h2 id="why-title">Why Project Z, why now</h2>
             <p>A pre-seed road-data and mobility startup in India, with a clear path from a 50-driver pilot to a multi-city network.</p>
           </div>
           <ul className="venture-grid venture-grid-2">
@@ -137,7 +137,7 @@ export default function Page() {
           <div className="founder">
             <span className="venture-status">{FOUNDER.role}</span>
             <h3>{FOUNDER.name}</h3>
-            <p>Founded and runs vexoro. Built three ventures end to end, and owns strategy, finance and buyer sales at RoadLens.</p>
+            <p>Founded and runs vexoro. Built three ventures end to end, and owns strategy, finance and buyer sales at Project Z.</p>
             <a className="btn" href={DECK}>Request the investor deck</a>
           </div>
         </div>

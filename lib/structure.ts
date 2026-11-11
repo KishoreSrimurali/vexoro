@@ -1,10 +1,10 @@
-// Detailed public business structure (/structure). Facts come from the RoadLens deck and the public copy.
+// Detailed public business structure (/structure). Facts come from the Project Z deck and the public copy.
 // Ownership, money rules and investor terms are deliberately left out.
 
 export type Unit = { name: string; items: string[] };
 
 export type VentureDetail = {
-  id: "digital" | "roadlens" | "next";
+  id: "digital" | "project-z" | "next";
   name: string;
   status: string;
   role: string;
@@ -36,8 +36,8 @@ export const GROUP = {
 
 export const VENTURE_DETAILS: VentureDetail[] = [
   {
-    id: "roadlens",
-    name: "RoadLens",
+    id: "project-z",
+    name: "Project Z",
     status: "Launching in Bengaluru",
     role: "India's road-data network, built on ride-hailing dashcams. Every ride maps India.",
     market: ["India", "Bengaluru first", "Chennai and Hyderabad next"],
@@ -55,7 +55,7 @@ export const VENTURE_DETAILS: VentureDetail[] = [
       { name: "App and data engineer", detail: "Driver app, uploads, blurring and tagging pipeline.", stage: "Validate" },
       { name: "B2B data sales lead", detail: "Insurers, carmakers and city contracts.", stage: "Scale" },
     ],
-    href: "/ventures/roadlens",
+    href: "/ventures/project-z",
   },
   {
     id: "digital",
@@ -87,11 +87,11 @@ export const VENTURE_DETAILS: VentureDetail[] = [
   },
 ];
 
-/** How value moves through RoadLens, left to right. */
-export const ROADLENS_FLOW = [
-  { name: "Drivers", detail: "Drive as usual with a RoadLens dashcam" },
+/** How value moves through Project Z, left to right. */
+export const PROJECT_Z_FLOW = [
+  { name: "Drivers", detail: "Drive as usual with a Project Z dashcam" },
   { name: "Footage", detail: "Recorded with GPS, uploaded over Wi-Fi" },
-  { name: "RoadLens platform", detail: "Blurs faces and plates, tags hazards" },
+  { name: "Project Z platform", detail: "Blurs faces and plates, tags hazards" },
   { name: "Buyers", detail: "Insurers, mapping, cities, carmakers" },
 ];
-export const ROADLENS_RETURN = "Buyers pay for data → drivers earn per km, with bonuses for new roads, night or rain driving and verified hazards";
+export const PROJECT_Z_RETURN = "Buyers pay for data → drivers earn per km, with bonuses for new roads, night or rain driving and verified hazards";
