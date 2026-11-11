@@ -60,19 +60,19 @@ export function ProjectZTeaser() {
     <section className="section" id="project-z" aria-labelledby="project-z-title">
       <div className="wrap project-z-teaser">
         <div>
-          <span className="venture-status">A vexoro venture · Launching in Bengaluru</span>
+          <span className="venture-status">A vexoro venture · Beta in Bengaluru</span>
           <h2 id="project-z-title">Project Z<span className="sq" aria-hidden="true" /></h2>
-          <p className="teaser-lede">Every ride maps India. Project Z turns everyday cab rides into road-safety data: we put dashcams in ride-hailing cars and pay drivers for the footage they record. That footage becomes privacy-safe data on real Indian roads.</p>
+          <p className="teaser-lede">You ask. It calls. Project Z is an AI that makes phone calls for you, in any Indian language. It finds the number, calls, waits on hold, speaks the other person&apos;s language and sends you the result.</p>
           <div className="hero-links">
             <Link className="btn" href="/ventures/project-z">Meet Project Z</Link>
             <Link className="text-link" href="/investors">For investors</Link>
-            <Link className="text-link" href="/ventures/project-z/data">For data buyers</Link>
+            <Link className="text-link" href="/ventures/project-z#beta">Join the beta</Link>
           </div>
         </div>
         <dl className="stats">
-          <div><dt>people died on Indian roads in 2023</dt><dd>1.72 lakh</dd></div>
-          <div><dt>driven by a typical ride-hailing driver every day</dt><dd>150 km</dd></div>
-          <div><dt>to turn a car into a data collector</dt><dd>₹2,500</dd></div>
+          <div><dt>smartphone users in India, 2026</dt><dd>~69 Cr</dd></div>
+          <div><dt>of Indian consumers prefer a phone call when talking to businesses</dt><dd>76%+</dd></div>
+          <div><dt>a month gets 8 calls made for you (planned)</dt><dd>₹169</dd></div>
         </dl>
       </div>
     </section>

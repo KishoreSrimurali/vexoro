@@ -24,7 +24,7 @@ export const GROUP = {
   shared: [
     { name: "Strategy and finance", detail: "Led by the founder and CEO across every venture." },
     { name: "Brand, design and web", detail: "Built in-house by vexoro Digital for each venture." },
-    { name: "Partnerships and sales", detail: "Buyer, partner and investor relationships, led by the founder." },
+    { name: "Partnerships and sales", detail: "Customer, partner and investor relationships, led by the founder." },
   ],
   principles: [
     "Each venture runs as its own business, with its own customers and team",
@@ -38,22 +38,25 @@ export const VENTURE_DETAILS: VentureDetail[] = [
   {
     id: "project-z",
     name: "Project Z",
-    status: "Launching in Bengaluru",
-    role: "India's road-data network, built on ride-hailing dashcams. Every ride maps India.",
-    market: ["India", "Bengaluru first", "Chennai and Hyderabad next"],
+    status: "Beta in Bengaluru",
+    role: "An AI that makes your phone calls, in any Indian language. You ask. It calls. You get the result.",
+    market: ["India", "Bengaluru first", "Top 10 metros, then tier 2 cities"],
     units: [
-      { name: "Driver network", items: ["Driver sign-up and waitlist", "Dashcam fitting on a refundable deposit", "Driver app: earnings, uploads, SOS", "Driver support"] },
-      { name: "Data platform", items: ["Footage upload over Wi-Fi", "Face and number-plate blurring", "Hazard tagging and quality scoring", "GPS and route coverage"] },
-      { name: "Data products and sales", items: ["Dataset licences", "Event clips", "Hazard feeds", "Per-km map licences"] },
-      { name: "Trust and compliance", items: ["Driver opt-in consent (DPDP Act)", "Passenger notice", "Blurring before any data is used", "Legal review before launch"] },
+      { name: "Consumer app", items: ["Android and iOS app, then WhatsApp and web", "Task planner and follow-up questions", "Live ping when a call needs a detail", "Saved profile, family and contacts"] },
+      { name: "Call platform", items: ["Real-time call orchestration", "Keypad IVR navigation and hold detection", "Indian-language speech and code-mix detection", "Declared numbers through a licensed telephony partner"] },
+      { name: "Business plans", items: ["Appointment reminders", "No-show recovery", "Payment reminders and callbacks", "Free verified-caller dashboard"] },
+      { name: "Trust and compliance", items: ["AI disclosure on every call", "Never-share guardrails: OTPs, cards, Aadhaar", "DPDP consent ledger", "TRAI A2P and DLT registration"] },
     ],
-    customers: ["Insurers", "Mapping and navigation companies", "City authorities", "Carmakers and ADAS teams"],
-    revenue: ["Data licences", "Event clips", "Monthly hazard feeds", "Optional driver app plans"],
-    partners: ["Ride-hailing drivers", "Fleet owners", "Driver unions", "Airport and railway taxi hubs"],
+    customers: ["Busy urban professionals", "Families managing elderly parents", "Clinics and salons", "Small businesses"],
+    revenue: ["Pay per call", "Basic, Unlimited and Family subscriptions", "Business plans", "Referral fees from businesses (upside)"],
+    partners: ["Licensed telephony providers", "Indian-language speech providers", "Clinics as design partners", "Local businesses"],
     roles: [
-      { name: "Driver operations lead", detail: "Onboarding, camera fitting and fleet partnerships in Bengaluru.", stage: "Pilot" },
-      { name: "App and data engineer", detail: "Driver app, uploads, blurring and tagging pipeline.", stage: "Validate" },
-      { name: "B2B data sales lead", detail: "Insurers, carmakers and city contracts.", stage: "Scale" },
+      { name: "Head of engineering", detail: "Founding hire. Voice AI and real-time systems; owns the stack.", stage: "Pilot" },
+      { name: "Voice AI engineer", detail: "Speech pipeline, latency and language detection.", stage: "Pilot" },
+      { name: "Full-stack and mobile engineers", detail: "App, task flows and the live-ping experience.", stage: "Pilot" },
+      { name: "QA and evaluation engineer", detail: "Evaluation set, call quality and regressions.", stage: "Launch" },
+      { name: "Growth lead", detail: "Referrals, content and family-plan marketing.", stage: "Launch" },
+      { name: "B2B sales lead", detail: "Clinics and small-business accounts.", stage: "Launch" },
     ],
     href: "/ventures/project-z",
   },
@@ -87,11 +90,11 @@ export const VENTURE_DETAILS: VentureDetail[] = [
   },
 ];
 
-/** How value moves through Project Z, left to right. */
+/** How a Project Z call works, left to right. */
 export const PROJECT_Z_FLOW = [
-  { name: "Drivers", detail: "Drive as usual with a Project Z dashcam" },
-  { name: "Footage", detail: "Recorded with GPS, uploaded over Wi-Fi" },
-  { name: "Project Z platform", detail: "Blurs faces and plates, tags hazards" },
-  { name: "Buyers", detail: "Insurers, mapping, cities, carmakers" },
+  { name: "You ask", detail: "Type or say what you need, in any language" },
+  { name: "It briefs", detail: "1–3 quick questions plus your saved details" },
+  { name: "It calls", detail: "Dials, navigates the IVR, waits on hold, talks" },
+  { name: "You get it done", detail: "Result, transcript and recording sent to you" },
 ];
-export const PROJECT_Z_RETURN = "Buyers pay for data → drivers earn per km, with bonuses for new roads, night or rain driving and verified hazards";
+export const PROJECT_Z_RETURN = "You pay per call or subscribe → businesses get clear, polite callers in their language, and can upgrade to business plans";

@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/site";
 
 const TITLE = "vexoro | A Venture Group Building Products for Real Problems";
 const DESCRIPTION =
-  "vexoro finds real problems and builds focused ventures to solve them: Project Z, India's road-data network, and vexoro Digital for AI, branding and websites.";
+  "vexoro finds real problems and builds focused ventures to solve them: Project Z, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/",

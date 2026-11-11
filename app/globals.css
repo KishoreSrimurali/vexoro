@@ -658,3 +658,4 @@ h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.3; }
 .legal-num { color: var(--muted); font-variant-numeric: tabular-nums; }
 .legal-body p { overflow-wrap: anywhere; }
 .legal-contact { font-weight: 600; }
+@media (min-width: 1101px) { .pricing-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

@@ -5,17 +5,17 @@ export const FAQS: Faq[] = [
   {
     id: "v1",
     question: "What is vexoro?",
-    answer: "vexoro is a group that builds focused solutions to real problems. Each venture runs as its own business, backed by the vexoro team: vexoro Digital is live and Project Z is launching in Bengaluru.",
+    answer: "vexoro is a group that builds focused solutions to real problems. Each venture runs as its own business, backed by the vexoro team: vexoro Digital is live and Project Z is starting its beta in Bengaluru.",
   },
   {
     id: "v2",
     question: "What is Project Z?",
-    answer: "Project Z turns India's ride-hailing cars into a live road-data network. Drivers get a dashcam on a small refundable deposit and earn from useful footage; carmakers, insurers, mapping companies and cities buy privacy-safe road data.",
+    answer: "Project Z is an AI that makes phone calls for you, in any Indian language. Tell it what you need, like booking a doctor or chasing a refund; it finds the number, calls, waits on hold, speaks the other person's language and sends you the result. Every call says it's an AI, and it never shares OTPs, card details or passwords.",
   },
   {
     id: "v3",
     question: "How can I invest in or partner with a vexoro venture?",
-    answer: "Email hello@vexoro.dev. Project Z is raising a pre-seed round, and we share the investor deck on request. Drivers in Bengaluru can join the Project Z waitlist, and insurers and partners can request a sample data pack.",
+    answer: "Email hello@vexoro.dev. Project Z is raising a pre-seed round, and we share the investor brief on request. People in Bengaluru can join the Project Z beta waitlist, and clinics and small businesses can become design partners.",
   },
   {
     id: "ai1",

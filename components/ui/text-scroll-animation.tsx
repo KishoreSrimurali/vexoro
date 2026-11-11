@@ -7,7 +7,7 @@ import {
   useTransform,
   type MotionValue,
 } from "framer-motion";
-import { Car, Hammer, Layers, Rocket, Search, ShieldCheck, type LucideIcon } from "lucide-react";
+import { Hammer, Layers, PhoneCall, Rocket, Search, ShieldCheck, type LucideIcon } from "lucide-react";
 import React, { useRef } from "react";
 import { cn } from "@/lib/utils";
 import { useIsTouch, usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
@@ -107,7 +107,7 @@ const DEFAULT_ITEMS = [
   { icon: Hammer, label: "Build" },
   { icon: ShieldCheck, label: "Prove" },
   { icon: Rocket, label: "Scale" },
-  { icon: Car, label: "Project Z" },
+  { icon: PhoneCall, label: "Project Z" },
   { icon: Layers, label: "Digital" },
 ];
 

@@ -24,13 +24,13 @@ const projectZ = {
   name: "Project Z",
   alternateName: "Project Z by vexoro",
   url: abs("/ventures/project-z"),
-  description: "A road-data network for India, built on ride-hailing dashcams. Drivers earn from footage; carmakers, insurers, mapping companies and cities get privacy-safe road data.",
+  description: "An AI that makes phone calls for people in India, in any Indian language. It finds the number, calls, waits on hold, speaks the other person's language and sends you the result.",
   parentOrganization: { "@id": ORG_ID },
   founder: { "@id": FOUNDER_ID },
   areaServed: { "@type": "Country", name: "India" },
   address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" },
   location: { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
-  knowsAbout: ["Dashcam data", "Road safety", "ADAS training data", "Mapping", "Insurance telematics"],
+  knowsAbout: ["Voice AI", "AI phone calls", "Indian-language speech", "Conversational AI", "Appointment booking"],
 };
 
 const SERVICES = [
@@ -219,49 +219,6 @@ export const investorsStructuredData = (title: string, description: string, faqs
     }),
     { ...breadcrumb([["Home", "/"], ["Investors", "/investors"]]), "@id": abs("/investors#breadcrumb") },
     faqPage("/investors", faqs),
-  ],
-});
-
-/** /ventures/project-z/data: the data products Project Z sells. */
-export const projectZDataStructuredData = (
-  title: string,
-  description: string,
-  products: { name: string; detail: string; time: string }[],
-  faqs: QA[],
-) => ({
-  "@context": "https://schema.org",
-  "@graph": [
-    organization,
-    projectZ,
-    webPage("/ventures/project-z/data", title, description, {
-      about: { "@id": PROJECT_Z_ID },
-      audience: { "@type": "BusinessAudience", audienceType: "Carmakers, ADAS teams, insurers, mapping companies and city authorities" },
-      breadcrumb: { "@id": abs("/ventures/project-z/data#breadcrumb") },
-    }),
-    {
-      ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Project Z", "/ventures/project-z"], ["Road data", "/ventures/project-z/data"]]),
-      "@id": abs("/ventures/project-z/data#breadcrumb"),
-    },
-    {
-      "@type": "Service",
-      "@id": abs("/ventures/project-z/data#service"),
-      name: "Project Z road data for India",
-      serviceType: "Road data, dashcam footage and hazard feeds",
-      description,
-      provider: { "@id": PROJECT_Z_ID },
-      areaServed: { "@type": "Country", name: "India" },
-      audience: { "@type": "BusinessAudience", audienceType: "Carmakers, ADAS teams, insurers, mapping companies and city authorities" },
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Project Z data products",
-        itemListElement: products.map((p) => ({
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: p.name, description: p.detail },
-          description: `${p.name}: ${p.detail} (${p.time})`,
-        })),
-      },
-    },
-    faqPage("/ventures/project-z/data", faqs),
   ],
 });
 

@@ -7,17 +7,16 @@ Contact: hello@vexoro.dev
 ## Ventures
 
 - vexoro Digital (live): websites, design and digital solutions (including AI) for businesses, startups and creators, in Oman and worldwide
-- Project Z (launching in Bengaluru): India's road-data network, built on ride-hailing dashcams. "Every ride maps India." Drivers get a dashcam on a small refundable deposit, footage uploads over Wi-Fi, and drivers earn per km (up to about ₹4,500 extra a month, estimated; final rates at launch). Drivers in Bengaluru can join the waitlist; insurers and partners can request a sample data pack. Drivers earn from useful footage; carmakers and ADAS teams, insurers, mapping companies and city authorities buy privacy-safe road data (faces and plates blurred, DPDP Act consent). Based in Bengaluru, India. Pilot: 50 drivers in Bengaluru, then Chennai and Hyderabad.
+- Project Z (beta in Bengaluru): an AI that makes your phone calls, in any Indian language. "You ask. It calls." You type or say what you need; it finds the number, calls, navigates the IVR, waits on hold, speaks the other person's language and sends you the result, pinging you live if it needs a detail. Uses: doctor and lab bookings, home services, customer care refunds and cancellations, errands, family care for parents in other cities, and reminder and callback calls for clinics and small businesses. Every call opens with an AI disclosure; OTPs, card details, passwords and Aadhaar are never shared; DPDP Act consent and TRAI-compliant declared numbers. Planned pricing (incl. GST): first 3 calls free, ₹29 a call, Basic ₹169/month for 8 calls, Unlimited ₹549/month, Family ₹749/month, business plans ₹2,000–20,000/month. Closed beta in Bengaluru with 3 tasks and 4 languages, then top 10 metros. People can join the beta waitlist; clinics and businesses can become design partners.
 - What's next (coming soon): new problems, same approach (build lean, prove it, then scale)
 
 ## Pages
 
 - [Home](https://vexoro.dev/): ventures, Project Z, how we build, vexoro Digital, FAQ and contact form
 - [Ventures](https://vexoro.dev/ventures): our ventures and how we build them
-- [Project Z](https://vexoro.dev/ventures/project-z): the problem, how it works, buyers, privacy, roadmap and investor contact
+- [Project Z](https://vexoro.dev/ventures/project-z): the problem, how it works, example tasks, use cases, planned pricing, beta waitlist, trust and compliance, roadmap and investor contact
 - [Business structure](https://vexoro.dev/structure): org chart of the vexoro group (founder and CEO Kishore Srimuralikrishnan) and its ventures: vexoro Digital, Project Z and what's next
-- [Investors](https://vexoro.dev/investors): Project Z pre-seed round, milestones, investor FAQ and how to request the deck
-- [Road data for buyers](https://vexoro.dev/ventures/project-z/data): ADAS datasets, event clips, insurance risk feeds, map updates and city hazard feeds from Indian roads; request a sample data pack
+- [Investors](https://vexoro.dev/investors): Project Z pre-seed round: market, business model, unit economics, milestones, proof of concept, investor FAQ and how to request the investor brief
 - [AI Solutions](https://vexoro.dev/ai): AI assistants, automation, document processing, knowledge assistants, custom AI and strategy
 - [Pricing](https://vexoro.dev/pricing): website packages and add-ons in Omani rial (OMR)
 - [Brand & Web](https://vexoro.dev/services): branding and website services with typical timelines
