@@ -21,7 +21,7 @@ export function SiteFooter() {
         </nav>
         <p className="footer-legal">
           © {new Date().getFullYear()} vexoro ·{" "}
-          <a href="/terms-of-service.pdf" target="_blank" rel="noopener">Terms of Service</a>
+          <a href="/terms">Terms of Service</a>
         </p>
       </div>
     </footer>
