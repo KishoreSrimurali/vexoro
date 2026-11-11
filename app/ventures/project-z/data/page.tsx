@@ -16,7 +16,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.projectZData,
 });
 
-const LOI = "mailto:hello@vexoro.dev?subject=Project Z%3A%20sample%20data%20pack";
+const LOI = "mailto:hello@vexoro.dev?subject=Project%20Z%3A%20sample%20data%20pack";
 
 const PRODUCTS = [
   { name: "ADAS and autonomy datasets", detail: "Indian traffic footage with GPS to train and test safety systems: two-wheelers, autos, cattle, potholes and missing lane markings.", time: "Dataset licence" },

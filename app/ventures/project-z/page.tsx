@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.projectZ,
 });
 
-const SAMPLE = "mailto:hello@vexoro.dev?subject=Project Z%3A%20sample%20data%20pack";
+const SAMPLE = "mailto:hello@vexoro.dev?subject=Project%20Z%3A%20sample%20data%20pack";
 
 const STEPS = [
   { name: "Drivers join", detail: "and get a dashcam on a small refundable deposit." },
