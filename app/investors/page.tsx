@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.investors,
 });
 
-const DECK = "mailto:hello@vexoro.dev?subject=Investor%20enquiry%3A%20Project Z%20deck";
+const DECK = "mailto:hello@vexoro.dev?subject=Investor%20enquiry%3A%20Project%20Z%20deck";
 
 const WHY = [
   { name: "A large, unsolved problem", detail: "India recorded 4.80 lakh road accidents and 1.72 lakh deaths in 2023, and most driving data comes from orderly Western roads." },
