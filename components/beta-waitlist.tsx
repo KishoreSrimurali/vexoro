@@ -18,7 +18,7 @@ export function BetaWaitlist() {
       `For: ${d.get("who")}`,
       `Calls I'd hand over first: ${d.get("use")}`,
     ].join("\n");
-    window.location.href = `mailto:hello@vexoro.dev?subject=${encodeURIComponent("Project Z beta waitlist")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ceo@vexoro.dev?subject=${encodeURIComponent("Project Z beta waitlist")}&body=${encodeURIComponent(body)}`;
   }
 
   return (

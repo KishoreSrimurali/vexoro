@@ -15,7 +15,7 @@ export const FAQS: Faq[] = [
   {
     id: "v3",
     question: "How can I invest in or partner with a vexoro venture?",
-    answer: "Email hello@vexoro.dev. Project Z is raising a pre-seed round, and we share the investor brief on request. People in Bengaluru can join the Project Z beta waitlist, and clinics and small businesses can become design partners.",
+    answer: "Email ceo@vexoro.dev. Project Z is raising a pre-seed round, and we share the investor brief on request. People in Bengaluru can join the Project Z beta waitlist, and clinics and small businesses can become design partners.",
   },
   {
     id: "ai1",

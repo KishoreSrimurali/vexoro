@@ -2,7 +2,7 @@
 export const SITE = {
   name: "vexoro",
   url: "https://vexoro.dev",
-  email: "hello@vexoro.dev",
+  email: "ceo@vexoro.dev",
   description:
     "vexoro is a venture group that finds real problems and builds focused products to solve them: Project Z, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
   ogImage: "/assets/img/og-image.png",

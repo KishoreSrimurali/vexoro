@@ -120,7 +120,7 @@ export const KEYWORDS = {
   ],
 
   contact: [
-    "contact vexoro", "vexoro email", "hello@vexoro.dev", "invest in Project Z", "Project Z investor brief",
+    "contact vexoro", "vexoro email", "ceo@vexoro.dev", "invest in Project Z", "Project Z investor brief",
     "partner with vexoro", "join the Project Z beta", "free AI consultation", "free website consultation",
     "website quote", "website quote Oman", "hire web designer Oman", "hire AI developer", "AI consultation Oman",
     "start a project", "Project Z beta", "Project Z for business",

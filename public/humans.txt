@@ -1,6 +1,6 @@
 /* TEAM */
 Founder & CEO: Kishore Srimuralikrishnan
-Contact: hello@vexoro.dev
+Contact: ceo@vexoro.dev
 Site: https://vexoro.dev
 
 /* VENTURES */

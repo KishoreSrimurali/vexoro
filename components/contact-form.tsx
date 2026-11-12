@@ -19,7 +19,7 @@ export function ContactForm() {
       "",
       String(d.get("message")),
     ].join("\n");
-    window.location.href = `mailto:hello@vexoro.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ceo@vexoro.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
   return (

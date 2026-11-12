@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.projectZ,
 });
 
-const BUSINESS = "mailto:hello@vexoro.dev?subject=Project%20Z%3A%20business%20plans";
+const BUSINESS = "mailto:ceo@vexoro.dev?subject=Project%20Z%3A%20business%20plans";
 
 const STEPS = [
   { name: "You ask", detail: "“Book Dr. Rao for Saturday morning.” Type it or say it, in any language." },
@@ -245,7 +245,7 @@ export default function Page() {
           <div className="section-head">
             <h2 id="involved-title">Get involved</h2>
             <p>
-              Or email <a className="text-link" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>.
+              Or email <a className="text-link" href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>.
             </p>
           </div>
           <ul className="venture-grid">

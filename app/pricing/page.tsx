@@ -105,7 +105,7 @@ export default function PricingPage() {
             <p>Book a free consultation. Tell us about your business and we&apos;ll recommend the right package.</p>
             <div className="hero-links">
               <a className="btn" href="/contact">Get a free consultation</a>
-              <a className="text-link" href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>
+              <a className="text-link" href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>
             </div>
           </div>
         </div>
