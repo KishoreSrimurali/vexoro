@@ -6,7 +6,7 @@ import { TEAM, VENTURES } from "@/lib/ventures";
 
 const UNITS: Record<string, string[]> = {
   digital: ["AI solutions", "Brand & web", "Pricing from 15 OMR"],
-  "project-z": ["Driver network in Bengaluru", "Road data for insurers, mapping, cities and carmakers", "Privacy and data processing"],
+  "project-z": ["AI calling app for people in India", "Business plans for clinics and shops", "Call platform and compliance"],
   next: ["New problems, same approach", "Build lean, prove it, then scale"],
 };
 

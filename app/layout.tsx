@@ -10,7 +10,7 @@ import { FOUNDER } from "@/lib/ventures";
 
 const title = "vexoro | A Venture Group Building Products for Real Problems";
 const shareTitle = "vexoro | We build ventures that solve real problems";
-const shareDescription = "Project Z, India's road-data network, and vexoro Digital for AI, branding and websites.";
+const shareDescription = "Project Z, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.";
 const ogImage = {
   url: "/assets/img/og-image.png",
   secureUrl: `${SITE.url}/assets/img/og-image.png`,
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     url: SITE.url,
     "identifier-URL": SITE.url,
     subject: "Ventures that solve real problems: Project Z and vexoro Digital",
-    topic: "Venture building, road data, AI solutions, branding and web development",
+    topic: "Venture building, voice AI, AI solutions, branding and web development",
     summary: SITE.description,
     abstract: SITE.description,
     "DC.title": "vexoro",
@@ -124,7 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="author" href="/humans.txt" type="text/plain" />
         <link rel="help" href="/llms.txt" type="text/plain" title="Site summary for AI assistants" />
         <link rel="sitemap" href="/sitemap.xml" type="application/xml" title="Sitemap" />
-        <link rel="me" href="mailto:hello@vexoro.dev" />
+        <link rel="me" href="mailto:ceo@vexoro.dev" />
       </head>
       <body>
         <SmoothScroll>

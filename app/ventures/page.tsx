@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
 const TITLE = "Ventures: Products We Build to Solve Real Problems";
-const DESCRIPTION = "vexoro is a venture group. We find real problems and build focused products to solve them: vexoro Digital (live), Project Z (launching in Bengaluru) and what's next.";
+const DESCRIPTION = "vexoro is a venture group. We find real problems and build focused products to solve them: vexoro Digital (live), Project Z (beta in Bengaluru) and what's next.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/ventures",

@@ -2,7 +2,7 @@
 
 import type { FormEvent } from "react";
 
-const SERVICES = ["Investing in Project Z", "Partnership or data buying", "Driving with Project Z", "AI solution", "Brand website", "Landing page", "Online store", "Web app", "SEO audit", "Something else"];
+const SERVICES = ["Investing in Project Z", "Joining the Project Z beta", "Project Z for my business or clinic", "Partnership", "AI solution", "Brand website", "Landing page", "Online store", "Web app", "SEO audit", "Something else"];
 
 /** Opens the visitor's email app with the enquiry filled in. */
 export function ContactForm() {
@@ -19,7 +19,7 @@ export function ContactForm() {
       "",
       String(d.get("message")),
     ].join("\n");
-    window.location.href = `mailto:hello@vexoro.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ceo@vexoro.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
   return (

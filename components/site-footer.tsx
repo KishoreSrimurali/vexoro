@@ -10,14 +10,13 @@ export function SiteFooter() {
           <a href="/ventures/project-z">Project Z</a>
           <a href="/investors">Investors</a>
           <a href="/structure">Structure</a>
-          <a href="/ventures/project-z/data">Road data</a>
           <a href="/ai">AI Solutions</a>
           <a href="/services">Brand &amp; Web</a>
           <a href="/process">Process</a>
           <a href="/seo">SEO</a>
           <a href="/faq">FAQ</a>
           <a href="/pricing">Pricing</a>
-          <a href="mailto:hello@vexoro.dev">hello@vexoro.dev</a>
+          <a href="mailto:ceo@vexoro.dev">ceo@vexoro.dev</a>
         </nav>
         <p className="footer-legal">
           © {new Date().getFullYear()} vexoro ·{" "}

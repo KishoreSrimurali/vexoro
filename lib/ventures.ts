@@ -20,8 +20,8 @@ export const VENTURES: Venture[] = [
   {
     id: "project-z",
     name: "Project Z",
-    status: "Launching in Bengaluru",
-    summary: "India's road-data network, built on ride-hailing dashcams.",
+    status: "Beta in Bengaluru",
+    summary: "An AI that makes your phone calls, in any Indian language.",
     href: "/ventures/project-z",
     cta: "Meet Project Z",
   },
