@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
     return [
       // The old signed PDF terms were replaced by the public /terms page.
       { source: "/terms-of-service.pdf", destination: "/terms", permanent: true },
-      // RoadLens was replaced by Project Z, and the road-data buyer page was retired.
-      { source: "/ventures/roadlens/:path*", destination: "/ventures/project-z", permanent: true },
-      { source: "/ventures/project-z/data", destination: "/ventures/project-z", permanent: true },
+      // RoadLens became Project Z, which was renamed Bolio ai. The road-data buyer page was retired.
+      { source: "/ventures/roadlens/:path*", destination: "/ventures/bolio-ai", permanent: true },
+      { source: "/ventures/project-z/:path*", destination: "/ventures/bolio-ai", permanent: true },
     ];
   },
 };

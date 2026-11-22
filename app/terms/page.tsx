@@ -5,13 +5,13 @@ import { TERMS, TERMS_INTRO, TERMS_META } from "@/lib/terms";
 
 const TITLE = "Terms of Service";
 const DESCRIPTION =
-  "The terms that apply to all of vexoro.dev, our servers and systems, and every vexoro venture, including vexoro Digital and Project Z. Governed by the laws of the Sultanate of Oman.";
+  "The terms that apply to all of vexoro.dev, our servers and systems, and every vexoro venture, including vexoro Digital and Bolio ai. Governed by the laws of the Sultanate of Oman.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/terms",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: ["vexoro terms of service", "vexoro terms", "Project Z terms", "vexoro Digital terms"],
+  keywords: ["vexoro terms of service", "vexoro terms", "Bolio ai terms", "vexoro Digital terms"],
 });
 
 export default function Page() {

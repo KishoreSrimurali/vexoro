@@ -11,9 +11,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       images: [`${SITE.url}${SITE.ogImage}`],
     },
-    ...["ventures", "ventures/project-z", "investors", "structure"].map((p) => ({
+    {
+      url: `${SITE.url}/ventures/bolio-ai`,
+      lastModified: new Date("2026-11-22"),
+      changeFrequency: "weekly",
+      priority: 1,
+      images: [`${SITE.url}${SITE.ogImage}`],
+    },
+    ...["ventures", "investors", "structure"].map((p) => ({
       url: `${SITE.url}/${p}`,
-      lastModified: new Date("2026-10-21"),
+      lastModified: new Date("2026-11-22"),
       changeFrequency: "monthly" as const,
       priority: 0.95,
     })),

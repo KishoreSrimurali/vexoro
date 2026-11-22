@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://vexoro.dev",
   email: "ceo@vexoro.dev",
   description:
-    "vexoro is a venture group that finds real problems and builds focused products to solve them: Project Z, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
+    "vexoro is a venture group that finds real problems and builds focused products to solve them: Bolio ai, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
   ogImage: "/assets/img/og-image.png",
   logo: "/assets/brand/vexoro-mark.png",
   areaServed: ["Oman", "India", "Bengaluru", "Worldwide"],
@@ -29,7 +29,8 @@ export const BASE_KEYWORDS = [
   "vexoro ventures",
   "venture group",
   "venture studio",
-  "Project Z",
+  "Bolio ai",
+  "Bolio",
   "vexoro Digital",
   "Kishore Srimuralikrishnan",
 ];
@@ -40,15 +41,34 @@ export function pageMetadata({
   title,
   description,
   keywords = [],
+  shareTitle,
+  shareDescription,
+  siteName = SITE.name,
+  locale = "en_OM",
+  country = "Oman",
+  applicationName,
+  other,
 }: {
   path: string;
   title: string;
   description: string;
   keywords?: string[];
+  /** Shorter title and description for link previews (Open Graph, X/Twitter). */
+  shareTitle?: string;
+  shareDescription?: string;
+  siteName?: string;
+  locale?: string;
+  country?: string;
+  applicationName?: string;
+  /** Extra <meta name="…"> tags for this page. */
+  other?: Record<string, string>;
 }) {
   const full = title.includes("vexoro") ? title : `${title} | vexoro`;
+  const ogTitle = shareTitle ?? full;
+  const ogDescription = shareDescription ?? description;
   return {
     title: { absolute: full },
+    ...(applicationName ? { applicationName } : {}),
     description,
     keywords: [...new Set([...keywords, ...BASE_KEYWORDS])],
     alternates: {
@@ -57,16 +77,17 @@ export function pageMetadata({
     },
     openGraph: {
       type: "website" as const,
-      siteName: SITE.name,
-      locale: "en_OM",
-      alternateLocale: ["en_IN", "en_US", "en_GB"],
+      siteName,
+      locale,
+      alternateLocale: ["en_OM", "en_IN", "en_US", "en_GB"].filter((l) => l !== locale),
       url: path,
-      title: full,
-      description,
+      title: ogTitle,
+      description: ogDescription,
       emails: [SITE.email],
-      countryName: "Oman",
+      countryName: country,
       images: [OG_IMAGE],
     },
-    twitter: { card: "summary_large_image" as const, title: full, description, images: [OG_IMAGE] },
+    twitter: { card: "summary_large_image" as const, title: ogTitle, description: ogDescription, images: [OG_IMAGE] },
+    ...(other ? { other } : {}),
   };
 }

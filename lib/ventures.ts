@@ -18,12 +18,12 @@ export const VENTURES: Venture[] = [
     cta: "See what we build",
   },
   {
-    id: "project-z",
-    name: "Project Z",
+    id: "bolio-ai",
+    name: "Bolio ai",
     status: "Beta in Bengaluru",
     summary: "An AI that makes your phone calls, in any Indian language.",
-    href: "/ventures/project-z",
-    cta: "Meet Project Z",
+    href: "/ventures/bolio-ai",
+    cta: "Meet Bolio ai",
   },
   {
     id: "next",

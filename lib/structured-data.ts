@@ -8,7 +8,7 @@ const ORG_ID = abs("/#organization");
 const SITE_ID = abs("/#website");
 const SERVICE_ID = abs("/#service");
 const FOUNDER_ID = abs("/#founder");
-const PROJECT_Z_ID = abs("/ventures/project-z#organization");
+const BOLIO_AI_ID = abs("/ventures/bolio-ai#organization");
 
 const founder = {
   "@type": "Person",
@@ -18,12 +18,16 @@ const founder = {
   worksFor: { "@id": ORG_ID },
 };
 
-const projectZ = {
+const bolioAi = {
   "@type": "Organization",
-  "@id": PROJECT_Z_ID,
-  name: "Project Z",
-  alternateName: "Project Z by vexoro",
-  url: abs("/ventures/project-z"),
+  "@id": BOLIO_AI_ID,
+  name: "Bolio ai",
+  alternateName: ["Bolio", "Bolio AI", "BolioAI", "Bolio ai by vexoro"],
+  slogan: "You ask. It calls.",
+  url: abs("/ventures/bolio-ai"),
+  logo: { "@type": "ImageObject", url: abs(SITE.logo), width: 1174, height: 886 },
+  image: abs(SITE.ogImage),
+  email: SITE.email,
   description: "An AI that makes phone calls for people in India, in any Indian language. It finds the number, calls, waits on hold, speaks the other person's language and sends you the result.",
   parentOrganization: { "@id": ORG_ID },
   founder: { "@id": FOUNDER_ID },
@@ -58,7 +62,7 @@ const organization = {
   email: SITE.email,
   description: SITE.description,
   founder: { "@id": FOUNDER_ID },
-  subOrganization: [{ "@id": SERVICE_ID }, { "@id": PROJECT_Z_ID }],
+  subOrganization: [{ "@id": SERVICE_ID }, { "@id": BOLIO_AI_ID }],
   location: [
     { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
     { "@type": "Place", name: "Oman", address: { "@type": "PostalAddress", addressCountry: "OM" } },
@@ -157,7 +161,7 @@ export const homeStructuredData = (title: string, description: string) => ({
   "@graph": [
     organization,
     founder,
-    projectZ,
+    bolioAi,
     website,
     professionalService,
     webPage("/", title, description),
@@ -187,14 +191,60 @@ export const pricingStructuredData = (title: string, description: string) => ({
   ],
 });
 
-export const projectZStructuredData = (title: string, description: string) => ({
+type Plan = { id: string; name: string; price: string; unit: string; features: string[] };
+const BOLIO_APP_ID = abs("/ventures/bolio-ai#app");
+
+/** The Bolio ai app itself, with its planned plans in INR. */
+const bolioApp = (plans: Plan[]) => ({
+  "@type": "SoftwareApplication",
+  "@id": BOLIO_APP_ID,
+  name: "Bolio ai",
+  alternateName: ["Bolio", "Bolio AI", "BolioAI"],
+  url: abs("/ventures/bolio-ai"),
+  description: "Bolio ai is an AI that makes phone calls for you, in any Indian language. Tell it what you need; it finds the number, calls, navigates the IVR, waits on hold, speaks the other person's language and sends you the result.",
+  applicationCategory: "LifestyleApplication",
+  applicationSubCategory: "AI phone call assistant",
+  operatingSystem: "Android, iOS, Web",
+  inLanguage: ["en-IN", "hi-IN", "kn-IN", "ta-IN", "te-IN"],
+  countriesSupported: "IN",
+  availableOnDevice: "Smartphone",
+  releaseNotes: "Closed beta in Bengaluru. Not yet generally available.",
+  featureList: [
+    "Makes phone calls on your behalf",
+    "Speaks Hindi, Kannada, Tamil, Telugu, English and other Indian languages",
+    "Navigates IVR menus and waits on hold",
+    "Books doctor appointments, chases refunds and calls home services",
+    "Sends you a summary, transcript and recording",
+    "Always says it is an AI; never shares OTPs, card details, Aadhaar or PAN",
+  ],
+  keywords: "Bolio ai, Bolio, AI phone calls, AI calling assistant, voice AI India, Indian language AI",
+  image: abs(SITE.ogImage),
+  publisher: { "@id": BOLIO_AI_ID },
+  provider: { "@id": BOLIO_AI_ID },
+  creator: { "@id": ORG_ID },
+  offers: plans
+    .filter((p) => /^₹[\d,]+$/.test(p.price))
+    .map((p) => ({
+      "@type": "Offer",
+      name: `Bolio ai ${p.name}`,
+      description: p.features.join(". "),
+      price: p.price.replace(/[₹,]/g, ""),
+      priceCurrency: "INR",
+      url: abs(`/ventures/bolio-ai#${p.id}-name`),
+      availability: "https://schema.org/PreOrder",
+      seller: { "@id": BOLIO_AI_ID },
+    })),
+});
+
+export const bolioAiStructuredData = (title: string, description: string, plans: Plan[] = []) => ({
   "@context": "https://schema.org",
   "@graph": [
     organization,
     founder,
-    projectZ,
-    webPage("/ventures/project-z", title, description, { about: { "@id": PROJECT_Z_ID }, breadcrumb: { "@id": abs("/ventures/project-z#breadcrumb") } }),
-    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Project Z", "/ventures/project-z"]]), "@id": abs("/ventures/project-z#breadcrumb") },
+    bolioAi,
+    bolioApp(plans),
+    webPage("/ventures/bolio-ai", title, description, { about: [{ "@id": BOLIO_AI_ID }, { "@id": BOLIO_APP_ID }], mainEntity: { "@id": BOLIO_APP_ID }, inLanguage: "en-IN", keywords: "Bolio ai, Bolio, Bolio AI, AI phone calls India", breadcrumb: { "@id": abs("/ventures/bolio-ai#breadcrumb") } }),
+    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Bolio ai", "/ventures/bolio-ai"]]), "@id": abs("/ventures/bolio-ai#breadcrumb") },
   ],
 });
 
@@ -211,9 +261,9 @@ export const investorsStructuredData = (title: string, description: string, faqs
   "@graph": [
     organization,
     founder,
-    projectZ,
+    bolioAi,
     webPage("/investors", title, description, {
-      about: [{ "@id": ORG_ID }, { "@id": PROJECT_Z_ID }],
+      about: [{ "@id": ORG_ID }, { "@id": BOLIO_AI_ID }],
       audience: { "@type": "Audience", audienceType: "Investors, angel investors, venture capital funds" },
       breadcrumb: { "@id": abs("/investors#breadcrumb") },
     }),

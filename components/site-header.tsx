@@ -6,7 +6,7 @@ import { Wordmark } from "@/components/brand";
 
 const LINKS = [
   { href: "/ventures", label: "Ventures" },
-  { href: "/ventures/project-z", label: "Project Z" },
+  { href: "/ventures/bolio-ai", label: "Bolio ai" },
   { href: "/investors", label: "Investors" },
   { href: "/structure", label: "Structure" },
   { href: "/ai", label: "AI Solutions" },

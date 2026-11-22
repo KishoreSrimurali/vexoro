@@ -4,20 +4,40 @@ import { BetaWaitlist } from "@/components/beta-waitlist";
 import { TeamSection } from "@/components/ventures";
 import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
-import { projectZStructuredData } from "@/lib/structured-data";
+import { bolioAiStructuredData } from "@/lib/structured-data";
 
-const TITLE = "Project Z: An AI That Makes Your Phone Calls, in Any Indian Language";
+const TITLE = "Bolio ai: The AI That Makes Phone Calls for You, in Any Indian Language";
 const DESCRIPTION =
-  "Project Z is an AI that makes phone calls for you in India. Tell it what you need; it finds the number, calls, waits on hold, speaks the other person's language and sends you the result. Beta launching in Bengaluru.";
+  "Bolio ai is an AI that makes phone calls for you in India. Tell it what you need; it finds the number, calls, waits on hold, speaks Hindi, Kannada, Tamil, Telugu or English and sends you the result. Join the Bengaluru beta.";
+const SHARE_TITLE = "Bolio ai: You ask. It calls.";
+const SHARE_DESCRIPTION = "An AI that makes your phone calls, in any Indian language. Book doctors, chase refunds and call plumbers without waiting on hold. Beta in Bengaluru.";
 
 export const metadata: Metadata = pageMetadata({
-  path: "/ventures/project-z",
+  path: "/ventures/bolio-ai",
   title: TITLE,
   description: DESCRIPTION,
-  keywords: KEYWORDS.projectZ,
+  keywords: KEYWORDS.bolioAi,
+  shareTitle: SHARE_TITLE,
+  shareDescription: SHARE_DESCRIPTION,
+  siteName: "Bolio ai by vexoro",
+  locale: "en_IN",
+  country: "India",
+  applicationName: "Bolio ai",
+  other: {
+    "geo.region": "IN-KA",
+    "geo.placename": "Bengaluru, Karnataka, India",
+    "geo.position": "12.9716;77.5946",
+    ICBM: "12.9716, 77.5946",
+    subject: "Bolio ai: an AI that makes your phone calls, in any Indian language",
+    topic: "AI phone calls, voice AI, Indian languages",
+    "DC.title": "Bolio ai",
+    "DC.subject": "AI phone call assistant for India",
+    "DC.description": DESCRIPTION,
+    "DC.coverage": "India",
+  },
 });
 
-const BUSINESS = "mailto:ceo@vexoro.dev?subject=Project%20Z%3A%20business%20plans";
+const BUSINESS = "mailto:ceo@vexoro.dev?subject=Bolio%20ai%3A%20business%20plans";
 
 const STEPS = [
   { name: "You ask", detail: "“Book Dr. Rao for Saturday morning.” Type it or say it, in any language." },
@@ -70,7 +90,7 @@ const TRUST = [
 export default function Page() {
   return (
     <main id="main" className="subpage">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectZStructuredData(`${TITLE} | vexoro`, DESCRIPTION)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bolioAiStructuredData(`${TITLE} | vexoro`, DESCRIPTION, PLANS)) }} />
 
       <section className="page-intro">
         <div className="wrap">
@@ -78,27 +98,27 @@ export default function Page() {
             <ol>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/ventures">Ventures</Link></li>
-              <li aria-current="page">Project Z</li>
+              <li aria-current="page">Bolio ai</li>
             </ol>
           </nav>
           <span className="venture-status">A vexoro venture · Beta in Bengaluru</span>
-          <h1 className="page-title">Project Z: You ask. It calls.<span className="sq" aria-hidden="true" /></h1>
+          <h1 className="page-title">Bolio ai: You ask. It calls.<span className="sq" aria-hidden="true" /></h1>
           <p className="page-lede">
-            Project Z is an AI that makes phone calls for you, in any Indian language. Tell it what you need. It finds the number, calls, waits on hold, speaks the other person&apos;s language and sends you the result.
+            Bolio ai is an AI that makes phone calls for you, in any Indian language. Tell it what you need. It finds the number, calls, waits on hold, speaks the other person&apos;s language and sends you the result.
           </p>
           <div className="hero-links intro-links">
             <a className="btn" href="#beta">Join the beta waitlist</a>
-            <a className="text-link" href={BUSINESS}>Project Z for business</a>
+            <a className="text-link" href={BUSINESS}>Bolio ai for business</a>
           </div>
         </div>
       </section>
 
       <section className="section" aria-labelledby="problem-title">
-        <div className="wrap project-z-teaser">
+        <div className="wrap bolio-ai-teaser">
           <div>
             <h2 id="problem-title">India runs on phone calls, and people hate making them</h2>
             <p className="teaser-lede">
-              Clinics, repair shops, tailors, landlords and schools are often reachable only by phone. IVR menus and hold music turn a 2-minute question into a 30-minute task. The person who answers may not speak your language, and you can&apos;t take a 30-minute call at work. Most of these calls follow a short script, so Project Z makes them for you.
+              Clinics, repair shops, tailors, landlords and schools are often reachable only by phone. IVR menus and hold music turn a 2-minute question into a 30-minute task. The person who answers may not speak your language, and you can&apos;t take a 30-minute call at work. Most of these calls follow a short script, so Bolio ai makes them for you.
             </p>
           </div>
           <div>
@@ -135,7 +155,7 @@ export default function Page() {
         <div className="wrap">
           <div className="section-head">
             <h2 id="tasks-title">What it does on a real task</h2>
-            <p>Examples are illustrative. Project Z is in development and not yet live.</p>
+            <p>Examples are illustrative. Bolio ai is in development and not yet live.</p>
           </div>
           <ul className="venture-grid venture-grid-2">
             {TASKS.map((t) => (
@@ -166,7 +186,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section pricing-section" aria-labelledby="plans-title">
+      <section className="section pricing-section" id="pricing" aria-labelledby="plans-title">
         <div className="wrap">
           <div className="section-head">
             <h2 id="plans-title">Try free, pay per call, or subscribe</h2>
@@ -200,7 +220,7 @@ export default function Page() {
             <p>The closed beta starts in Bengaluru with three tasks and four languages. Join the waitlist and tell us which calls you&apos;d hand over first.</p>
           </div>
           <div>
-            <h3 className="form-title">Join the Project Z beta waitlist</h3>
+            <h3 className="form-title">Join the Bolio ai beta waitlist</h3>
             <BetaWaitlist />
           </div>
         </div>
@@ -210,7 +230,7 @@ export default function Page() {
         <div className="wrap seo">
           <div className="seo-text">
             <h2 id="trust-title">Honest by design</h2>
-            <p>Project Z always says it&apos;s an AI, never shares anything risky, and is built to comply with TRAI and the DPDP Act from day one.</p>
+            <p>Bolio ai always says it&apos;s an AI, never shares anything risky, and is built to comply with TRAI and the DPDP Act from day one.</p>
           </div>
           <ul className="plain-list">
             {TRUST.map((t) => <li key={t}>{t}</li>)}
@@ -263,8 +283,8 @@ export default function Page() {
             </li>
             <li className="venture-card">
               <span className="venture-status">Investors</span>
-              <h3>Back Project Z</h3>
-              <p>Read why we&apos;re building Project Z and request the investor brief.</p>
+              <h3>Back Bolio ai</h3>
+              <p>Read why we&apos;re building Bolio ai and request the investor brief.</p>
               <Link className="text-link" href="/investors">For investors</Link>
             </li>
           </ul>
