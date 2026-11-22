@@ -36,7 +36,9 @@ export const KEYWORDS = {
 
   bolioAi: unique(
     [
-      "Bolio ai", "Bolio", "Bolio AI", "Bolio ai India", "Bolio ai by vexoro", "Bolio ai app", "Bolio ai app India",
+      "Bolio ai", "Bolio", "Bolio AI", "BolioAI", "Bolio app", "Bolio ai app", "Bolio AI app", "Bolio ai India",
+      "Bolio ai by vexoro", "Bolio ai app India", "Bolio calling app", "Bolio ai phone calls", "Bolio ai Bengaluru",
+      "Bolio ai beta", "Bolio ai pricing", "Bolio ai review", "what is Bolio ai",
       "AI that makes phone calls", "AI phone call assistant", "AI calling assistant", "AI call assistant India",
       "AI that calls for you", "AI to make calls for me", "AI voice agent", "AI voice assistant India",
       "AI calls customer care", "AI to call customer care", "AI customer care calls", "skip hold music",
@@ -51,7 +53,7 @@ export const KEYWORDS = {
       "Equal AI alternative", "Truecaller assistant alternative",
       "DPDP Act", "TRAI AI calls", "AI disclosure calls",
       "pre-seed startup India", "voice AI startup India", "AI startup India", "consumer AI startup India",
-      "Bolio ai beta", "Bolio ai beta waitlist", "Bengaluru startup", "Bangalore startup", "Bangalore AI startup",
+      "Bolio ai beta waitlist", "Bengaluru startup", "Bangalore startup", "Bangalore AI startup",
       "invest in Bolio ai", "Bolio ai investor brief",
     ],
     near(["AI phone calls", "AI calling assistant", "voice AI", "AI startup"], INDIA),

@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMetadata({
   keywords: KEYWORDS.investors,
 });
 
-const DECK = "mailto:ceo@vexoro.dev?subject=Investor%20enquiry%3A%20Project%20Z%20investor%20brief";
+const DECK = "mailto:ceo@vexoro.dev?subject=Investor%20enquiry%3A%20Bolio%20ai%20investor%20brief";
 
 const GLANCE = [
   { name: "Problem", detail: "Daily life in India still runs on phone calls: clinics, repairmen, landlords, customer care. Calls are slow, stressful and often in another language." },

@@ -6,18 +6,38 @@ import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { bolioAiStructuredData } from "@/lib/structured-data";
 
-const TITLE = "Bolio ai: An AI That Makes Your Phone Calls, in Any Indian Language";
+const TITLE = "Bolio ai: The AI That Makes Phone Calls for You, in Any Indian Language";
 const DESCRIPTION =
-  "Bolio ai is an AI that makes phone calls for you in India. Tell it what you need; it finds the number, calls, waits on hold, speaks the other person's language and sends you the result. Beta launching in Bengaluru.";
+  "Bolio ai is an AI that makes phone calls for you in India. Tell it what you need; it finds the number, calls, waits on hold, speaks Hindi, Kannada, Tamil, Telugu or English and sends you the result. Join the Bengaluru beta.";
+const SHARE_TITLE = "Bolio ai: You ask. It calls.";
+const SHARE_DESCRIPTION = "An AI that makes your phone calls, in any Indian language. Book doctors, chase refunds and call plumbers without waiting on hold. Beta in Bengaluru.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/ventures/bolio-ai",
   title: TITLE,
   description: DESCRIPTION,
   keywords: KEYWORDS.bolioAi,
+  shareTitle: SHARE_TITLE,
+  shareDescription: SHARE_DESCRIPTION,
+  siteName: "Bolio ai by vexoro",
+  locale: "en_IN",
+  country: "India",
+  applicationName: "Bolio ai",
+  other: {
+    "geo.region": "IN-KA",
+    "geo.placename": "Bengaluru, Karnataka, India",
+    "geo.position": "12.9716;77.5946",
+    ICBM: "12.9716, 77.5946",
+    subject: "Bolio ai: an AI that makes your phone calls, in any Indian language",
+    topic: "AI phone calls, voice AI, Indian languages",
+    "DC.title": "Bolio ai",
+    "DC.subject": "AI phone call assistant for India",
+    "DC.description": DESCRIPTION,
+    "DC.coverage": "India",
+  },
 });
 
-const BUSINESS = "mailto:ceo@vexoro.dev?subject=Project%20Z%3A%20business%20plans";
+const BUSINESS = "mailto:ceo@vexoro.dev?subject=Bolio%20ai%3A%20business%20plans";
 
 const STEPS = [
   { name: "You ask", detail: "“Book Dr. Rao for Saturday morning.” Type it or say it, in any language." },
@@ -70,7 +90,7 @@ const TRUST = [
 export default function Page() {
   return (
     <main id="main" className="subpage">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bolioAiStructuredData(`${TITLE} | vexoro`, DESCRIPTION)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bolioAiStructuredData(`${TITLE} | vexoro`, DESCRIPTION, PLANS)) }} />
 
       <section className="page-intro">
         <div className="wrap">
@@ -166,7 +186,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section pricing-section" aria-labelledby="plans-title">
+      <section className="section pricing-section" id="pricing" aria-labelledby="plans-title">
         <div className="wrap">
           <div className="section-head">
             <h2 id="plans-title">Try free, pay per call, or subscribe</h2>
