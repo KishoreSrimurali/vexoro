@@ -6,9 +6,9 @@ import { pageMetadata } from "@/lib/site";
 import { investorsStructuredData } from "@/lib/structured-data";
 import { FOUNDER } from "@/lib/ventures";
 
-const TITLE = "Investors: Invest in Project Z, a Pre-Seed Voice AI Startup in India";
+const TITLE = "Investors: Invest in Bolio ai, a Pre-Seed Voice AI Startup in India";
 const DESCRIPTION =
-  "Project Z by vexoro is raising ₹4.5 Cr pre-seed in gated tranches: an AI that makes phone calls for people in India, in any Indian language. Beta launching in Bengaluru. Request the investor brief.";
+  "Bolio ai by vexoro is raising ₹4.5 Cr pre-seed in gated tranches: an AI that makes phone calls for people in India, in any Indian language. Beta launching in Bengaluru. Request the investor brief.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/investors",
@@ -66,26 +66,26 @@ const TRANCHES = [
 const INVESTOR_FAQS = [
   {
     question: "What is vexoro raising for?",
-    answer: "vexoro is raising ₹4.5 Cr pre-seed for Project Z, an AI that makes phone calls for people in India, in any Indian language. The round funds 18 months of the plan plus a 6-month reserve.",
+    answer: "vexoro is raising ₹4.5 Cr pre-seed for Bolio ai, an AI that makes phone calls for people in India, in any Indian language. The round funds 18 months of the plan plus a 6-month reserve.",
   },
   {
-    question: "What stage is Project Z at?",
-    answer: "Project Z is pre-product. A six-week proof of concept tests the riskiest assumptions for under ₹15 lakh: a concierge test with 50 users, 500 controlled calls and a closed beta with 100 users and about 1,000 real tasks. Results go to investors as a POC report at week 6.",
+    question: "What stage is Bolio ai at?",
+    answer: "Bolio ai is pre-product. A six-week proof of concept tests the riskiest assumptions for under ₹15 lakh: a concierge test with 50 users, 500 controlled calls and a closed beta with 100 users and about 1,000 real tasks. Results go to investors as a POC report at week 6.",
   },
   {
     question: "How is investor capital protected?",
     answer: "The round is released in three tranches plus a reserve, each only after the previous gate is met. At most ₹0.9 Cr is at risk before a working product and paying users. If task success stays below 60% after three rounds of fixes, or fewer than 15% of users would pay, we narrow to the single best task or pivot to the business reminder product.",
   },
   {
-    question: "How does Project Z make money?",
-    answer: "Pay-per-call at ₹29, subscriptions at ₹169, ₹549 and ₹749 a month, and business plans at ₹2,000–20,000 a month for reminders, no-show recovery and callbacks. In the base plan Project Z reaches ₹35 Cr revenue and positive EBITDA in year 3. These are projections, not results.",
+    question: "How does Bolio ai make money?",
+    answer: "Pay-per-call at ₹29, subscriptions at ₹169, ₹549 and ₹749 a month, and business plans at ₹2,000–20,000 a month for reminders, no-show recovery and callbacks. In the base plan Bolio ai reaches ₹35 Cr revenue and positive EBITDA in year 3. These are projections, not results.",
   },
   {
     question: "How is it kept safe and compliant?",
     answer: "Every call opens with an AI disclosure, OTPs, card details, passwords and Aadhaar are blocked at the guardrail layer, consent is recorded under India's DPDP Act, and calls use declared, DLT-registered numbers through a licensed telephony partner in line with TRAI rules. Data stays in India.",
   },
   {
-    question: "Who leads Project Z?",
+    question: "Who leads Bolio ai?",
     answer: `${FOUNDER.name}, founder and sole owner of the vexoro group, owns strategy, finance, product and fundraising. A founding head of engineering owns the product, with 13 hires funded by this round.`,
   },
   {
@@ -111,13 +111,13 @@ export default function Page() {
             </ol>
           </nav>
           <span className="venture-status">For investors · Raising pre-seed</span>
-          <h1 className="page-title">Invest in Project Z<span className="sq" aria-hidden="true" /></h1>
+          <h1 className="page-title">Invest in Bolio ai<span className="sq" aria-hidden="true" /></h1>
           <p className="page-lede">
-            vexoro builds ventures that solve real problems. Our current raise is for Project Z: an AI that makes your phone calls, in any Indian language. We are raising ₹4.5 Cr pre-seed, released in three gated tranches plus a reserve.
+            vexoro builds ventures that solve real problems. Our current raise is for Bolio ai: an AI that makes your phone calls, in any Indian language. We are raising ₹4.5 Cr pre-seed, released in three gated tranches plus a reserve.
           </p>
           <div className="hero-links intro-links">
             <a className="btn" href={DECK}>Request the investor brief</a>
-            <Link className="text-link" href="/ventures/project-z">Read about Project Z</Link>
+            <Link className="text-link" href="/ventures/bolio-ai">Read about Bolio ai</Link>
           </div>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function Page() {
       <section className="section" aria-labelledby="glance-title">
         <div className="wrap">
           <div className="section-head">
-            <h2 id="glance-title">Project Z at a glance</h2>
+            <h2 id="glance-title">Bolio ai at a glance</h2>
             <p>A consumer wedge into India&apos;s fast-growing voice AI market. You ask. It calls. You get the result.</p>
           </div>
           <ul className="venture-grid">
@@ -140,7 +140,7 @@ export default function Page() {
       </section>
 
       <section className="section" aria-labelledby="market-title">
-        <div className="wrap project-z-teaser">
+        <div className="wrap bolio-ai-teaser">
           <div>
             <h2 id="market-title">India runs on phone calls, and people hate making them</h2>
             <p className="teaser-lede">
@@ -151,7 +151,7 @@ export default function Page() {
             <dl className="stats">
               {METRICS.map((m) => <div key={m.dt}><dt>{m.dt}</dt><dd>{m.dd}</dd></div>)}
             </dl>
-            <p className="code-note">Sources: IBEF/PIB data via GrabOn; Caller Digital. Market layers and year-3 revenue are Project Z estimates, to be validated in the POC.</p>
+            <p className="code-note">Sources: IBEF/PIB data via GrabOn; Caller Digital. Market layers and year-3 revenue are Bolio ai estimates, to be validated in the POC.</p>
           </div>
         </div>
       </section>
@@ -244,7 +244,7 @@ export default function Page() {
           <div className="founder">
             <span className="venture-status">{FOUNDER.role}</span>
             <h3>{FOUNDER.name}</h3>
-            <p>Founder and sole owner of the vexoro group. Built Velocity Aviation to 3,000+ sales and three ventures solo, end to end. Owns strategy, finance, product and fundraising at Project Z.</p>
+            <p>Founder and sole owner of the vexoro group. Built Velocity Aviation to 3,000+ sales and three ventures solo, end to end. Owns strategy, finance, product and fundraising at Bolio ai.</p>
             <a className="btn" href={DECK}>Request the investor brief</a>
           </div>
         </div>

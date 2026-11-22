@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://vexoro.dev",
   email: "ceo@vexoro.dev",
   description:
-    "vexoro is a venture group that finds real problems and builds focused products to solve them: Project Z, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
+    "vexoro is a venture group that finds real problems and builds focused products to solve them: Bolio ai, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
   ogImage: "/assets/img/og-image.png",
   logo: "/assets/brand/vexoro-mark.png",
   areaServed: ["Oman", "India", "Bengaluru", "Worldwide"],
@@ -29,7 +29,7 @@ export const BASE_KEYWORDS = [
   "vexoro ventures",
   "venture group",
   "venture studio",
-  "Project Z",
+  "Bolio ai",
   "vexoro Digital",
   "Kishore Srimuralikrishnan",
 ];

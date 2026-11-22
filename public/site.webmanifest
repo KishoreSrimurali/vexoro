@@ -1,7 +1,7 @@
 {
   "name": "vexoro | Ventures that solve real problems",
   "short_name": "vexoro",
-  "description": "vexoro is a venture group: Project Z, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
+  "description": "vexoro is a venture group: Bolio ai, an AI that makes your phone calls in any Indian language, and vexoro Digital for AI, branding and websites.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A0A0B",
@@ -40,8 +40,8 @@
       "url": "/ventures"
     },
     {
-      "name": "Project Z",
-      "url": "/ventures/project-z"
+      "name": "Bolio ai",
+      "url": "/ventures/bolio-ai"
     },
     {
       "name": "AI Solutions",

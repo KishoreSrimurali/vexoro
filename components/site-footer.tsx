@@ -7,7 +7,7 @@ export function SiteFooter() {
         <Wordmark className="footer-wordmark" />
         <nav aria-label="Footer">
           <a href="/ventures">Ventures</a>
-          <a href="/ventures/project-z">Project Z</a>
+          <a href="/ventures/bolio-ai">Bolio ai</a>
           <a href="/investors">Investors</a>
           <a href="/structure">Structure</a>
           <a href="/ai">AI Solutions</a>

@@ -6,9 +6,9 @@ import { KEYWORDS } from "@/lib/keywords";
 import { pageMetadata } from "@/lib/site";
 import { subpageStructuredData } from "@/lib/structured-data";
 
-const TITLE = "Business Structure: vexoro Group, vexoro Digital and Project Z";
+const TITLE = "Business Structure: vexoro Group, vexoro Digital and Bolio ai";
 const DESCRIPTION =
-  "How vexoro is organised: one group, led by founder and CEO Kishore Srimuralikrishnan, with ventures that each run as their own business: vexoro Digital, Project Z and what's next.";
+  "How vexoro is organised: one group, led by founder and CEO Kishore Srimuralikrishnan, with ventures that each run as their own business: vexoro Digital, Bolio ai and what's next.";
 
 export const metadata: Metadata = pageMetadata({
   path: "/structure",

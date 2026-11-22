@@ -5,7 +5,7 @@ import type { FormEvent } from "react";
 const USES = ["Doctor and lab bookings", "Home services and repairs", "Customer care, refunds and cancellations", "Calls for my parents", "Calls for my business", "Something else"];
 const WHO = ["Just me", "My family", "My clinic or business"];
 
-/** Project Z beta waitlist. Opens the visitor's email app with the details filled in. */
+/** Bolio ai beta waitlist. Opens the visitor's email app with the details filled in. */
 export function BetaWaitlist() {
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -18,11 +18,11 @@ export function BetaWaitlist() {
       `For: ${d.get("who")}`,
       `Calls I'd hand over first: ${d.get("use")}`,
     ].join("\n");
-    window.location.href = `mailto:ceo@vexoro.dev?subject=${encodeURIComponent("Project Z beta waitlist")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:ceo@vexoro.dev?subject=${encodeURIComponent("Bolio ai beta waitlist")}&body=${encodeURIComponent(body)}`;
   }
 
   return (
-    <form className="contact-form" id="beta-waitlist" onSubmit={onSubmit} aria-label="Project Z beta waitlist">
+    <form className="contact-form" id="beta-waitlist" onSubmit={onSubmit} aria-label="Bolio ai beta waitlist">
       <div className="field">
         <label htmlFor="bw-name">Name</label>
         <input id="bw-name" name="name" type="text" autoComplete="name" required />

@@ -13,7 +13,7 @@ export function VenturesSection({ h1 = false }: { h1?: boolean }) {
         </div>
         <ul className="venture-grid">
           {VENTURES.map((v) => (
-            <li key={v.id} className={v.id === "project-z" ? "venture-card featured" : "venture-card"}>
+            <li key={v.id} className={v.id === "bolio-ai" ? "venture-card featured" : "venture-card"}>
               <span className="venture-status">{v.status}</span>
               <h3>{v.name}</h3>
               <p>{v.summary}</p>
@@ -55,18 +55,18 @@ export function ApproachSection() {
   );
 }
 
-export function ProjectZTeaser() {
+export function BolioAiTeaser() {
   return (
-    <section className="section" id="project-z" aria-labelledby="project-z-title">
-      <div className="wrap project-z-teaser">
+    <section className="section" id="bolio-ai" aria-labelledby="bolio-ai-title">
+      <div className="wrap bolio-ai-teaser">
         <div>
           <span className="venture-status">A vexoro venture · Beta in Bengaluru</span>
-          <h2 id="project-z-title">Project Z<span className="sq" aria-hidden="true" /></h2>
-          <p className="teaser-lede">You ask. It calls. Project Z is an AI that makes phone calls for you, in any Indian language. It finds the number, calls, waits on hold, speaks the other person&apos;s language and sends you the result.</p>
+          <h2 id="bolio-ai-title">Bolio ai<span className="sq" aria-hidden="true" /></h2>
+          <p className="teaser-lede">You ask. It calls. Bolio ai is an AI that makes phone calls for you, in any Indian language. It finds the number, calls, waits on hold, speaks the other person&apos;s language and sends you the result.</p>
           <div className="hero-links">
-            <Link className="btn" href="/ventures/project-z">Meet Project Z</Link>
+            <Link className="btn" href="/ventures/bolio-ai">Meet Bolio ai</Link>
             <Link className="text-link" href="/investors">For investors</Link>
-            <Link className="text-link" href="/ventures/project-z#beta">Join the beta</Link>
+            <Link className="text-link" href="/ventures/bolio-ai#beta">Join the beta</Link>
           </div>
         </div>
         <dl className="stats">

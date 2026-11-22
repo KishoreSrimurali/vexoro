@@ -1,10 +1,10 @@
-// Detailed public business structure (/structure). Facts come from the Project Z deck and the public copy.
+// Detailed public business structure (/structure). Facts come from the Bolio ai deck and the public copy.
 // Ownership, money rules and investor terms are deliberately left out.
 
 export type Unit = { name: string; items: string[] };
 
 export type VentureDetail = {
-  id: "digital" | "project-z" | "next";
+  id: "digital" | "bolio-ai" | "next";
   name: string;
   status: string;
   role: string;
@@ -36,8 +36,8 @@ export const GROUP = {
 
 export const VENTURE_DETAILS: VentureDetail[] = [
   {
-    id: "project-z",
-    name: "Project Z",
+    id: "bolio-ai",
+    name: "Bolio ai",
     status: "Beta in Bengaluru",
     role: "An AI that makes your phone calls, in any Indian language. You ask. It calls. You get the result.",
     market: ["India", "Bengaluru first", "Top 10 metros, then tier 2 cities"],
@@ -58,7 +58,7 @@ export const VENTURE_DETAILS: VentureDetail[] = [
       { name: "Growth lead", detail: "Referrals, content and family-plan marketing.", stage: "Launch" },
       { name: "B2B sales lead", detail: "Clinics and small-business accounts.", stage: "Launch" },
     ],
-    href: "/ventures/project-z",
+    href: "/ventures/bolio-ai",
   },
   {
     id: "digital",
@@ -90,11 +90,11 @@ export const VENTURE_DETAILS: VentureDetail[] = [
   },
 ];
 
-/** How a Project Z call works, left to right. */
-export const PROJECT_Z_FLOW = [
+/** How a Bolio ai call works, left to right. */
+export const BOLIO_AI_FLOW = [
   { name: "You ask", detail: "Type or say what you need, in any language" },
   { name: "It briefs", detail: "1–3 quick questions plus your saved details" },
   { name: "It calls", detail: "Dials, navigates the IVR, waits on hold, talks" },
   { name: "You get it done", detail: "Result, transcript and recording sent to you" },
 ];
-export const PROJECT_Z_RETURN = "You pay per call or subscribe → businesses get clear, polite callers in their language, and can upgrade to business plans";
+export const BOLIO_AI_RETURN = "You pay per call or subscribe → businesses get clear, polite callers in their language, and can upgrade to business plans";

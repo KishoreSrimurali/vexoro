@@ -18,7 +18,7 @@ export type TermsSection = {
 };
 
 export const TERMS_INTRO =
-  "These Terms of Service (“Terms”) are a binding agreement between you and vexoro. They apply to the whole of vexoro.dev and every other website, subdomain, page, form, link, file, email, app, API, server, system and service operated under the vexoro name, and to every product, programme and venture of vexoro, including vexoro Digital and Project Z. They replace all earlier versions. Please read them carefully, in particular the sections on disclaimers, limitation of liability, indemnity and disputes. If you do not agree with these Terms, you must not access or use any of our websites, systems or Services.";
+  "These Terms of Service (“Terms”) are a binding agreement between you and vexoro. They apply to the whole of vexoro.dev and every other website, subdomain, page, form, link, file, email, app, API, server, system and service operated under the vexoro name, and to every product, programme and venture of vexoro, including vexoro Digital and Bolio ai. They replace all earlier versions. Please read them carefully, in particular the sections on disclaimers, limitation of liability, indemnity and disputes. If you do not agree with these Terms, you must not access or use any of our websites, systems or Services.";
 
 export const TERMS: TermsSection[] = [
   {
@@ -37,7 +37,7 @@ export const TERMS: TermsSection[] = [
     title: "Definitions",
     clauses: [
       "“vexoro”, “we”, “us” and “our” mean vexoro, the venture group operating under the vexoro name at vexoro.dev, together with each of its ventures, its founder, owners, directors, team members, contractors, successors and assigns.",
-      "“Venture” means any business or product line operated under the vexoro name, currently vexoro Digital and Project Z, and any venture added in future.",
+      "“Venture” means any business or product line operated under the vexoro name, currently vexoro Digital and Bolio ai, and any venture added in future.",
       "“You” and “your” mean any person or organisation that visits our websites, connects to our systems, or uses, orders, buys, licenses, takes part in or receives anything we provide, including visitors, clients, customers, users, partners, licensees, waitlist members and investors.",
       "“Websites” means vexoro.dev and every other website, subdomain, page, preview or deployment we operate, including their content, code, design and files.",
       "“Systems” means every server, host, network, database, API, endpoint, storage location, account, dashboard, admin panel, deployment, repository and other technical infrastructure we own, operate, rent or use, whether run by us or by a provider on our behalf.",
@@ -56,8 +56,8 @@ export const TERMS: TermsSection[] = [
     clauses: [
       "These Terms cover every page and part of the Websites, every System, and every Service of every Venture, whether paid or free, live, in testing, in pilot or not yet launched, and whether you reach it directly, through a link, through an API or through a third party.",
       "vexoro Digital provides websites, design, branding, AI solutions, SEO, hosting, maintenance and related digital services. Sections 10 to 19 apply to these services, in addition to the general sections.",
-      "Project Z is a vexoro venture: an AI service that makes phone calls on behalf of its users. Section 20 applies to anyone who uses Project Z to make calls, including on a free, pay-per-call, subscription or family plan, and section 21 applies to businesses, clinics and other organisations on Project Z business plans or design-partner pilots. Information about Project Z, including its investor brief, is also covered by sections 22 and 23.",
-      "Sections 22 and 23 apply to waitlists, pilots and early access, and to all investor information, including the Project Z investor brief, decks, data rooms and related communications.",
+      "Bolio ai is a vexoro venture: an AI service that makes phone calls on behalf of its users. Section 20 applies to anyone who uses Bolio ai to make calls, including on a free, pay-per-call, subscription or family plan, and section 21 applies to businesses, clinics and other organisations on Bolio ai business plans or design-partner pilots. Information about Bolio ai, including its investor brief, is also covered by sections 22 and 23.",
+      "Sections 22 and 23 apply to waitlists, pilots and early access, and to all investor information, including the Bolio ai investor brief, decks, data rooms and related communications.",
       "Every other section applies to everyone and to every Venture, Website, System and Service.",
       "Each Venture runs as its own line of business. Unless Specific Terms say otherwise, an agreement for one Venture covers that Venture only, and a matter with one Venture does not give you any rights against, or claims on the assets of, any other Venture or vexoro as a whole.",
       "When we launch a new Venture, product or Website, these Terms apply to it from the moment it is made available, together with any Specific Terms we publish for it.",
@@ -228,46 +228,46 @@ export const TERMS: TermsSection[] = [
     ],
   },
   {
-    id: "project-z-users",
-    title: "Project Z: calls made on your behalf",
+    id: "bolio-ai-users",
+    title: "Bolio ai: calls made on your behalf",
     clauses: [
-      "When you give Project Z a task, you authorise us, and the AI agent we operate, to place calls, navigate phone menus, wait on hold, speak and share the details you provide on your behalf, in any language, for the purpose of that task. You are the person on whose behalf each call is made, and you are responsible for every request you give and every detail you allow the agent to use.",
+      "When you give Bolio ai a task, you authorise us, and the AI agent we operate, to place calls, navigate phone menus, wait on hold, speak and share the details you provide on your behalf, in any language, for the purpose of that task. You are the person on whose behalf each call is made, and you are responsible for every request you give and every detail you allow the agent to use.",
       "The agent acts only within the goal and limits you set, such as a maximum price, acceptable alternatives and suitable times. Anything it agrees within those limits binds you as if you had agreed it yourself. We are not a party to any agreement, booking, purchase, refund, cancellation or other arrangement made between you and the person or business called, and we are not responsible for what they do or fail to do.",
       "Every call identifies itself as an AI assistant calling on your behalf. You must not ask the agent to hide that it is an AI, to impersonate any person or organisation, or to make any call that is unlawful, abusive, threatening, harassing, fraudulent, deceptive, discriminatory, for marketing or bulk calling, to emergency services, or to anyone who has asked not to be called.",
       "The agent is designed never to share one-time passwords, card or bank details, passwords, Aadhaar, PAN or similar sensitive identifiers, and you must not ask it to. If you share such information with us or a callee in any way, you do so entirely at your own risk.",
       "You must have the right to share any personal data about other people that you give us, such as a family member's name, appointment or address, and to ask us to call on their behalf. You must obtain any consent the law requires for this.",
-      "Calls, task briefs, transcripts and recordings may be recorded, stored, reviewed by people and processed by us and our providers to complete the task, ensure safety and quality, prevent misuse, resolve disputes and improve Project Z, in line with the consents you give in the app and with section 30. You are responsible for any notice or consent required where you are.",
-      "We do not guarantee that any call will connect, be answered, be understood, or achieve the result you want, or that any summary, transcript or result we send you is complete or accurate. You must check every result before relying on it, in particular for health, money, legal or time-critical matters. Project Z is not an emergency service and must never be used in an emergency.",
+      "Calls, task briefs, transcripts and recordings may be recorded, stored, reviewed by people and processed by us and our providers to complete the task, ensure safety and quality, prevent misuse, resolve disputes and improve Bolio ai, in line with the consents you give in the app and with section 30. You are responsible for any notice or consent required where you are.",
+      "We do not guarantee that any call will connect, be answered, be understood, or achieve the result you want, or that any summary, transcript or result we send you is complete or accurate. You must check every result before relying on it, in particular for health, money, legal or time-critical matters. Bolio ai is not an emergency service and must never be used in an emergency.",
       "Prices, free-call allowances, fair-use limits, plan features and the languages and tasks available are set out in the app at the time you buy or use them, and may change for the future at any time. Subscriptions renew automatically until cancelled, unused calls do not roll over, and payments through an app store or payment provider are also subject to its terms. A call is counted once the agent has dialled, whatever the outcome.",
       "We may refuse, stop or end any call or task, limit how many calls you can make, and suspend or end your access at any time, without refund, where we suspect misuse, fraud, a breach of these Terms or a risk to anyone, or where a callee asks us to stop calling them. Free calls are limited to one verified phone number per person, and we may cancel free calls or referral rewards obtained through fake or duplicate accounts.",
     ],
   },
   {
-    id: "project-z-business",
-    title: "Project Z: business plans and partners",
+    id: "bolio-ai-business",
+    title: "Bolio ai: business plans and partners",
     clauses: [
-      "Business plans let a business, clinic or other organisation use Project Z to make reminder, no-show recovery, payment reminder, callback and similar calls to its own customers. They are governed by these Terms and by your order or plan, which forms Specific Terms.",
-      "You are responsible for the people you ask us to call and for the content of every call. You confirm that you have a lawful basis and every consent required to call each person and to share their data with us, that you will honour every opt-out, and that you will not use Project Z for marketing, promotional or bulk calls unless your plan expressly allows it and you have completed every registration the law requires.",
+      "Business plans let a business, clinic or other organisation use Bolio ai to make reminder, no-show recovery, payment reminder, callback and similar calls to its own customers. They are governed by these Terms and by your order or plan, which forms Specific Terms.",
+      "You are responsible for the people you ask us to call and for the content of every call. You confirm that you have a lawful basis and every consent required to call each person and to share their data with us, that you will honour every opt-out, and that you will not use Bolio ai for marketing, promotional or bulk calls unless your plan expressly allows it and you have completed every registration the law requires.",
       "For the personal data of the people you ask us to call, you are the controller and we process it only to provide the Services, in line with section 30. You are responsible for your own privacy notices and for any reliance you place on call results.",
       "We do not guarantee any level of answered calls, reduced no-shows, recovered payments or any other business result. Pilot, design-partner and early-access terms, prices and results are confidential, and we may use any feedback you give us without restriction or payment.",
-      "Call recordings, transcripts, task data, models, playbooks, business directory data and every other output of the Project Z platform belong to us, except your own customer data. We may use de-identified and aggregated data from all calls to operate and improve Project Z.",
-      "You must not bypass us to obtain a similar service from any supplier, contractor or team member introduced to you through Project Z, during your plan and for 24 months after it ends.",
+      "Call recordings, transcripts, task data, models, playbooks, business directory data and every other output of the Bolio ai platform belong to us, except your own customer data. We may use de-identified and aggregated data from all calls to operate and improve Bolio ai.",
+      "You must not bypass us to obtain a similar service from any supplier, contractor or team member introduced to you through Bolio ai, during your plan and for 24 months after it ends.",
     ],
   },
   {
     id: "early-access",
     title: "Waitlists, pilots and early access",
     clauses: [
-      "Joining a waitlist, pilot, beta or early-access programme for any Venture, including Project Z, does not guarantee a place, a launch date, a price, a feature, a language or any Service.",
+      "Joining a waitlist, pilot, beta or early-access programme for any Venture, including Bolio ai, does not guarantee a place, a launch date, a price, a feature, a language or any Service.",
       "Pilot, beta and early-access Services may be incomplete, unreliable, changed or ended at any time, and are provided entirely without warranty.",
       "We decide who is offered a place, on what terms and in what order, at our discretion.",
     ],
   },
   {
     id: "investors",
-    title: "Investor information and the Project Z investor brief",
+    title: "Investor information and the Bolio ai investor brief",
     clauses: [
-      "Information about investing in vexoro or any Venture, including the Project Z investor brief, decks, figures, data rooms, emails, calls and statements on our Websites (“Investor Information”), is general information only. It is not an offer to sell, or a solicitation of an offer to buy, any shares, securities, tokens or other interest in any jurisdiction, and it is not investment, legal, tax or accounting advice.",
+      "Information about investing in vexoro or any Venture, including the Bolio ai investor brief, decks, figures, data rooms, emails, calls and statements on our Websites (“Investor Information”), is general information only. It is not an offer to sell, or a solicitation of an offer to buy, any shares, securities, tokens or other interest in any jurisdiction, and it is not investment, legal, tax or accounting advice.",
       "Any investment can only be made under separate written agreements signed by both sides, and only on the terms of those agreements. Nothing on our Websites or in our communications creates any commitment by us to accept an investment, to keep a round open, or to offer any particular terms.",
       "Projections, plans, targets, valuations, market sizes, unit economics, roadmaps and other forward-looking statements are estimates based on assumptions that may prove wrong. Actual results may differ materially. We make no representation or warranty as to the accuracy or completeness of any Investor Information, and we have no duty to update it.",
       "You must make your own independent investigation and take your own professional advice. You confirm that you will not rely on any Investor Information, and to the fullest extent permitted by law, neither vexoro nor its founder, team or advisers will be liable for any loss arising from its use.",
@@ -287,7 +287,7 @@ export const TERMS: TermsSection[] = [
     id: "ip",
     title: "Our intellectual property",
     clauses: [
-      "The Websites, Systems and Services, and everything in them, including the vexoro and Project Z names, logos, brands, designs, text, graphics, code, software, models, data, databases, documents and the selection and arrangement of all of it, are owned by us or our licensors and protected by the Law on Copyright and Related Rights of the Sultanate of Oman (Royal Decree 65/2008), the Industrial Property Rights Law (Royal Decree 67/2008) and international law. All rights not expressly granted to you are reserved.",
+      "The Websites, Systems and Services, and everything in them, including the vexoro and Bolio ai names, logos, brands, designs, text, graphics, code, software, models, data, databases, documents and the selection and arrangement of all of it, are owned by us or our licensors and protected by the Law on Copyright and Related Rights of the Sultanate of Oman (Royal Decree 65/2008), the Industrial Property Rights Law (Royal Decree 67/2008) and international law. All rights not expressly granted to you are reserved.",
       "You must not use our names, logos or brands, or anything confusingly similar, in any way, including in domain names, social media handles, advertising or keywords, without our prior written permission.",
       "On payment in full of everything you owe us, you own the Deliverables created specifically for you under a Project, excluding the materials described in clauses 25.4 to 25.6. Until then we own them and you have only a limited right to review them.",
       "We keep ownership of all our pre-existing and general-purpose materials, including code libraries, components, templates, prompts, workflows, tools, methods, know-how and improvements, even if developed during your Project. Once you have paid in full, we grant you a perpetual, non-exclusive, non-transferable licence to use them only as part of your Deliverables.",
@@ -337,7 +337,7 @@ export const TERMS: TermsSection[] = [
     clauses: [
       "We handle personal data in line with the Personal Data Protection Law of the Sultanate of Oman (Royal Decree 6/2022), and, where a Venture operates in India, the Digital Personal Data Protection Act, 2023, and any other law that applies. We collect only what we need to run our Websites, Systems and Services, keep them secure, and comply with the law.",
       "For personal data collected through a website, app or AI solution we build or host for you, you are the controller and are solely responsible for having a lawful basis, privacy notices and consents. When we process that data for you, we do so only on your documented instructions and to provide the Services.",
-      "For Project Z, we process personal data, task details, call audio, recordings and transcripts as described in the app and our notices, with separate consents for recording, AI analysis and reading receipts, and we keep data in India where the law requires. We delete or de-identify call data when it is no longer needed, but no method of de-identification is perfect.",
+      "For Bolio ai, we process personal data, task details, call audio, recordings and transcripts as described in the app and our notices, with separate consents for recording, AI analysis and reading receipts, and we keep data in India where the law requires. We delete or de-identify call data when it is no longer needed, but no method of de-identification is perfect.",
       "We take reasonable technical and organisational measures to protect personal data. No system can be made completely secure, and we do not guarantee protection against hacking, malware, spam or attacks. We will tell affected clients without undue delay if we become aware of a security incident affecting their data in Systems we manage.",
       "You may contact us using section 42 to exercise any data rights you have under the law.",
     ],
@@ -367,7 +367,7 @@ export const TERMS: TermsSection[] = [
     id: "indemnity",
     title: "Indemnity",
     clauses: [
-      "You will defend, indemnify and hold harmless vexoro, each Venture, and their founder, owners, directors, team members, contractors and licensors from and against all claims, demands, proceedings, losses, damages, liabilities, fines, penalties, costs and expenses, including reasonable legal fees, arising out of or relating to: (a) Your Materials or the content of your website, app or products; (b) your business, products, services or customers; (c) your use or misuse of the Websites, Systems, Services, Project Z calls or AI output; (d) any unauthorised access to or interference with any System by you or anyone using your credentials; (e) your breach of these Terms or of any law; or (f) any claim that anything you provided infringes another person’s rights.",
+      "You will defend, indemnify and hold harmless vexoro, each Venture, and their founder, owners, directors, team members, contractors and licensors from and against all claims, demands, proceedings, losses, damages, liabilities, fines, penalties, costs and expenses, including reasonable legal fees, arising out of or relating to: (a) Your Materials or the content of your website, app or products; (b) your business, products, services or customers; (c) your use or misuse of the Websites, Systems, Services, Bolio ai calls or AI output; (d) any unauthorised access to or interference with any System by you or anyone using your credentials; (e) your breach of these Terms or of any law; or (f) any claim that anything you provided infringes another person’s rights.",
       "We may take control of the defence of any such claim at your cost, and you must cooperate fully with us. You must not settle any claim that affects us without our written consent.",
     ],
   },
@@ -386,7 +386,7 @@ export const TERMS: TermsSection[] = [
     title: "Cancellation and refunds",
     clauses: [
       "You may cancel a Project by written notice. You must pay for all work done up to the date of cancellation, including work in progress at our current rates, and for all Third-Party costs already committed, even if these exceed the deposit.",
-      "All payments are non-refundable except where these Terms or the law expressly require a refund. In particular, no refunds are given for deposits once work has started, for work that has been delivered, approved or launched, for monthly, subscription or licence periods already started, for Project Z calls already dialled under section 20, or for dissatisfaction with style, results or AI output.",
+      "All payments are non-refundable except where these Terms or the law expressly require a refund. In particular, no refunds are given for deposits once work has started, for work that has been delivered, approved or launched, for monthly, subscription or licence periods already started, for Bolio ai calls already dialled under section 20, or for dissatisfaction with style, results or AI output.",
       "If we end a Service for convenience under clause 34.2, your only remedy is the refund described there.",
     ],
   },
@@ -443,7 +443,7 @@ export const TERMS: TermsSection[] = [
       "No waiver. A delay or failure by us to enforce any right is not a waiver of it. A waiver is valid only if given by us in writing.",
       "Assignment. You may not assign, transfer or subcontract any of your rights or obligations without our prior written consent. We may assign, transfer or subcontract any of our rights and obligations at any time, including to any Venture, affiliate, successor or buyer of all or part of our business.",
       "Independent parties. Nothing in these Terms creates a partnership, joint venture, employment, franchise or agency relationship. No one other than you, us and the persons named in clause 32.4 has any right to enforce these Terms.",
-      "Records. Our electronic records of communications, approvals, orders, payments, access logs and Project Z call recordings, transcripts and logs are admissible and, unless proven otherwise, conclusive evidence of their contents.",
+      "Records. Our electronic records of communications, approvals, orders, payments, access logs and Bolio ai call recordings, transcripts and logs are admissible and, unless proven otherwise, conclusive evidence of their contents.",
       "Language. These Terms are written in English. If they are translated, the English version prevails to the extent permitted by law.",
     ],
   },

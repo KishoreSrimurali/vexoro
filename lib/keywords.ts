@@ -16,7 +16,7 @@ export const KEYWORDS = {
       "venture group", "venture studio", "venture builder", "startup studio", "startup builder", "company builder",
       "product studio", "build ventures", "products that solve real problems", "problem-first startups",
       "lean startup", "bootstrapped startups", "new ventures", "tech ventures", "tech startup",
-      "Project Z", "vexoro Digital", "AI phone calls India", "voice AI India", "AI solutions", "AI company",
+      "Bolio ai", "vexoro Digital", "AI phone calls India", "voice AI India", "AI solutions", "AI company",
       "branding and web development", "web design studio", "digital studio", "founder-led company",
     ],
     near(["venture studio", "startup studio", "AI company", "tech company", "digital agency"], ["Oman", "Muscat", "Bengaluru", "Bangalore", "India"]),
@@ -29,14 +29,14 @@ export const KEYWORDS = {
       "startup portfolio", "new ventures", "pre-seed startups", "invest in startups", "angel investment",
       "startup investment opportunity", "early-stage startups", "lean startups", "stage-gated startup",
       "build lean prove scale", "problem-first products", "startup ideas", "co-found a startup",
-      "partner with a startup studio", "Project Z", "vexoro Digital",
+      "partner with a startup studio", "Bolio ai", "vexoro Digital",
     ],
     near(["startup studio", "venture studio", "venture builder", "startups", "startup investment"], ["Bengaluru", "Bangalore", "India", "Oman", "Muscat", "GCC"]),
   ),
 
-  projectZ: unique(
+  bolioAi: unique(
     [
-      "Project Z", "Project Z India", "Project Z by vexoro", "Project Z app", "Project Z AI",
+      "Bolio ai", "Bolio", "Bolio AI", "Bolio ai India", "Bolio ai by vexoro", "Bolio ai app", "Bolio ai app India",
       "AI that makes phone calls", "AI phone call assistant", "AI calling assistant", "AI call assistant India",
       "AI that calls for you", "AI to make calls for me", "AI voice agent", "AI voice assistant India",
       "AI calls customer care", "AI to call customer care", "AI customer care calls", "skip hold music",
@@ -51,8 +51,8 @@ export const KEYWORDS = {
       "Equal AI alternative", "Truecaller assistant alternative",
       "DPDP Act", "TRAI AI calls", "AI disclosure calls",
       "pre-seed startup India", "voice AI startup India", "AI startup India", "consumer AI startup India",
-      "Project Z beta", "Project Z beta waitlist", "Bengaluru startup", "Bangalore startup", "Bangalore AI startup",
-      "invest in Project Z", "Project Z investor brief",
+      "Bolio ai beta", "Bolio ai beta waitlist", "Bengaluru startup", "Bangalore startup", "Bangalore AI startup",
+      "invest in Bolio ai", "Bolio ai investor brief",
     ],
     near(["AI phone calls", "AI calling assistant", "voice AI", "AI startup"], INDIA),
   ),
@@ -115,15 +115,15 @@ export const KEYWORDS = {
   faq: [
     "website cost", "how much does a website cost", "website cost Oman", "AI solution cost", "AI chatbot cost",
     "who owns my website", "can I edit my website", "is SEO included", "how long does a website take",
-    "web design FAQ", "AI FAQ", "vexoro FAQ", "Project Z FAQ", "what is Project Z", "what is vexoro",
-    "how to invest in Project Z", "web design questions", "website ownership",
+    "web design FAQ", "AI FAQ", "vexoro FAQ", "Bolio ai FAQ", "what is Bolio ai", "what is vexoro",
+    "how to invest in Bolio ai", "web design questions", "website ownership",
   ],
 
   contact: [
-    "contact vexoro", "vexoro email", "ceo@vexoro.dev", "invest in Project Z", "Project Z investor brief",
-    "partner with vexoro", "join the Project Z beta", "free AI consultation", "free website consultation",
+    "contact vexoro", "vexoro email", "ceo@vexoro.dev", "invest in Bolio ai", "Bolio ai investor brief",
+    "partner with vexoro", "join the Bolio ai beta", "free AI consultation", "free website consultation",
     "website quote", "website quote Oman", "hire web designer Oman", "hire AI developer", "AI consultation Oman",
-    "start a project", "Project Z beta", "Project Z for business",
+    "start a project", "Bolio ai beta", "Bolio ai for business",
   ],
 
   pricing: unique(
@@ -140,14 +140,14 @@ export const KEYWORDS = {
 
   structure: [
     "vexoro business structure", "vexoro group structure", "vexoro organisation", "vexoro org chart",
-    "vexoro group", "vexoro ventures", "vexoro Digital", "Project Z", "Project Z parent company",
-    "who owns Project Z", "vexoro founder", "vexoro CEO", "Kishore Srimuralikrishnan", "venture group structure",
+    "vexoro group", "vexoro ventures", "vexoro Digital", "Bolio ai", "Bolio ai parent company",
+    "who owns Bolio ai", "vexoro founder", "vexoro CEO", "Kishore Srimuralikrishnan", "venture group structure",
     "holding group", "group of companies", "venture studio structure", "company structure",
   ],
 
   investors: unique(
     [
-      "invest in Project Z", "Project Z investors", "Project Z investor brief", "Project Z pre-seed",
+      "invest in Bolio ai", "Bolio ai investors", "Bolio ai investor brief", "Bolio ai pre-seed",
       "invest in startups", "startup investment opportunity", "pre-seed round", "pre-seed funding",
       "pre-seed startup", "early-stage startup investment", "angel investment", "angel investors",
       "startups raising funds", "startup fundraising", "seed funding", "venture capital", "VC funding",

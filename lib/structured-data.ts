@@ -8,7 +8,7 @@ const ORG_ID = abs("/#organization");
 const SITE_ID = abs("/#website");
 const SERVICE_ID = abs("/#service");
 const FOUNDER_ID = abs("/#founder");
-const PROJECT_Z_ID = abs("/ventures/project-z#organization");
+const BOLIO_AI_ID = abs("/ventures/bolio-ai#organization");
 
 const founder = {
   "@type": "Person",
@@ -18,12 +18,12 @@ const founder = {
   worksFor: { "@id": ORG_ID },
 };
 
-const projectZ = {
+const bolioAi = {
   "@type": "Organization",
-  "@id": PROJECT_Z_ID,
-  name: "Project Z",
-  alternateName: "Project Z by vexoro",
-  url: abs("/ventures/project-z"),
+  "@id": BOLIO_AI_ID,
+  name: "Bolio ai",
+  alternateName: "Bolio ai by vexoro",
+  url: abs("/ventures/bolio-ai"),
   description: "An AI that makes phone calls for people in India, in any Indian language. It finds the number, calls, waits on hold, speaks the other person's language and sends you the result.",
   parentOrganization: { "@id": ORG_ID },
   founder: { "@id": FOUNDER_ID },
@@ -58,7 +58,7 @@ const organization = {
   email: SITE.email,
   description: SITE.description,
   founder: { "@id": FOUNDER_ID },
-  subOrganization: [{ "@id": SERVICE_ID }, { "@id": PROJECT_Z_ID }],
+  subOrganization: [{ "@id": SERVICE_ID }, { "@id": BOLIO_AI_ID }],
   location: [
     { "@type": "Place", name: "Bengaluru, Karnataka, India", address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "Karnataka", addressCountry: "IN" } },
     { "@type": "Place", name: "Oman", address: { "@type": "PostalAddress", addressCountry: "OM" } },
@@ -157,7 +157,7 @@ export const homeStructuredData = (title: string, description: string) => ({
   "@graph": [
     organization,
     founder,
-    projectZ,
+    bolioAi,
     website,
     professionalService,
     webPage("/", title, description),
@@ -187,14 +187,14 @@ export const pricingStructuredData = (title: string, description: string) => ({
   ],
 });
 
-export const projectZStructuredData = (title: string, description: string) => ({
+export const bolioAiStructuredData = (title: string, description: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     organization,
     founder,
-    projectZ,
-    webPage("/ventures/project-z", title, description, { about: { "@id": PROJECT_Z_ID }, breadcrumb: { "@id": abs("/ventures/project-z#breadcrumb") } }),
-    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Project Z", "/ventures/project-z"]]), "@id": abs("/ventures/project-z#breadcrumb") },
+    bolioAi,
+    webPage("/ventures/bolio-ai", title, description, { about: { "@id": BOLIO_AI_ID }, breadcrumb: { "@id": abs("/ventures/bolio-ai#breadcrumb") } }),
+    { ...breadcrumb([["Home", "/"], ["Ventures", "/ventures"], ["Bolio ai", "/ventures/bolio-ai"]]), "@id": abs("/ventures/bolio-ai#breadcrumb") },
   ],
 });
 
@@ -211,9 +211,9 @@ export const investorsStructuredData = (title: string, description: string, faqs
   "@graph": [
     organization,
     founder,
-    projectZ,
+    bolioAi,
     webPage("/investors", title, description, {
-      about: [{ "@id": ORG_ID }, { "@id": PROJECT_Z_ID }],
+      about: [{ "@id": ORG_ID }, { "@id": BOLIO_AI_ID }],
       audience: { "@type": "Audience", audienceType: "Investors, angel investors, venture capital funds" },
       breadcrumb: { "@id": abs("/investors#breadcrumb") },
     }),
